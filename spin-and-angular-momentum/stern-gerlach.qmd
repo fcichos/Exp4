@@ -1,0 +1,108 @@
+---
+title: "The Stern–Gerlach Experiment"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Describe the setup and results of the Stern–Gerlach experiment
+- Explain how the experiment demonstrates spatial quantization
+- Analyze the force on a magnetic dipole in an inhomogeneous field
+- Discuss the implications for the existence of electron spin
+- Describe sequential Stern–Gerlach experiments and quantum measurement
+:::
+
+## Experimental Setup (1922)
+
+Otto Stern and Walther Gerlach designed an experiment to test the quantization of angular momentum. The setup consists of:
+
+1. An oven producing a beam of neutral atoms (originally silver)
+2. A collimating slit to create a narrow beam
+3. An **inhomogeneous magnetic field** (produced by specially shaped pole pieces)
+4. A detector screen (originally a glass plate)
+
+## Classical vs. Quantum Prediction
+
+A magnetic dipole $\boldsymbol{\mu}$ in an inhomogeneous magnetic field $\mathbf{B}$ experiences a force:
+
+$$
+\mathbf{F} = \nabla(\boldsymbol{\mu} \cdot \mathbf{B})
+$$
+
+If the field gradient is primarily along $z$:
+
+$$
+F_z = \mu_z \frac{\partial B_z}{\partial z}
+$$ {#eq-force-sg}
+
+**Classical prediction:** $\mu_z$ can take any continuous value, so the beam should spread into a continuous band on the screen.
+
+**Quantum prediction:** Only discrete values of $\mu_z$ are allowed, so the beam should split into discrete spots.
+
+## Experimental Result
+
+Stern and Gerlach observed **two distinct spots** on the detector screen — not a continuous band. For silver atoms (with a single valence electron in the $5s$ state, $\ell = 0$), the splitting into exactly two beams could not be explained by orbital angular momentum (which gives $2\ell + 1$ beams, i.e., one beam for $\ell = 0$).
+
+The resolution came with the discovery of electron spin: the two beams correspond to $m_s = +1/2$ and $m_s = -1/2$. The deflection is:
+
+$$
+F_z = \mp g_s \mu_B \frac{\partial B_z}{\partial z}
+$$
+
+## Spatial Quantization
+
+The Stern–Gerlach experiment provides direct evidence for **spatial quantization** — the angular momentum component along any axis can only take discrete values. For an atom with total angular momentum quantum number $j$, there are $2j + 1$ beams:
+
+| Quantum number $j$ | Number of beams |
+|---------------------|-----------------|
+| 1/2 | 2 |
+| 1 | 3 |
+| 3/2 | 4 |
+| 2 | 5 |
+
+## Sequential Stern–Gerlach Experiments
+
+Sequential Stern–Gerlach apparatuses with different orientations beautifully illustrate quantum measurement principles:
+
+**Experiment 1:** SG$_z$ → SG$_z$. The $m_s = +1/2$ beam from the first apparatus passes entirely through the $+1/2$ channel of the second. **Measurement is repeatable.**
+
+**Experiment 2:** SG$_z$ → SG$_x$ → SG$_z$. After selecting $m_s = +1/2$ along $z$ and then measuring along $x$, a subsequent $z$-measurement gives both $\pm 1/2$ with equal probability. **The $x$-measurement has erased the information about $z$.** This reflects the incompatibility $[\hat{S}_x, \hat{S}_z] \neq 0$.
+
+::: {.callout-important}
+## Experiment: Practical Details of the Original Apparatus
+
+The original Stern–Gerlach apparatus (Frankfurt, 1922) used an oven at $\sim 1300$ K to produce a beam of silver atoms. The collimating slit was $\sim 0.03$ mm wide. The inhomogeneous magnetic field ($B \sim 0.1$ T, $\partial B/\partial z \sim 10^4$ T/m) was produced by a wedge-shaped pole piece (sharp tip) facing a flat pole piece, over a length of $\sim 3.5$ cm. The deflection of the silver atoms ($m = 108\;u$, $v \sim 600$ m/s) was only $\sim 0.2$ mm — detected by depositing the atoms onto a cold glass plate and developing the deposit chemically (similar to a photographic process). The experiment required hours of continuous beam operation and extreme care to avoid stray magnetic fields.
+
+**Order-of-magnitude estimate:** The time spent in the field region is $\Delta t = L/v \approx 0.035/600 \approx 6 \times 10^{-5}$ s. The transverse velocity acquired is $\Delta v_z = (F_z/m)\Delta t = (\mu_B/m)(\partial B/\partial z)\Delta t \approx (9.27 \times 10^{-24})/(1.79 \times 10^{-25}) \times 10^4 \times 6 \times 10^{-5} \approx 31$ m/s. After a further drift of $\sim 3$ cm, the deflection is $\sim 0.2$ mm — consistent with what Stern and Gerlach observed.
+:::
+
+## Modern Variants
+
+The Stern–Gerlach principle underlies many modern experiments:
+
+- **State preparation:** Selecting specific $m_J$ states for subsequent precision measurements (atomic clocks, interferometers)
+- **Magnetic molecular beam deflection:** Measuring the magnetic moments of clusters, nanoparticles, and biomolecules
+- **Atom interferometry:** Using Stern–Gerlach pulses (state-dependent forces) to create superpositions of spatially separated paths — the basis of precision inertial sensors and tests of fundamental physics
+- **Quantum information:** The Stern–Gerlach device is the prototypical quantum measurement apparatus, and its conceptual descendants (spin-dependent lattice potentials, quantum gas microscopes) are used in quantum computing and simulation with cold atoms
+
+## Significance
+
+The Stern–Gerlach experiment is fundamental to our understanding of quantum mechanics:
+
+- First direct evidence for the quantization of angular momentum
+- Demonstrated the existence of electron spin ($s = 1/2$)
+- Illustrates the concept of quantum measurement and state preparation
+- Used as a conceptual tool for understanding quantum superposition and entanglement
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Stern–Gerlach: inhomogeneous $\mathbf{B}$-field splits atomic beam into discrete spots
+- Silver: two spots → evidence for spin-½ ($m_s = \pm 1/2$)
+- Force: $F_z = \mu_z (\partial B_z/\partial z)$
+- Sequential experiments demonstrate quantum measurement and incompatibility
+:::

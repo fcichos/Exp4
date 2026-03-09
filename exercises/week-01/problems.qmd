@@ -1,0 +1,56 @@
+---
+title: "Exercise Sheet 1 — The Bohr Model"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: Energy Levels and Spectral Lines
+
+The energy levels of hydrogen in the Bohr model are given by:
+
+$$
+E_n = -\frac{13.6\;\text{eV}}{n^2}
+$$
+
+(a) Calculate the energy (in eV) required to ionize a hydrogen atom from the ground state.
+
+(b) Calculate the wavelength of the photon emitted during the transition $n = 3 \to n = 2$ (first Balmer line). Express your result in nm.
+
+(c) What is the shortest wavelength in the Balmer series (series limit)? To which transition does it correspond?
+
+(d) In which spectral region (UV, visible, IR) do the Lyman, Balmer, and Paschen series lie?
+
+## Problem 2: The Bohr Radius and Orbital Velocity
+
+(a) Derive the Bohr radius $a_0 = \hbar^2/(m_e e^2/(4\pi\varepsilon_0))$ by balancing the centripetal force with the Coulomb force and imposing the quantization condition $L = n\hbar$ for $n = 1$.
+
+(b) Calculate the velocity of the electron in the ground state of hydrogen as a fraction of the speed of light.
+
+(c) The kinetic energy of the electron in orbit $n$ is $T_n = -E_n$ (virial theorem). Verify this explicitly for the ground state.
+
+## Problem 3: Hydrogen-Like Ions
+
+For a hydrogen-like ion with nuclear charge $Z$, the Bohr energy levels become:
+
+$$
+E_n = -\frac{Z^2 \cdot 13.6\;\text{eV}}{n^2}
+$$
+
+(a) Calculate the ionization energy of He⁺ ($Z = 2$) and Li²⁺ ($Z = 3$).
+
+(b) At what wavelength does the $n = 2 \to n = 1$ transition occur in He⁺? Compare with the corresponding transition in hydrogen.
+
+(c) For which hydrogen-like ion does the $n = 2 \to n = 1$ transition emit a photon in the visible range (400–700 nm)?
+
+## Problem 4: Reduced Mass and Isotope Effects
+
+The Rydberg constant depends on the reduced mass $\mu = m_e M/(m_e + M)$, where $M$ is the nuclear mass:
+
+$$
+R = R_\infty \frac{\mu}{m_e}, \qquad R_\infty = \frac{m_e e^4}{8\varepsilon_0^2 h^3 c}
+$$
+
+(a) Calculate the Rydberg constant for hydrogen ($R_H$) and deuterium ($R_D$), given $m_p = 1836.15\,m_e$ and $m_D \approx 2 m_p$.
+
+(b) What is the wavelength difference between the Balmer-$\alpha$ line of hydrogen and deuterium? This **isotope shift** was used by Harold Urey to discover deuterium in 1932.
+
+(c) Positronium is a bound state of an electron and a positron ($m_{e^+} = m_e$). What is the ground state energy of positronium?

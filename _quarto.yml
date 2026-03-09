@@ -1,0 +1,155 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Experimental Physics 4 — Atomic and Molecular Physics"
+  subtitle: "IPSP – Leipzig University (Summer 2026)"
+  author: "Prof. Dr. Frank Cichos"
+  date: "2026-04-01"
+  date-format: "MMMM YYYY"
+
+  repo-url: https://github.com/fcichos/Exp4
+  repo-actions: [edit]
+  repo-branch: main
+
+  page-navigation: true
+  search: true
+
+  sidebar:
+    style: docked
+    collapse-level: 2
+
+  chapters:
+    - index.qmd
+    - part: "Course Information"
+      chapters:
+        - course-info/overview.qmd
+        - course-info/schedule.qmd
+        - course-info/literature.qmd
+
+    - part: "The Hydrogen Atom"
+      chapters:
+        - hydrogen-atom/bohr-model.qmd
+        - hydrogen-atom/schroedinger-equation.qmd
+        - hydrogen-atom/orbitals.qmd
+        - hydrogen-atom/hydrogen-spectrum.qmd
+
+    - part: "Spin and Angular Momentum"
+      chapters:
+        - spin-and-angular-momentum/angular-momentum.qmd
+        - spin-and-angular-momentum/electron-spin.qmd
+        - spin-and-angular-momentum/stern-gerlach.qmd
+        - spin-and-angular-momentum/spin-orbit-coupling.qmd
+
+    - part: "Multi-Electron Atoms"
+      chapters:
+        - multi-electron-atoms/helium-atom.qmd
+        - multi-electron-atoms/pauli-principle.qmd
+        - multi-electron-atoms/periodic-table.qmd
+        - multi-electron-atoms/x-ray-spectra.qmd
+
+    - part: "Atoms in External Fields and Spectroscopy"
+      chapters:
+        - atoms-in-fields/zeeman-effect.qmd
+        - atoms-in-fields/stark-effect.qmd
+        - atoms-in-fields/optical-transitions.qmd
+        - atoms-in-fields/lasers.qmd
+
+    - part: "Quantum Statistics"
+      chapters:
+        - quantum-statistics/identical-particles.qmd
+        - quantum-statistics/fermi-dirac.qmd
+        - quantum-statistics/bose-einstein.qmd
+        - quantum-statistics/bec.qmd
+
+    - part: "Molecular Structure and Bonding"
+      chapters:
+        - molecular-structure/hydrogen-molecule.qmd
+        - molecular-structure/molecular-orbitals.qmd
+        - molecular-structure/chemical-bonds.qmd
+        - molecular-structure/hybridization.qmd
+
+    - part: "Molecular Spectroscopy"
+      chapters:
+        - molecular-spectroscopy/rotational-spectra.qmd
+        - molecular-spectroscopy/vibrational-spectra.qmd
+        - molecular-spectroscopy/raman-spectroscopy.qmd
+        - molecular-spectroscopy/electronic-spectroscopy.qmd
+        - molecular-spectroscopy/nmr-spectroscopy.qmd
+
+  appendices:
+    - part: "Exercises"
+      chapters:
+        - exercises/week-01/problems.qmd
+        - exercises/week-02/problems.qmd
+        - exercises/week-03/problems.qmd
+        - exercises/week-04/problems.qmd
+        - exercises/week-05/problems.qmd
+        - exercises/week-06/problems.qmd
+        - exercises/week-07/problems.qmd
+        - exercises/week-08/problems.qmd
+        - exercises/week-09/problems.qmd
+        - exercises/week-10/problems.qmd
+        - exercises/week-11/problems.qmd
+        - exercises/week-12/problems.qmd
+        - exercises/week-13/problems.qmd
+        - exercises/week-14/problems.qmd
+        - exercises/week-15/problems.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    code-link: true
+    highlight-style: github
+    css: assets/custom.css
+    mainfont: "Source Sans Pro"
+    fontsize: "1.0em"
+
+  pdf:
+    documentclass: scrbook
+    classoption:
+      - twoside
+      - open=right
+    papersize: a4
+    fontsize: 11pt
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    linkcolor: "blue"
+    urlcolor: "blue"
+    citecolor: "blue"
+    highlight-style: github
+    code-block-bg: "#f8f8f8"
+    fig-pos: "htbp"
+    geometry:
+      - top=25mm
+      - bottom=25mm
+      - left=30mm
+      - right=25mm
+    header-includes: |
+      \usepackage{booktabs}
+      \usepackage{siunitx}
+      \usepackage{physics}
+      \usepackage{fancyhdr}
+      \pagestyle{fancy}
+      \fancyhead[LE]{\leftmark}
+      \fancyhead[RO]{\rightmark}
+      \fancyfoot[C]{\thepage}
+
+execute:
+  freeze: auto
+  cache: true
+
+jupyter: python3
+
+bibliography: references.bib
+# csl: american-physical-society.csl

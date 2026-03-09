@@ -1,0 +1,163 @@
+---
+title: "Vibrational Spectroscopy"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Solve the quantum harmonic oscillator and interpret its energy levels
+- Explain the selection rules for vibrational transitions
+- Describe anharmonicity and the Morse potential
+- Interpret IR absorption spectra and FTIR spectroscopy
+- Describe advanced IR techniques: ATR, IR microscopy, and photothermal IR spectroscopy
+- Analyze ro-vibrational spectra (P, Q, R branches)
+:::
+
+## The Quantum Harmonic Oscillator
+
+Near equilibrium, the potential energy of a diatomic bond is approximately parabolic:
+
+$$
+V(x) = \frac{1}{2}kx^2
+$$
+
+where $x = R - R_e$ is the displacement from equilibrium and $k$ is the **force constant**. The Schrödinger equation gives energy levels:
+
+$$
+E_v = \hbar\omega\left(v + \frac{1}{2}\right) = h\nu_0\left(v + \frac{1}{2}\right)
+$$ {#eq-harmonic-oscillator}
+
+where $v = 0, 1, 2, \ldots$ is the vibrational quantum number, $\omega = \sqrt{k/\mu}$, and $\mu$ is the reduced mass.
+
+Key features:
+
+- **Equally spaced** energy levels with spacing $\hbar\omega$
+- **Zero-point energy** $E_0 = \frac{1}{2}\hbar\omega$ — the molecule vibrates even in the ground state
+- Typical vibrational frequencies: $\tilde{\nu} \sim 100\text{–}4000$ cm⁻¹ (infrared region)
+
+## Selection Rules
+
+For the harmonic oscillator:
+
+$$
+\Delta v = \pm 1
+$$ {#eq-vib-selection}
+
+and the molecule must have a **changing electric dipole moment** during vibration:
+
+$$
+\left(\frac{d\mu}{dR}\right)_{R_e} \neq 0
+$$
+
+Homonuclear diatomics (H₂, O₂, N₂) are IR-inactive because their dipole moment is zero at all bond lengths.
+
+## The Fundamental and Overtones
+
+- **Fundamental transition** ($v = 0 \to 1$): the strongest absorption, at frequency $\tilde{\nu}_0$
+- **Overtones** ($v = 0 \to 2, 3, \ldots$): forbidden in the harmonic approximation, but observed weakly due to anharmonicity
+
+## Anharmonicity: The Morse Potential
+
+The real potential deviates from a parabola at large displacements. The **Morse potential** is a better model:
+
+$$
+V(x) = D_e\left(1 - e^{-\beta x}\right)^2
+$$ {#eq-morse}
+
+where $D_e$ is the dissociation energy and $\beta = \omega\sqrt{\mu/(2D_e)}$. The energy levels become:
+
+$$
+E_v = \hbar\omega\left(v + \frac{1}{2}\right) - \hbar\omega x_e\left(v + \frac{1}{2}\right)^2
+$$ {#eq-anharmonic}
+
+where $x_e = \hbar\omega/(4D_e)$ is the **anharmonicity constant**. Consequences:
+
+- Energy levels get **closer together** at higher $v$
+- Overtone transitions ($\Delta v = 2, 3, \ldots$) become weakly allowed
+- There is a finite number of bound states below the dissociation limit
+
+## Infrared Spectroscopy
+
+### IR Absorption
+
+The fundamental vibrational frequencies of common functional groups fall in characteristic ranges:
+
+| Bond | $\tilde{\nu}$ (cm⁻¹) |
+|------|----------------------|
+| O–H stretch | 3200–3600 |
+| N–H stretch | 3300–3500 |
+| C–H stretch | 2850–3300 |
+| C≡C, C≡N | 2100–2260 |
+| C=O stretch | 1650–1750 |
+| C=C stretch | 1600–1680 |
+
+### FTIR (Fourier Transform Infrared) Spectroscopy
+
+FTIR uses a **Michelson interferometer** to record an interferogram (intensity vs. mirror displacement), which is Fourier-transformed to give the spectrum. Advantages over dispersive spectroscopy:
+
+- **Fellgett (multiplex) advantage:** All frequencies measured simultaneously → faster acquisition
+- **Jacquinot (throughput) advantage:** No entrance slit → higher optical throughput
+- **Connes advantage:** Internal He-Ne laser reference → superior wavelength accuracy ($\sim 0.01\;\text{cm}^{-1}$)
+
+::: {.callout-important}
+## Experiment: Building an FTIR Spectrum
+
+A typical benchtop FTIR spectrometer (e.g., Bruker Alpha or Thermo Nicolet) contains a broadband IR source (globar, a heated SiC rod at $\sim 1500$ K), a Michelson interferometer with a moving mirror, and a mercury cadmium telluride (MCT) or deuterated triglycine sulfate (DTGS) detector. The mirror moves at constant velocity $v$, modulating each IR frequency $\tilde{\nu}$ at a different audio frequency $f = 2v\tilde{\nu}$. Fourier transformation of the recorded interferogram recovers the complete IR spectrum in a single scan — typically in under one second.
+:::
+
+### Attenuated Total Reflection (ATR)
+
+In ATR-FTIR, the IR beam undergoes **total internal reflection** inside a high-refractive-index crystal (diamond, ZnSe, or Ge). At the reflection point, an evanescent wave extends $\sim 0.5\text{–}2\;\mu\text{m}$ into the sample pressed against the crystal surface. This enables direct measurement of solids, powders, liquids, and biological tissues **without sample preparation** — a major practical advantage over transmission FTIR.
+
+### IR Microscopy
+
+Coupling a FTIR spectrometer to an optical microscope allows spatially resolved chemical mapping. The spatial resolution is **diffraction-limited** to $\sim\lambda/2 \approx 3\text{–}10\;\mu\text{m}$ in the mid-IR. Focal-plane array (FPA) detectors with $128 \times 128$ pixels allow parallel spectral imaging, recording a complete IR spectrum at each pixel simultaneously. Applications range from polymer analysis and forensics to histopathology of tissue sections.
+
+### Photothermal Infrared Spectroscopy
+
+::: {.callout-tip}
+## Research Highlight: Beyond the Diffraction Limit with Photothermal IR
+
+Conventional IR microscopy is limited to $\sim 3\text{–}10\;\mu\text{m}$ spatial resolution by diffraction. **Photothermal infrared (PTIR) spectroscopy** overcomes this limit by detecting molecular absorption indirectly through the local temperature change it produces.
+
+**Principle:** When a sample absorbs a pulsed, wavelength-tunable IR laser beam, the absorbed energy is converted to heat within picoseconds. This local temperature rise ($\Delta T \sim$ mK–K) causes thermal expansion and changes in the local refractive index. These thermal effects are detected by a secondary probe:
+
+- **AFM-IR (photothermal AFM):** An atomic force microscope tip in contact with the sample detects the rapid thermal expansion as a ring-down oscillation of the cantilever. By tuning the IR laser wavelength, one recovers a local absorption spectrum with spatial resolution of $\sim 20\text{–}100\;\text{nm}$ — well below the IR diffraction limit. This technique was pioneered by Dazzi and colleagues (2005).
+
+- **O-PTIR (optical photothermal IR):** A visible probe laser (e.g., 532 nm) measures the change in local reflectivity or scattering caused by the photothermal effect. The spatial resolution is set by the visible probe focus ($\sim 500\;\text{nm}$), not the IR wavelength. This far-field variant combines sub-micrometer IR chemical imaging with conventional optical microscopy.
+
+- **Photothermal single-particle detection:** At the single-nanoparticle level, the periodic heating from modulated laser absorption creates a modulated thermal lens in the surrounding medium. A second, non-resonant probe beam traversing this lens acquires a phase modulation that is detected interferometrically. This principle — exploited in **photothermal microscopy** and **photothermal correlation spectroscopy (PhoCS)** — allows detection and spectral identification of individual nanoparticles and even single molecules via their absorption cross-sections, without any need for fluorescence.
+
+These photothermal methods represent an active frontier in nanoscale chemical imaging, with applications in materials science, polymer research, pharmaceutical analysis, and single-cell biology.
+:::
+
+## Ro-Vibrational Spectra
+
+In gas-phase molecules, vibrational transitions are accompanied by rotational changes. The combined selection rules are:
+
+$$
+\Delta v = \pm 1, \qquad \Delta J = \pm 1 \text{ (for linear molecules)}
+$$
+
+This gives rise to two branches:
+
+- **P branch** ($\Delta J = -1$): lines at $\tilde{\nu} < \tilde{\nu}_0$
+- **R branch** ($\Delta J = +1$): lines at $\tilde{\nu} > \tilde{\nu}_0$
+
+A **Q branch** ($\Delta J = 0$) appears for molecules where this is allowed (e.g., perpendicular bands of polyatomics). The spacing between P and R branch lines is approximately $2B$.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Harmonic oscillator: $E_v = \hbar\omega(v + 1/2)$, equally spaced, zero-point energy
+- Selection rules: $\Delta v = \pm 1$, requires changing dipole moment
+- Anharmonicity → levels converge, overtones become allowed
+- FTIR: Michelson interferometer + Fourier transform (Fellgett, Jacquinot, Connes advantages)
+- ATR-FTIR: evanescent-wave sampling, no sample preparation
+- Photothermal IR: nanoscale IR spectroscopy beyond the diffraction limit
+- Ro-vibrational: P branch ($\Delta J = -1$), R branch ($\Delta J = +1$)
+:::

@@ -1,0 +1,125 @@
+---
+title: "Atomic Orbitals"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Describe the shapes and symmetries of s, p, d, and f orbitals
+- Interpret radial probability distributions $P(r) = r^2|R_{n\ell}(r)|^2$
+- Explain the physical significance of nodes (radial and angular)
+- Visualize electron probability densities and their angular dependence
+- Relate orbital quantum numbers to the spectroscopic notation
+:::
+
+## Spectroscopic Notation
+
+By historical convention, the orbital quantum number $\ell$ is denoted by letters:
+
+| $\ell$ | 0 | 1 | 2 | 3 | 4 |
+|--------|---|---|---|---|---|
+| Letter | s | p | d | f | g |
+
+A state with quantum numbers $(n, \ell)$ is written as $n\ell$, e.g., $1s$, $2p$, $3d$.
+
+## Radial Wave Functions
+
+The first few radial wave functions $R_{n\ell}(r)$ are:
+
+$$
+R_{10}(r) = 2\left(\frac{1}{a_0}\right)^{3/2} e^{-r/a_0}
+$$
+
+$$
+R_{20}(r) = \frac{1}{2\sqrt{2}}\left(\frac{1}{a_0}\right)^{3/2}\left(2 - \frac{r}{a_0}\right)e^{-r/(2a_0)}
+$$
+
+$$
+R_{21}(r) = \frac{1}{2\sqrt{6}}\left(\frac{1}{a_0}\right)^{3/2}\frac{r}{a_0}e^{-r/(2a_0)}
+$$
+
+### Radial Probability Distribution
+
+The probability of finding the electron between $r$ and $r + dr$ is:
+
+$$
+P(r)\,dr = |R_{n\ell}(r)|^2 r^2 \, dr
+$$ {#eq-radial-probability}
+
+The factor $r^2$ comes from the volume element in spherical coordinates. The most probable radius (maximum of $P(r)$) for the $1s$ state is $r_{\text{mp}} = a_0$, confirming the Bohr radius.
+
+### Radial Nodes
+
+The number of **radial nodes** (zeros of $R_{n\ell}(r)$ for $r > 0$) is $n - \ell - 1$. For example:
+
+- $1s$: 0 radial nodes
+- $2s$: 1 radial node
+- $2p$: 0 radial nodes
+- $3s$: 2 radial nodes
+- $3d$: 0 radial nodes
+
+## Angular Dependence: Orbital Shapes
+
+The angular dependence of the wave function is given by the spherical harmonics. The full probability density $|\psi_{n\ell m_\ell}|^2$ determines the "shape" of the orbital.
+
+### s Orbitals ($\ell = 0$)
+
+The $s$ orbitals are **spherically symmetric**: $Y_0^0 = 1/\sqrt{4\pi}$. The electron probability depends only on $r$. The $1s$ orbital has its maximum density at the nucleus; the $2s$ orbital has a node at $r = 2a_0$.
+
+### p Orbitals ($\ell = 1$)
+
+The three $p$ orbitals ($m_\ell = -1, 0, +1$) have a characteristic **dumbbell shape** with a nodal plane through the nucleus. The real combinations are:
+
+$$
+p_z = Y_1^0 \propto \cos\theta, \qquad p_x = \frac{1}{\sqrt{2}}(Y_1^{-1} - Y_1^{+1}) \propto \sin\theta\cos\varphi
+$$
+$$
+p_y = \frac{i}{\sqrt{2}}(Y_1^{-1} + Y_1^{+1}) \propto \sin\theta\sin\varphi
+$$
+
+Each $p$ orbital has one angular nodal plane.
+
+### d Orbitals ($\ell = 2$)
+
+The five $d$ orbitals ($m_\ell = -2, \ldots, +2$) have more complex shapes with two angular nodal surfaces. The real combinations are $d_{z^2}$, $d_{xz}$, $d_{yz}$, $d_{xy}$, and $d_{x^2-y^2}$.
+
+### f Orbitals ($\ell = 3$)
+
+The seven $f$ orbitals have three angular nodal surfaces and increasingly complex shapes. They become important for the lanthanides and actinides.
+
+## Total Number of Nodes
+
+The total number of nodes (radial + angular) for any orbital is:
+
+$$
+\text{Total nodes} = (n - \ell - 1) + \ell = n - 1
+$$
+
+This is a general result: the ground state ($n = 1$) has no nodes, and each higher $n$ adds one node.
+
+## Electron Probability Densities
+
+The full probability density is:
+
+$$
+|\psi_{n\ell m_\ell}(\mathbf{r})|^2 = |R_{n\ell}(r)|^2 |Y_\ell^{m_\ell}(\theta, \varphi)|^2
+$$
+
+Important properties:
+
+- **Penetration:** For a given $n$, lower $\ell$ orbitals have higher probability near the nucleus. This becomes crucial for multi-electron atoms (screening).
+- **Size:** The expectation value of $r$ grows as $\langle r \rangle \propto n^2$, consistent with the Bohr model.
+- **Average values:** $\langle r \rangle_{n\ell} = \frac{a_0}{2}[3n^2 - \ell(\ell+1)]$
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Orbital shapes are determined by $Y_\ell^{m_\ell}(\theta, \varphi)$: s (spherical), p (dumbbell), d (cloverleaf)
+- Radial nodes: $n - \ell - 1$; angular nodes: $\ell$; total: $n - 1$
+- Radial probability distribution: $P(r) = r^2 |R_{n\ell}(r)|^2$
+- Lower $\ell$ → greater penetration toward the nucleus
+:::

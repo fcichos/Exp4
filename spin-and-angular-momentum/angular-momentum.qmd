@@ -1,0 +1,116 @@
+---
+title: "Orbital Angular Momentum"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Write down the commutation relations for angular momentum operators
+- Derive the eigenvalues of $\hat{L}^2$ and $\hat{L}_z$ using ladder operators
+- Explain the uncertainty relation between different components of angular momentum
+- Describe the vector model of angular momentum
+- Apply the addition of angular momenta rules
+:::
+
+## Angular Momentum Operators
+
+In quantum mechanics, the orbital angular momentum operator is:
+
+$$
+\hat{\mathbf{L}} = \hat{\mathbf{r}} \times \hat{\mathbf{p}} = -i\hbar(\mathbf{r} \times \nabla)
+$$
+
+with components:
+
+$$
+\hat{L}_x = \hat{y}\hat{p}_z - \hat{z}\hat{p}_y, \quad \hat{L}_y = \hat{z}\hat{p}_x - \hat{x}\hat{p}_z, \quad \hat{L}_z = \hat{x}\hat{p}_y - \hat{y}\hat{p}_x
+$$
+
+## Commutation Relations
+
+The fundamental commutation relations are:
+
+$$
+[\hat{L}_x, \hat{L}_y] = i\hbar\hat{L}_z, \quad [\hat{L}_y, \hat{L}_z] = i\hbar\hat{L}_x, \quad [\hat{L}_z, \hat{L}_x] = i\hbar\hat{L}_y
+$$ {#eq-commutation}
+
+Compactly: $[\hat{L}_i, \hat{L}_j] = i\hbar\epsilon_{ijk}\hat{L}_k$
+
+A crucial consequence: **we cannot simultaneously know all three components** of angular momentum. However, $\hat{L}^2$ commutes with all components:
+
+$$
+[\hat{L}^2, \hat{L}_i] = 0, \quad i = x, y, z
+$$
+
+So we can simultaneously diagonalize $\hat{L}^2$ and one component (conventionally $\hat{L}_z$).
+
+## Eigenvalues via Ladder Operators
+
+Define the **raising and lowering operators**:
+
+$$
+\hat{L}_+ = \hat{L}_x + i\hat{L}_y, \qquad \hat{L}_- = \hat{L}_x - i\hat{L}_y
+$$
+
+These satisfy:
+
+$$
+[\hat{L}_z, \hat{L}_\pm] = \pm\hbar\hat{L}_\pm, \qquad [\hat{L}_+, \hat{L}_-] = 2\hbar\hat{L}_z
+$$
+
+If $|{\ell, m}\rangle$ is an eigenstate of $\hat{L}_z$ with eigenvalue $m\hbar$, then $\hat{L}_\pm|{\ell, m}\rangle$ is an eigenstate with eigenvalue $(m \pm 1)\hbar$. The ladder must terminate, leading to:
+
+$$
+\hat{L}^2|\ell, m\rangle = \hbar^2\ell(\ell+1)|\ell, m\rangle
+$$
+$$
+\hat{L}_z|\ell, m\rangle = \hbar m|\ell, m\rangle
+$$ {#eq-eigenvalues}
+
+with $\ell = 0, 1, 2, \ldots$ and $m = -\ell, -\ell+1, \ldots, \ell$.
+
+## The Vector Model
+
+Since only $L^2$ and $L_z$ can be known simultaneously, the angular momentum vector can be pictured as precessing around the $z$-axis on a cone. The magnitude is $|\mathbf{L}| = \hbar\sqrt{\ell(\ell+1)}$, while the $z$-projection is $L_z = m\hbar$.
+
+Note that $|\mathbf{L}| > |L_z|_{\max} = \hbar\ell$ — the angular momentum vector can never be perfectly aligned with any axis. This is a fundamental quantum mechanical result.
+
+## Angular Momentum in Spherical Coordinates
+
+In spherical coordinates:
+
+$$
+\hat{L}_z = -i\hbar\frac{\partial}{\partial\varphi}
+$$
+
+$$
+\hat{L}^2 = -\hbar^2\left[\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right) + \frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\varphi^2}\right]
+$$
+
+The eigenfunctions are the spherical harmonics $Y_\ell^m(\theta, \varphi)$.
+
+## Addition of Angular Momenta
+
+When combining two angular momenta $\hat{\mathbf{J}}_1$ and $\hat{\mathbf{J}}_2$ (e.g., orbital and spin, or two electrons), the total angular momentum $\hat{\mathbf{J}} = \hat{\mathbf{J}}_1 + \hat{\mathbf{J}}_2$ has quantum numbers:
+
+$$
+j = |j_1 - j_2|, |j_1 - j_2| + 1, \ldots, j_1 + j_2
+$$ {#eq-addition}
+
+The coupled states $|j, m_j\rangle$ are related to the uncoupled states $|j_1, m_1; j_2, m_2\rangle$ by **Clebsch–Gordan coefficients**:
+
+$$
+|j, m_j\rangle = \sum_{m_1, m_2} \langle j_1, m_1; j_2, m_2 | j, m_j \rangle \, |j_1, m_1; j_2, m_2\rangle
+$$
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- $[\hat{L}_i, \hat{L}_j] = i\hbar\epsilon_{ijk}\hat{L}_k$ — components don't commute
+- $\hat{L}^2$ eigenvalues: $\hbar^2\ell(\ell+1)$; $\hat{L}_z$ eigenvalues: $m\hbar$
+- Angular momentum addition: $j$ ranges from $|j_1 - j_2|$ to $j_1 + j_2$
+:::

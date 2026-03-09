@@ -1,0 +1,128 @@
+---
+title: "Bose–Einstein Condensation"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Derive the critical temperature for Bose–Einstein condensation
+- Explain the concept of macroscopic occupation of the ground state
+- Describe the de Broglie wavelength criterion for condensation
+- Discuss the experimental realization of BEC in dilute atomic gases
+- Describe the properties of a BEC and its significance for physics
+:::
+
+## The Concept
+
+Below a critical temperature $T_c$, a macroscopic fraction of bosons accumulates in the **single-particle ground state**. This is **Bose–Einstein condensation (BEC)** — a phase transition driven entirely by quantum statistics, without any attractive interaction between particles.
+
+## Critical Temperature
+
+For $N$ non-interacting bosons of mass $m$ in volume $V$, the total number is:
+
+$$
+N = N_0 + \int_0^\infty \frac{g(\varepsilon)}{e^{\varepsilon/(k_BT)} - 1}\,d\varepsilon
+$$
+
+where $N_0$ is the ground state population and we set $\mu = 0$ (its maximum value for non-relativistic bosons at condensation).
+
+At the critical temperature $T_c$, the excited states can accommodate exactly $N$ particles (with $N_0 \to 0$):
+
+$$
+k_BT_c = \frac{2\pi\hbar^2}{m}\left(\frac{n}{\zeta(3/2)}\right)^{2/3}
+$$ {#eq-bec-tc}
+
+where $n = N/V$ is the particle density and $\zeta(3/2) \approx 2.612$ is the Riemann zeta function.
+
+## Condensate Fraction
+
+Below $T_c$, the ground state occupation grows as:
+
+$$
+\frac{N_0}{N} = 1 - \left(\frac{T}{T_c}\right)^{3/2}
+$$ {#eq-condensate-fraction}
+
+At $T = 0$, all particles are in the ground state ($N_0 = N$).
+
+## De Broglie Wavelength Criterion
+
+An intuitive picture: BEC occurs when the thermal de Broglie wavelength:
+
+$$
+\lambda_{\text{dB}} = \frac{h}{\sqrt{2\pi m k_BT}}
+$$
+
+becomes comparable to the interparticle spacing $d \sim n^{-1/3}$:
+
+$$
+n\lambda_{\text{dB}}^3 \sim 1
+$$
+
+At this point, the quantum wave packets of individual particles overlap significantly, and the system must be treated as a coherent quantum state.
+
+## Experimental Realization
+
+BEC was first achieved in 1995 by Eric Cornell and Carl Wieman (rubidium-87) and independently by Wolfgang Ketterle (sodium-23). Cornell, Wieman, and Ketterle received the 2001 Nobel Prize in Physics.
+
+### Step 1: Laser Cooling and the Magneto-Optical Trap (MOT)
+
+Atoms from a thermal source (oven at $\sim 400$ K, $v \sim 300$ m/s) are first slowed by a **Zeeman slower** — a tapered solenoid producing a spatially varying magnetic field that keeps the decelerating atoms on resonance with a counter-propagating laser beam via the Zeeman shift. The slowed atoms ($v \sim 10$ m/s) are captured in a **magneto-optical trap (MOT)**, which combines six laser beams with a quadrupole magnetic field. The MOT cools and traps $\sim 10^9$ atoms at $T \sim 100\;\mu\text{K}$.
+
+### Step 2: Magnetic Trapping
+
+The laser beams are switched off and the atoms are transferred to a **magnetic trap**. For atoms in a low-field-seeking state, a magnetic field minimum provides a confining potential: $U(\mathbf{r}) = g_J m_J \mu_B |\mathbf{B}(\mathbf{r})|$. Common geometries include the Ioffe–Pritchard trap (harmonic confinement) and the time-orbiting potential (TOP) trap. Atoms in high-field-seeking states would need an optical dipole trap (discussed below).
+
+### Step 3: Evaporative Cooling
+
+The trapped cloud is further cooled by **evaporative cooling**: an RF "knife" selectively spin-flips the most energetic atoms, ejecting them from the trap. The remaining atoms re-thermalize through elastic collisions at a lower temperature. The process is analogous to cooling coffee by blowing away the steam. Careful optimization of the RF ramp cools the gas from $\sim 100\;\mu\text{K}$ to $\sim 100$ nK while losing only a factor of $\sim 100$ in atom number, reaching the phase-space density required for BEC ($n\lambda_{\text{dB}}^3 > 2.612$).
+
+### Step 4: Detection — Absorption Imaging and Time-of-Flight
+
+::: {.callout-important}
+## Experiment: Seeing a BEC
+
+The hallmark signature of BEC is observed in **time-of-flight (TOF) absorption imaging**:
+
+1. The trapping potential is suddenly switched off, allowing the atom cloud to expand ballistically.
+2. After a controlled expansion time ($\sim 10\text{–}30$ ms), a resonant probe laser pulse illuminates the cloud.
+3. The shadow cast by the atoms is recorded on a CCD camera — this is the **absorption image**, proportional to the column density.
+
+Above $T_c$, the expanded cloud has a broad, isotropic Gaussian profile (reflecting the thermal Maxwell–Boltzmann velocity distribution). Below $T_c$, a dense, narrow peak appears at the center — the condensate, whose momentum distribution is set by the Heisenberg uncertainty principle and the trap geometry, not by temperature. The bimodal distribution (sharp condensate peak on a broad thermal background) and the **anisotropic expansion** of the condensate (reflecting the anisotropy of the trap) are unmistakable signatures of BEC.
+:::
+
+### Optical Dipole Traps
+
+An alternative to magnetic trapping is the **optical dipole trap**: a far-detuned, focused laser beam creates a conservative potential $U(\mathbf{r}) = -\frac{1}{2}\alpha|\mathbf{E}(\mathbf{r})|^2$ proportional to the local light intensity. Red-detuned light ($\delta < 0$) attracts atoms to the intensity maximum. Optical traps can confine any spin state (including high-field seekers) and allow additional control via optical lattices — periodic potentials formed by standing waves of laser light, used to create quantum simulators of condensed-matter systems.
+
+Typical parameters for a BEC experiment: $N \sim 10^5\text{–}10^6$ atoms, $T_c \sim 100\;\text{nK}\text{–}1\;\mu\text{K}$, peak density $\sim 10^{13}\text{–}10^{15}\;\text{cm}^{-3}$, trap frequencies $\sim 10\text{–}1000\;\text{Hz}$.
+
+## Properties of a BEC
+
+A Bose–Einstein condensate exhibits remarkable quantum properties:
+
+- **Macroscopic coherence:** All condensed atoms are described by a single macroscopic wave function $\Psi(\mathbf{r})$
+- **Interference:** Two BECs can produce interference fringes when overlapped
+- **Superfluidity:** Below a critical velocity, the condensate flows without friction
+- **Quantized vortices:** Angular momentum is quantized, leading to discrete vortex lines
+
+## BEC in Other Systems
+
+The concept extends beyond dilute atomic gases:
+
+- **Superfluid helium-4:** A related (but strongly interacting) phenomenon below 2.17 K
+- **Exciton-polariton condensates:** In semiconductor microcavities at elevated temperatures
+- **Magnon BEC:** Condensation of spin waves in magnetic materials
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- BEC: macroscopic ground-state occupation below $T_c$
+- Critical temperature: $k_BT_c \propto \hbar^2 n^{2/3}/m$
+- Condensate fraction: $N_0/N = 1 - (T/T_c)^{3/2}$
+- Criterion: $n\lambda_{\text{dB}}^3 \sim 1$ (wave packets overlap)
+- First experimental BEC: 1995 (Cornell, Wieman; Ketterle)
+:::

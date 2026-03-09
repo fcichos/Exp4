@@ -1,0 +1,109 @@
+---
+title: "The Hydrogen Molecule"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain the Born–Oppenheimer approximation and its justification
+- Solve the H₂⁺ molecular ion using the LCAO approach
+- Distinguish between bonding and antibonding molecular orbitals
+- Describe the Heitler–London (valence bond) treatment of H₂
+- Interpret the molecular potential energy curve and bonding
+:::
+
+## The Born–Oppenheimer Approximation
+
+Since nuclei are much heavier than electrons ($m_p/m_e \approx 1836$), they move much more slowly. The **Born–Oppenheimer approximation** treats the nuclear positions as fixed parameters while solving the electronic Schrödinger equation:
+
+1. Fix the nuclear coordinates $\mathbf{R}$
+2. Solve the electronic Schrödinger equation to get $E_{\text{el}}(\mathbf{R})$
+3. The **potential energy surface** $E_{\text{el}}(\mathbf{R})$ serves as the potential for nuclear motion
+
+This approximation is excellent for most molecules and is the foundation of quantum chemistry.
+
+## The Hydrogen Molecular Ion H₂⁺
+
+The simplest molecule — one electron shared between two protons — is the only molecular system solvable analytically (in prolate spheroidal coordinates). However, the **LCAO method** provides greater physical insight.
+
+### LCAO Approach
+
+We approximate the molecular wave function as a **linear combination of atomic orbitals**:
+
+$$
+\psi = c_1\phi_{1s}(\mathbf{r} - \mathbf{R}_A) + c_2\phi_{1s}(\mathbf{r} - \mathbf{R}_B) = c_1\phi_A + c_2\phi_B
+$$ {#eq-lcao}
+
+By symmetry ($c_1 = \pm c_2$), we obtain two solutions:
+
+**Bonding orbital** ($\sigma_g$, gerade/even):
+$$
+\psi_+ = \frac{1}{\sqrt{2(1+S)}}(\phi_A + \phi_B), \quad E_+ = \frac{H_{AA} + H_{AB}}{1 + S}
+$$
+
+**Antibonding orbital** ($\sigma_u^*$, ungerade/odd):
+$$
+\psi_- = \frac{1}{\sqrt{2(1-S)}}(\phi_A - \phi_B), \quad E_- = \frac{H_{AA} - H_{AB}}{1 - S}
+$$
+
+where $S = \langle\phi_A|\phi_B\rangle$ is the **overlap integral**, $H_{AA}$ is the **Coulomb integral**, and $H_{AB}$ is the **resonance (exchange) integral**.
+
+### Bonding vs. Antibonding
+
+The bonding orbital has **enhanced electron density between the nuclei** — the electron acts as "glue" holding the protons together. The antibonding orbital has a **nodal plane** between the nuclei, pushing them apart.
+
+The energy lowering from bond formation comes primarily from the increase in electron–nuclear attraction when the electron delocalizes over both nuclei.
+
+## The Hydrogen Molecule H₂
+
+### Molecular Orbital (MO) Approach
+
+Two electrons fill the bonding orbital with opposite spins:
+
+$$
+\Psi_{\text{MO}} = \sigma_g(1)\sigma_g(2) \times \frac{1}{\sqrt{2}}(\alpha(1)\beta(2) - \beta(1)\alpha(2))
+$$
+
+This gives a bond energy of about 2.68 eV (experimental: 4.75 eV) — not very accurate because the MO approach overestimates the probability of finding both electrons on the same nucleus (ionic contribution).
+
+### Heitler–London (Valence Bond) Approach
+
+Heitler and London (1927) instead started from the atomic limit:
+
+$$
+\Psi_{\text{HL}} = \frac{1}{\sqrt{2(1+S^2)}}[\phi_A(1)\phi_B(2) + \phi_A(2)\phi_B(1)] \times \chi_{\text{singlet}}
+$$ {#eq-heitler-london}
+
+This correctly describes the dissociation limit and gives a bond energy of 3.14 eV — better than the MO result but still not quantitative.
+
+### Improved Treatments
+
+The best description combines covalent and ionic contributions:
+
+$$
+\Psi = c_{\text{cov}}\Psi_{\text{HL}} + c_{\text{ion}}\Psi_{\text{ionic}}
+$$
+
+Modern quantum chemistry methods (configuration interaction, coupled cluster) achieve chemical accuracy ($\sim$1 kcal/mol).
+
+## The Molecular Potential Energy Curve
+
+The total energy $E(R)$ as a function of internuclear distance $R$ shows:
+
+- A **potential energy minimum** at the equilibrium bond length $R_e = 0.74$ Å
+- A **dissociation energy** $D_e = 4.75$ eV
+- Repulsion at short distances (nuclear repulsion + kinetic energy increase)
+- Approach to the separated-atom limit at large $R$
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Born–Oppenheimer approximation: separate electronic and nuclear motion
+- LCAO: $\psi = c_1\phi_A + c_2\phi_B$ → bonding ($\sigma_g$) and antibonding ($\sigma_u^*$) orbitals
+- H₂ bond: $R_e = 0.74$ Å, $D_e = 4.75$ eV
+- MO and VB approaches give complementary pictures of chemical bonding
+:::

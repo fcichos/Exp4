@@ -1,0 +1,116 @@
+---
+title: "The Helium Atom"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Write down the Hamiltonian for the helium atom and explain why it cannot be solved exactly
+- Apply perturbation theory and the variational method to estimate the helium ground state energy
+- Explain exchange symmetry and its consequences for identical fermions
+- Distinguish between singlet and triplet spin states (parahelium and orthohelium)
+- Describe the exchange interaction and its role in energy level splitting
+:::
+
+## The Two-Electron Problem
+
+Helium is the simplest multi-electron atom: two electrons orbiting a nucleus with charge $Z = 2$. The Hamiltonian is:
+
+$$
+\hat{H} = -\frac{\hbar^2}{2m_e}(\nabla_1^2 + \nabla_2^2) - \frac{Ze^2}{4\pi\varepsilon_0 r_1} - \frac{Ze^2}{4\pi\varepsilon_0 r_2} + \frac{e^2}{4\pi\varepsilon_0 r_{12}}
+$$ {#eq-helium-hamiltonian}
+
+where $r_{12} = |\mathbf{r}_1 - \mathbf{r}_2|$ is the electron–electron distance. The last term — the electron–electron repulsion — makes this problem **analytically unsolvable**.
+
+## Approximate Methods
+
+### Independent Particle Model (Zeroth Order)
+
+Ignoring the $e^2/r_{12}$ term, the two electrons are independent, each in a hydrogen-like potential with $Z = 2$. The ground state energy would be:
+
+$$
+E_0^{(0)} = 2 \times (-Z^2 \times 13.6 \, \text{eV}) = -108.8 \, \text{eV}
+$$
+
+The experimental value is $E_0 = -79.0$ eV — the electron–electron repulsion is clearly significant.
+
+### First-Order Perturbation Theory
+
+Treating $e^2/(4\pi\varepsilon_0 r_{12})$ as a perturbation:
+
+$$
+E_0^{(1)} = \left\langle\frac{e^2}{4\pi\varepsilon_0 r_{12}}\right\rangle = \frac{5}{4}Z \times 13.6 \, \text{eV} = 34.0 \, \text{eV}
+$$
+
+This gives $E_0 \approx -108.8 + 34.0 = -74.8$ eV (within 5% of experiment).
+
+### Variational Method
+
+Using a trial wave function $\psi(\mathbf{r}_1, \mathbf{r}_2) \propto e^{-Z_{\text{eff}}(r_1 + r_2)/a_0}$ with an effective nuclear charge $Z_{\text{eff}}$ as a variational parameter, minimizing the energy gives $Z_{\text{eff}} = Z - 5/16 = 1.6875$ and $E_0 = -77.5$ eV (within 2% of experiment). The reduction from $Z = 2$ reflects **screening** by the other electron.
+
+## Exchange Symmetry
+
+For identical fermions, the total wave function must be **antisymmetric** under particle exchange:
+
+$$
+\Psi(\mathbf{r}_1, \sigma_1; \mathbf{r}_2, \sigma_2) = -\Psi(\mathbf{r}_2, \sigma_2; \mathbf{r}_1, \sigma_1)
+$$
+
+The total wave function is a product of spatial and spin parts: $\Psi = \psi_{\text{space}} \cdot \chi_{\text{spin}}$.
+
+## Spin States: Singlet and Triplet
+
+For two spin-½ particles, the possible spin states are:
+
+**Singlet** ($S = 0$, antisymmetric spin):
+$$
+\chi_0^0 = \frac{1}{\sqrt{2}}(|\!\uparrow\downarrow\rangle - |\!\downarrow\uparrow\rangle)
+$$
+
+**Triplet** ($S = 1$, symmetric spin):
+$$
+\chi_1^{+1} = |\!\uparrow\uparrow\rangle, \quad \chi_1^0 = \frac{1}{\sqrt{2}}(|\!\uparrow\downarrow\rangle + |\!\downarrow\uparrow\rangle), \quad \chi_1^{-1} = |\!\downarrow\downarrow\rangle
+$$
+
+Since the total wave function must be antisymmetric:
+
+- **Singlet** (antisymmetric spin) → **symmetric** spatial wave function
+- **Triplet** (symmetric spin) → **antisymmetric** spatial wave function
+
+## The Exchange Interaction
+
+The energy difference between singlet and triplet states arises from the **exchange integral** $K$:
+
+$$
+E_{\text{singlet}} = E_0 + J + K, \qquad E_{\text{triplet}} = E_0 + J - K
+$$
+
+where $J$ is the **Coulomb integral** (classical electrostatic repulsion) and $K$ is the **exchange integral** (a purely quantum mechanical effect with no classical analog):
+
+$$
+K = \int\int \psi_a^*(\mathbf{r}_1)\psi_b^*(\mathbf{r}_2)\frac{e^2}{4\pi\varepsilon_0 r_{12}}\psi_b(\mathbf{r}_1)\psi_a(\mathbf{r}_2)\,d^3r_1\,d^3r_2
+$$
+
+Since $K > 0$, the **triplet state has lower energy**. This is because the antisymmetric spatial wave function vanishes when $\mathbf{r}_1 = \mathbf{r}_2$, keeping the electrons farther apart and reducing their Coulomb repulsion.
+
+## Parahelium and Orthohelium
+
+Helium has two distinct spectral series:
+
+- **Parahelium:** Singlet states ($S = 0$). Includes the ground state $1s^2\,{}^1S_0$.
+- **Orthohelium:** Triplet states ($S = 1$). The lowest is $1s2s\,{}^3S_1$.
+
+Transitions between para- and orthohelium are strongly suppressed (spin selection rule $\Delta S = 0$), which is why they were historically thought to be different elements.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Helium: two-electron problem, not exactly solvable due to $e^2/r_{12}$
+- Exchange symmetry: total wave function must be antisymmetric for fermions
+- Singlet ($S = 0$) → symmetric space; Triplet ($S = 1$) → antisymmetric space
+- Exchange interaction: triplet states lower in energy ($K > 0$)
+:::

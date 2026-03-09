@@ -1,0 +1,58 @@
+---
+title: "Solutions — Exercise Sheet 11: The Hydrogen Molecule"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Solution 1: The Born–Oppenheimer Approximation
+
+**(a)** Electrons are much lighter than nuclei ($m_e/M \sim 10^{-3}\text{–}10^{-5}$), so they move much faster. On the timescale of nuclear motion, electrons adjust instantaneously to the nuclear positions. This allows solving the electronic Schrödinger equation at fixed nuclear positions, then using the resulting electronic energy as a potential for the nuclear motion.
+
+**(b)** $\sqrt{M/m_e} = \sqrt{1836} \approx 43$. Electronic velocities are about 43 times larger than nuclear velocities.
+
+**(c)** The bonding potential curve should show: a minimum at $R = R_e$, a steep repulsive wall at small $R$, an asymptotic approach to the separated-atom energy at large $R$, the well depth $D_e$ measured from the minimum to the asymptote, and the zero-point energy $\frac{1}{2}\hbar\omega$ above the minimum.
+
+## Solution 2: The H₂⁺ Molecular Ion
+
+**(a)** $\psi_+$ (bonding): constructive interference between the nuclei increases electron density between them, providing electrostatic attraction that binds the molecule.
+
+$\psi_-$ (antibonding): destructive interference creates a node between the nuclei, pushing electron density outward. This leads to net repulsion.
+
+**(b)** $\psi_+$: $N_+ = 1/\sqrt{2(1+0.59)} = 1/\sqrt{3.18} = 0.561$
+
+$\psi_-$: $N_- = 1/\sqrt{2(1-0.59)} = 1/\sqrt{0.82} = 1.104$
+
+**(c)** The simple LCAO uses only $1s$ atomic orbitals, which are too diffuse at molecular distances. They don't account for: (1) polarization — the electron cloud distorts toward the other nucleus (needs $p$-orbital contributions), and (2) orbital contraction — in the molecule, the effective $Z$ is larger than 1. Using a variational $Z_{\text{eff}}$ significantly improves the result.
+
+## Solution 3: The H₂ Molecule
+
+**(a)** Heitler–London ground state:
+
+Spatial (symmetric): $\psi_+ = N[\phi_A(1)\phi_B(2) + \phi_A(2)\phi_B(1)]$
+
+Spin (antisymmetric/singlet): $\chi_- = \frac{1}{\sqrt{2}}(|\uparrow\downarrow\rangle - |\downarrow\uparrow\rangle)$
+
+Total: $\Psi = \psi_+\chi_-$ (antisymmetric under particle exchange). ✓
+
+**(b)** The symmetric spatial function places electron density between the nuclei (bonding). The Pauli principle requires the spin part to be antisymmetric, i.e., singlet. In the triplet state ($S = 1$), the spatial part must be antisymmetric (node between nuclei), which gives an antibonding state — no stable H₂.
+
+**(c)** Improvements: (1) Include ionic terms ($\phi_A(1)\phi_A(2)$ and $\phi_B(1)\phi_B(2)$) — the Weinbaum function gives $\sim 3.78\;\text{eV}$. (2) Use a variational effective nuclear charge $Z_{\text{eff}} > 1$. Combined, these and more sophisticated approaches (configuration interaction) converge to the experimental value.
+
+## Solution 4: Molecular Potential Energy Curves
+
+**(a)** Expand around $R = R_e$: let $x = R - R_e$, then $e^{-ax} \approx 1 - ax + \frac{1}{2}a^2x^2 - \cdots$
+
+$V(x) = D_e(ax - \frac{1}{2}a^2x^2 + \cdots)^2 \approx D_e a^2 x^2 = \frac{1}{2}kx^2$ with $k = 2D_e a^2$. ✓
+
+**(b)** $k = 2 \times 4.62 \times 1.602\times10^{-19} \times (1.87\times10^{10})^2 = 2\times7.40\times10^{-19}\times3.497\times10^{20} = 518\;\text{N/m}$
+
+Reduced mass: $\mu = m_H m_{Cl}/(m_H + m_{Cl}) = 1\times35/(36)\times1.661\times10^{-27} = 1.615\times10^{-27}\;\text{kg}$
+
+$\nu_0 = \frac{1}{2\pi}\sqrt{518/1.615\times10^{-27}} = \frac{1}{2\pi}\sqrt{3.21\times10^{29}} = \frac{1.79\times10^{14.7}}{2\pi} = 9.02\times10^{13}\;\text{Hz} \approx 90\;\text{THz}$
+
+This corresponds to $\tilde{\nu} = \nu/c = 3010\;\text{cm}^{-1}$ (experimental: 2991 cm⁻¹). ✓
+
+**(c)** $\hbar\omega = h\nu_0 = 6.626\times10^{-34}\times9.02\times10^{13} = 5.98\times10^{-20}\;\text{J} = 0.373\;\text{eV}$
+
+$n_{\max} \approx D_e/(\hbar\omega) - 1/2 = 4.62/0.373 - 0.5 = 11.9$
+
+The Morse potential supports approximately **12 bound vibrational levels** for HCl.

@@ -1,0 +1,80 @@
+---
+title: "Solutions — Exercise Sheet 13: Rotational and Vibrational Spectra"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Solution 1: The Rigid Rotor
+
+**(a)** $\mu = 12\times16/(12+16)\times1.661\times10^{-27} = 6.857\times1.661\times10^{-27} = 1.139\times10^{-26}\;\text{kg}$
+
+$I = \mu R_e^2 = 1.139\times10^{-26}\times(1.128\times10^{-10})^2 = 1.449\times10^{-46}\;\text{kg·m}^2$
+
+$B = \hbar^2/(2I) = (1.055\times10^{-34})^2/(2\times1.449\times10^{-46}) = 3.838\times10^{-23}\;\text{J}$
+
+In cm⁻¹: $B/hc = 3.838\times10^{-23}/(6.626\times10^{-34}\times3\times10^{10}) = 1.931\;\text{cm}^{-1}$
+
+In GHz: $B/h = 3.838\times10^{-23}/6.626\times10^{-34} = 57.93\;\text{GHz}$
+
+**(b)** Transition $J \to J+1$: $\Delta E = B(J+1)(J+2) - BJ(J+1) = 2B(J+1)$
+
+$\nu_{J\to J+1} = 2B(J+1)/h$, so the spacing is $\nu_{J+1} - \nu_J = 2B/h$. ✓
+
+**(c)** Maximize $N(J) \propto (2J+1)e^{-BJ(J+1)/(k_BT)}$:
+
+$\frac{dN}{dJ} = 0 \implies 2 - \frac{B(2J+1)^2}{k_BT} = 0 \implies J_{\max} = \sqrt{\frac{k_BT}{2B}} - \frac{1}{2}$
+
+$k_BT = 1.381\times10^{-23}\times300 = 4.143\times10^{-21}\;\text{J}$
+
+$J_{\max} = \sqrt{4.143\times10^{-21}/(2\times3.838\times10^{-23})} - 0.5 = \sqrt{54.0} - 0.5 = 7.35 - 0.5 \approx 7$
+
+**(d)** Levels with significant population up to $J$ where $BJ(J+1) \sim k_BT$, i.e., $J_{\max} \sim \sqrt{k_BT/B} \approx \sqrt{108} \approx 10$. About 10–15 rotational levels are significantly populated.
+
+## Solution 2: The Harmonic Oscillator
+
+**(a)** $\omega = 2\pi c\tilde{\nu}_0 = 2\pi\times3\times10^{10}\times2991 = 5.638\times10^{14}\;\text{s}^{-1}$
+
+$\mu_{HCl} = 1\times35/(36)\times1.661\times10^{-27} = 1.615\times10^{-27}\;\text{kg}$
+
+$k = \mu\omega^2 = 1.615\times10^{-27}\times(5.638\times10^{14})^2 = 513\;\text{N/m}$
+
+**(b)** $E_0 = \frac{1}{2}\hbar\omega = \frac{1}{2}\times1.055\times10^{-34}\times5.638\times10^{14} = 2.974\times10^{-20}\;\text{J} = 0.186\;\text{eV}$
+
+$k_BT$ at 300 K $= 0.026\;\text{eV}$. So $E_0/k_BT = 7.2$. The zero-point energy is much larger than $k_BT$, meaning almost all molecules are in $v = 0$ at room temperature.
+
+**(c)** Morse oscillator: $E_v = \hbar\omega(v+1/2) - \hbar\omega x_e(v+1/2)^2$, where $x_e$ is the anharmonicity constant. Selection rules relax to $\Delta v = \pm 1, \pm 2, \pm 3, \ldots$ (overtones at $\sim 2\tilde{\nu}_0, 3\tilde{\nu}_0$, etc.), though overtone intensities decrease rapidly.
+
+## Solution 3: Ro-Vibrational Spectra
+
+**(a)** R-branch ($J' = J'' + 1$):
+
+$\tilde{\nu}_R = \tilde{\nu}_0 + B(J''+1)(J''+2) - BJ''(J''+1) = \tilde{\nu}_0 + 2B(J''+1)$
+
+P-branch ($J' = J'' - 1$):
+
+$\tilde{\nu}_P = \tilde{\nu}_0 + B(J''-1)J'' - BJ''(J''+1) = \tilde{\nu}_0 - 2BJ''$ ✓
+
+**(b)** The lowest P-branch line is at $\tilde{\nu}_0 - 2B$ ($J'' = 1$) and the lowest R-branch line is at $\tilde{\nu}_0 + 2B$ ($J'' = 0$). The gap between them is $4B$. The Q-branch ($\Delta J = 0$) is forbidden for $\Sigma$ states ($\Lambda = 0$). It is allowed for molecules with electronic angular momentum along the bond axis ($\Pi, \Delta$ states).
+
+**(c)** $\tilde{\nu}_R(J'') = \tilde{\nu}_0 + 2B(J''+1)$
+
+From $J'' = 0$: $2906.3 = \tilde{\nu}_0 + 2B \implies \tilde{\nu}_0 + 2B = 2906.3$
+
+From $J'' = 1$: $2925.9 = \tilde{\nu}_0 + 4B \implies \tilde{\nu}_0 + 4B = 2925.9$
+
+Subtracting: $2B = 19.6\;\text{cm}^{-1}$, so $B = 9.8\;\text{cm}^{-1}$
+
+$\tilde{\nu}_0 = 2906.3 - 19.6 = 2886.7\;\text{cm}^{-1}$
+
+(Experimental value: $B = 10.44\;\text{cm}^{-1}$ — the discrepancy comes from centrifugal distortion and vibration-rotation interaction.)
+
+## Solution 4: FTIR Spectroscopy
+
+**(a)** An FTIR spectrometer uses a Michelson interferometer. As one mirror moves, the interference pattern (interferogram) is recorded as a function of mirror displacement (optical path difference). The interferogram is the Fourier transform of the spectrum. Inverse Fourier transformation yields the frequency-domain spectrum.
+
+**(b)** Fellgett's advantage: All frequencies are measured simultaneously (multiplex advantage), giving $\sqrt{N}$ improvement in SNR for $N$ spectral elements in the same measurement time. Jacquinot's advantage: No entrance slit needed — the circular aperture transmits much more light than a narrow slit, improving throughput.
+
+**(c)** $\Delta\tilde{\nu} \leq 2B = 3.86\;\text{cm}^{-1}$:
+
+$\Delta_{\max} = 1/(2\Delta\tilde{\nu}) = 1/(2\times3.86) = 0.13\;\text{cm} = 1.3\;\text{mm}$
+
+A modest mirror displacement of about 1.3 mm suffices to resolve the rotational structure of CO.

@@ -1,0 +1,112 @@
+---
+title: "Fermi–Dirac Statistics"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Derive the Fermi–Dirac distribution function
+- Define and interpret the Fermi energy and chemical potential
+- Describe the free electron gas model and the density of states
+- Calculate thermodynamic properties of a Fermi gas
+- Explain the electronic heat capacity and Pauli paramagnetism
+:::
+
+## The Fermi–Dirac Distribution
+
+For a system of non-interacting fermions in thermal equilibrium at temperature $T$, the mean occupation number of a single-particle state with energy $\varepsilon$ is:
+
+$$
+\bar{n}(\varepsilon) = f(\varepsilon) = \frac{1}{e^{(\varepsilon - \mu)/(k_BT)} + 1}
+$$ {#eq-fermi-dirac}
+
+where $\mu$ is the **chemical potential** (Fermi level). Key properties:
+
+- At $T = 0$: $f(\varepsilon) = 1$ for $\varepsilon < \mu$ and $f(\varepsilon) = 0$ for $\varepsilon > \mu$ — a sharp step function
+- At $\varepsilon = \mu$: $f(\mu) = 1/2$ for all temperatures
+- The transition region has width $\sim k_BT$ around $\mu$
+
+## The Free Electron Gas
+
+Consider $N$ non-interacting electrons confined to a box of volume $V$. The single-particle energy levels are:
+
+$$
+\varepsilon_\mathbf{k} = \frac{\hbar^2 k^2}{2m_e}
+$$
+
+### Density of States
+
+The number of states per unit energy per unit volume is:
+
+$$
+g(\varepsilon) = \frac{1}{2\pi^2}\left(\frac{2m_e}{\hbar^2}\right)^{3/2}\sqrt{\varepsilon}
+$$ {#eq-dos}
+
+(including the factor of 2 for spin).
+
+## The Fermi Energy
+
+At $T = 0$, all states below the **Fermi energy** $E_F$ are filled:
+
+$$
+N = V\int_0^{E_F}g(\varepsilon)\,d\varepsilon
+$$
+
+Solving for $E_F$:
+
+$$
+E_F = \frac{\hbar^2}{2m_e}\left(\frac{3\pi^2 N}{V}\right)^{2/3} = \frac{\hbar^2}{2m_e}(3\pi^2 n)^{2/3}
+$$ {#eq-fermi-energy}
+
+where $n = N/V$ is the electron density. For typical metals, $E_F \sim 1\text{–}10$ eV, corresponding to $T_F = E_F/k_B \sim 10^4\text{–}10^5$ K. This is much higher than room temperature — the electron gas is **highly degenerate**.
+
+## Total Energy at $T = 0$
+
+The total energy of the ground state is:
+
+$$
+E_0 = V\int_0^{E_F}\varepsilon \, g(\varepsilon)\,d\varepsilon = \frac{3}{5}NE_F
+$$
+
+The average energy per electron is $\bar{\varepsilon} = \frac{3}{5}E_F$.
+
+## Finite Temperature Properties
+
+### Electronic Heat Capacity
+
+At temperatures $T \ll T_F$, only electrons within $\sim k_BT$ of the Fermi surface are thermally excited. The electronic contribution to the heat capacity is:
+
+$$
+C_V^{\text{el}} = \frac{\pi^2}{3}Nk_B\frac{T}{T_F} = \gamma T
+$$ {#eq-electronic-cv}
+
+This is linear in $T$ (not $\frac{3}{2}Nk_B$ as classical theory would predict) and much smaller than the classical value at room temperature. This resolved the long-standing puzzle of why conduction electrons contribute so little to the heat capacity of metals.
+
+### Pauli Paramagnetism
+
+In a magnetic field, the spin-up and spin-down bands shift by $\pm\mu_B B$. The resulting magnetization is:
+
+$$
+M = \mu_B^2 g(E_F) B = \chi_P B
+$$
+
+The **Pauli paramagnetic susceptibility** is:
+
+$$
+\chi_P = \mu_0\mu_B^2 g(E_F)
+$$ {#eq-pauli-susceptibility}
+
+This is temperature-independent (unlike Curie paramagnetism) and much smaller than the classical prediction — another consequence of Fermi–Dirac statistics.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Fermi–Dirac distribution: $f(\varepsilon) = 1/(e^{(\varepsilon-\mu)/(k_BT)} + 1)$
+- Fermi energy: $E_F = (\hbar^2/2m)(3\pi^2 n)^{2/3}$, typically 1–10 eV in metals
+- Electronic heat capacity: $C_V \propto T$ (linear, much less than classical $\frac{3}{2}Nk_B$)
+- Pauli paramagnetism: temperature-independent, weak
+:::

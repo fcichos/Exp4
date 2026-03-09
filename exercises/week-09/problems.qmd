@@ -1,0 +1,54 @@
+---
+title: "Exercise Sheet 9 — Optical Transitions and Lasers"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: Einstein Coefficients
+
+The Einstein coefficients for a two-level system with states $|1\rangle$ and $|2\rangle$ ($E_2 > E_1$) satisfy:
+
+$$
+\frac{A_{21}}{B_{21}} = \frac{8\pi h\nu^3}{c^3}, \qquad \frac{B_{12}}{B_{21}} = \frac{g_2}{g_1}
+$$
+
+(a) Derive the ratio $A_{21}/B_{21}$ by requiring that the Einstein rate equations reproduce the Planck radiation law in thermal equilibrium.
+
+(b) For the hydrogen Lyman-α transition ($\nu = 2.47 \times 10^{15}\;\text{Hz}$), calculate $A_{21}/B_{21}$ in SI units. What does the large ratio mean physically?
+
+(c) The spontaneous emission rate for the $2p \to 1s$ transition in hydrogen is $A_{21} = 6.27 \times 10^8\;\text{s}^{-1}$. What is the natural lifetime of the $2p$ state? What is the natural linewidth $\Delta\nu_{\text{nat}}$?
+
+(d) The $2s$ state in hydrogen cannot decay via electric dipole radiation. Estimate its lifetime (it decays by two-photon emission with $A \approx 8.2\;\text{s}^{-1}$). Why is the $2s$ state called "metastable"?
+
+## Problem 2: Selection Rules
+
+Electric dipole (E1) transitions obey the selection rules: $\Delta\ell = \pm 1$, $\Delta m_\ell = 0, \pm 1$, $\Delta J = 0, \pm 1$ (but not $J = 0 \to J = 0$).
+
+(a) Which of the following transitions in hydrogen are E1-allowed?
+
+   - $3d \to 2p$
+   - $3d \to 2s$
+   - $3s \to 2s$
+   - $4f \to 3d$
+   - $4f \to 2p$
+
+(b) In a multi-electron atom with Russell–Saunders coupling, additional rules apply: $\Delta S = 0$, $\Delta L = 0, \pm 1$. Why is the intercombination line $^3P_1 \to\, ^1S_0$ in helium extremely weak?
+
+(c) Forbidden transitions can still occur through higher-order processes (magnetic dipole M1, electric quadrupole E2). The $2s_{1/2} \to 1s_{1/2}$ transition in hydrogen proceeds via M1 or two-photon E1 emission. Estimate the ratio of the two-photon rate to the M1 rate.
+
+## Problem 3: Laser Threshold and Mode Structure
+
+A Nd:YAG laser operates at $\lambda = 1064\;\text{nm}$ with a cavity length $L = 30\;\text{cm}$.
+
+(a) Calculate the frequency spacing between adjacent longitudinal modes.
+
+(b) The gain bandwidth of Nd:YAG is approximately $\Delta\nu_g = 120\;\text{GHz}$. How many longitudinal modes can oscillate simultaneously?
+
+(c) The threshold condition requires that the round-trip gain equals the round-trip losses: $R_1 R_2\,e^{2gL} = 1$, where $g$ is the gain coefficient and $R_1, R_2$ are mirror reflectivities. If $R_1 = 0.999$, $R_2 = 0.95$, and $L = 30\;\text{cm}$, calculate the threshold gain coefficient.
+
+## Problem 4: Three-Level vs. Four-Level Laser
+
+(a) In a three-level laser, the lasing transition ends at the ground state. Show that population inversion requires more than half of all atoms to be pumped to the upper laser level.
+
+(b) In a four-level laser, the lower laser level is rapidly depopulated. Why does this make population inversion much easier to achieve?
+
+(c) Calculate the minimum pump power needed for a three-level laser with $N = 10^{20}$ atoms and a transition frequency of $\nu = 4.32 \times 10^{14}\;\text{Hz}$ (ruby), assuming only spontaneous emission losses with $A_{21} = 3 \times 10^2\;\text{s}^{-1}$.

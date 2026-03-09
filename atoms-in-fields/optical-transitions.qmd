@@ -1,0 +1,159 @@
+---
+title: "Optical Transitions and Selection Rules"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Derive the electric dipole selection rules for atomic transitions
+- Explain the physical origin of selection rules in terms of symmetry
+- Calculate transition rates using the Einstein A and B coefficients
+- Describe the relationship between spontaneous emission, stimulated emission, and absorption
+- Discuss spectral linewidths and line broadening mechanisms
+:::
+
+## Time-Dependent Perturbation Theory
+
+An atom interacting with an electromagnetic field experiences a perturbation:
+
+$$
+\hat{H}'(t) = -\hat{\mathbf{d}} \cdot \mathbf{E}(t) = -e\hat{\mathbf{r}} \cdot \mathbf{E}_0 \cos(\omega t)
+$$
+
+where $\hat{\mathbf{d}} = -e\hat{\mathbf{r}}$ is the electric dipole operator. In the **electric dipole approximation** (valid when $\lambda \gg a_0$), Fermi's golden rule gives the transition rate:
+
+$$
+W_{i \to f} = \frac{\pi e^2 E_0^2}{2\hbar^2}|\langle f|\hat{\mathbf{r}}|i\rangle|^2 \,\delta(\omega_{fi} - \omega)
+$$
+
+## Electric Dipole Selection Rules
+
+The matrix element $\langle f|\hat{\mathbf{r}}|i\rangle$ vanishes unless certain conditions are met. The **selection rules** for electric dipole (E1) transitions are:
+
+$$
+\Delta\ell = \pm 1, \qquad \Delta m_\ell = 0, \pm 1
+$$ {#eq-selection-rules-1}
+
+$$
+\Delta J = 0, \pm 1 \quad (J = 0 \not\to J = 0), \qquad \Delta m_J = 0, \pm 1
+$$ {#eq-selection-rules-2}
+
+Additional rules for multi-electron atoms:
+
+$$
+\Delta S = 0, \qquad \Delta L = 0, \pm 1
+$$
+
+**Parity rule:** The parity must change — only transitions between states of opposite parity are allowed (since $\hat{\mathbf{r}}$ is an odd-parity operator).
+
+### Physical Origin
+
+The selection rules follow from the symmetry properties of the dipole operator:
+
+- $\Delta\ell = \pm 1$: The photon carries one unit of angular momentum ($\ell_\gamma = 1$)
+- $\Delta m = 0$: $\pi$-polarization (linear, parallel to quantization axis)
+- $\Delta m = \pm 1$: $\sigma$-polarization (circular)
+
+## Einstein Coefficients
+
+Einstein (1917) introduced three coefficients to describe the interaction of radiation with a two-level system:
+
+**Spontaneous emission** ($A_{21}$): The rate at which an excited atom spontaneously emits a photon:
+$$
+\left(\frac{dN_2}{dt}\right)_{\text{spont}} = -A_{21}N_2
+$$
+
+**Stimulated emission** ($B_{21}$): Emission induced by the radiation field:
+$$
+\left(\frac{dN_2}{dt}\right)_{\text{stim}} = -B_{21}\rho(\nu)N_2
+$$
+
+**Absorption** ($B_{12}$): Excitation by the radiation field:
+$$
+\left(\frac{dN_1}{dt}\right)_{\text{abs}} = -B_{12}\rho(\nu)N_1
+$$
+
+where $\rho(\nu)$ is the spectral energy density.
+
+### Relations Between Einstein Coefficients
+
+From thermal equilibrium with the Planck radiation field:
+
+$$
+\frac{A_{21}}{B_{21}} = \frac{8\pi h\nu^3}{c^3}, \qquad \frac{B_{21}}{B_{12}} = \frac{g_1}{g_2}
+$$ {#eq-einstein-relations}
+
+The spontaneous emission rate is:
+
+$$
+A_{21} = \frac{\omega^3}{3\pi\varepsilon_0\hbar c^3}|\langle 1|\hat{\mathbf{d}}|2\rangle|^2
+$$
+
+## Oscillator Strength
+
+The dimensionless **oscillator strength** $f_{12}$ characterizes the transition strength:
+
+$$
+f_{12} = \frac{2m_e\omega}{3\hbar}|\langle 1|\hat{\mathbf{r}}|2\rangle|^2
+$$
+
+The **Thomas–Reiche–Kuhn sum rule** states:
+
+$$
+\sum_k f_{ik} = Z \quad \text{(number of electrons)}
+$$
+
+## Spectral Linewidths
+
+Real spectral lines have finite width due to several mechanisms:
+
+**Natural linewidth** (Lorentzian, $\sim 10^{-5}$ nm): From the finite lifetime $\tau$ of the excited state:
+$$
+\Delta\nu_{\text{nat}} = \frac{1}{2\pi\tau} = \frac{A_{21}}{2\pi}
+$$
+
+**Doppler broadening** (Gaussian, $\sim 10^{-3}$ nm): From thermal motion of atoms:
+$$
+\Delta\nu_D = \frac{\nu_0}{c}\sqrt{\frac{8k_BT\ln 2}{m}}
+$$
+
+**Pressure (collisional) broadening** (Lorentzian): From interactions with neighboring atoms.
+
+The observed line profile is generally a **Voigt profile** — a convolution of the Lorentzian natural/pressure broadening and the Gaussian Doppler broadening.
+
+## Doppler-Free Spectroscopy
+
+Doppler broadening (typically $\sim$ GHz at room temperature) obscures the natural linewidth and fine/hyperfine structure. Several techniques circumvent this limit:
+
+### Saturation Spectroscopy
+
+A strong "pump" beam and a weak counter-propagating "probe" beam from the same laser interact with the same atoms only when those atoms have near-zero velocity along the beam axis (both beams are resonant with the same velocity class only at $v_z = 0$). The pump saturates the transition for these zero-velocity atoms, causing a narrow dip ("Lamb dip") in the absorption of the probe — with a linewidth determined by the **natural** linewidth, not Doppler broadening. This technique was used by Hänsch to measure the hydrogen 1S–2S transition with unprecedented precision.
+
+### Two-Photon Spectroscopy
+
+If two counter-propagating photons of frequency $\nu$ each are absorbed simultaneously, the total energy is $2h\nu$ while the total momentum transfer is zero (the Doppler shifts cancel exactly). All atoms contribute, regardless of velocity, giving a Doppler-free signal. This is the basis of the precision 1S–2S spectroscopy of hydrogen.
+
+::: {.callout-important}
+## Experiment: Spectroscopy Setup in the Teaching Lab
+
+A simple atomic spectroscopy experiment consists of: (1) A light source — either a gas discharge lamp (for emission spectroscopy) or a tunable diode laser (for absorption/fluorescence spectroscopy). (2) A wavelength selector — a diffraction grating spectrometer or a scanning Fabry–Pérot interferometer. (3) A detector — a CCD camera, photodiode, or photomultiplier tube (PMT).
+
+**Order-of-magnitude estimate:** The resolving power of a grating spectrometer with $N$ slits illuminated at order $m$ is $\mathcal{R} = \lambda/\Delta\lambda = mN$. For a 1200 lines/mm grating, 50 mm wide ($N = 60{,}000$), at first order: $\mathcal{R} = 60{,}000$. At $\lambda = 656$ nm (Hα), this gives $\Delta\lambda = 0.011$ nm — sufficient to resolve the fine structure splitting of the Balmer lines.
+
+A **Fabry–Pérot interferometer** with mirror reflectivity $R = 0.95$ and plate spacing $d = 1$ cm has finesse $\mathcal{F} = \pi\sqrt{R}/(1-R) \approx 61$ and free spectral range $\Delta\nu_{\text{FSR}} = c/(2d) = 15$ GHz, yielding a spectral resolution of $\sim 250$ MHz — enough to resolve hyperfine structure.
+:::
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- E1 selection rules: $\Delta\ell = \pm 1$, $\Delta m = 0, \pm 1$, parity changes
+- Einstein coefficients: $A_{21}$ (spontaneous), $B_{21}$ (stimulated), $B_{12}$ (absorption)
+- Relation: $A_{21}/B_{21} = 8\pi h\nu^3/c^3$
+- Linewidths: natural ($1/\tau$), Doppler ($\propto\sqrt{T}$), collisional; Voigt profile
+- Doppler-free techniques: saturation spectroscopy, two-photon spectroscopy
+- Spectrometers: grating ($\mathcal{R} = mN$), Fabry–Pérot ($\mathcal{F} = \pi\sqrt{R}/(1-R)$)
+:::

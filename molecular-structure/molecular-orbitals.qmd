@@ -1,0 +1,95 @@
+---
+title: "Molecular Orbital Theory"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Construct molecular orbital diagrams for homonuclear and heteronuclear diatomic molecules
+- Classify molecular orbitals by symmetry (σ, π, δ) and parity (g, u)
+- Determine bond order and predict molecular stability
+- Explain the electronic structure of O₂, N₂, and other diatomic molecules
+- Describe the difference between homonuclear and heteronuclear bonding
+:::
+
+## Molecular Orbital Symmetry
+
+Molecular orbitals are classified by their symmetry with respect to the internuclear axis (taken as $z$):
+
+| Type | Angular momentum projection $|m_\ell|$ | Nodal planes containing axis |
+|------|----------------------------------------|-------------------------------|
+| σ | 0 | 0 |
+| π | 1 | 1 |
+| δ | 2 | 2 |
+
+For homonuclear diatomics, there is an additional symmetry (inversion center):
+
+- **gerade (g):** symmetric under inversion — $\psi(-\mathbf{r}) = +\psi(\mathbf{r})$
+- **ungerade (u):** antisymmetric under inversion — $\psi(-\mathbf{r}) = -\psi(\mathbf{r})$
+
+Bonding orbitals formed from $s$ or $p_z$ atomic orbitals are $\sigma_g$ (bonding) or $\sigma_u^*$ (antibonding). Those from $p_x$ or $p_y$ are $\pi_u$ (bonding) or $\pi_g^*$ (antibonding).
+
+## MO Diagram for Homonuclear Diatomics
+
+For second-period homonuclear diatomics ($\text{Li}_2$ through $\text{Ne}_2$), the molecular orbitals formed from the $2s$ and $2p$ atomic orbitals are (in order of increasing energy):
+
+**Without $s$-$p$ mixing** (O₂, F₂, Ne₂):
+$$
+\sigma_{2s} < \sigma_{2s}^* < \sigma_{2p} < \pi_{2p} < \pi_{2p}^* < \sigma_{2p}^*
+$$
+
+**With $s$-$p$ mixing** (Li₂ through N₂):
+$$
+\sigma_{2s} < \sigma_{2s}^* < \pi_{2p} < \sigma_{2p} < \pi_{2p}^* < \sigma_{2p}^*
+$$
+
+The $s$-$p$ mixing (hybridization of $\sigma_{2s}$ and $\sigma_{2p}$) is significant for the lighter elements where the $2s$-$2p$ energy gap is smaller.
+
+## Bond Order
+
+The **bond order** quantifies bond strength:
+
+$$
+\text{Bond order} = \frac{1}{2}(N_{\text{bonding}} - N_{\text{antibonding}})
+$$ {#eq-bond-order}
+
+| Molecule | Electron config. | Bond order | $D_e$ (eV) | $R_e$ (Å) | Magnetic |
+|----------|-----------------|------------|------------|-----------|----------|
+| H₂ | $(\sigma_{1s})^2$ | 1 | 4.75 | 0.74 | Diamagnetic |
+| He₂ | $(\sigma_{1s})^2(\sigma_{1s}^*)^2$ | 0 | — | — | Does not exist |
+| N₂ | $\cdots(\pi_{2p})^4(\sigma_{2p})^2$ | 3 | 9.76 | 1.10 | Diamagnetic |
+| O₂ | $\cdots(\sigma_{2p})^2(\pi_{2p}^*)^2$ | 2 | 5.12 | 1.21 | **Paramagnetic** |
+| F₂ | $\cdots(\pi_{2p}^*)^4$ | 1 | 1.66 | 1.42 | Diamagnetic |
+
+## The Paramagnetism of O₂
+
+One of the triumphs of MO theory: it correctly predicts that O₂ is **paramagnetic** (has unpaired electrons). The two electrons in the $\pi_{2p}^*$ orbitals occupy separate, degenerate orbitals with parallel spins (Hund's rule), giving a ground state term ${}^3\Sigma_g^-$.
+
+This cannot be explained by Lewis dot structures or valence bond theory.
+
+## Heteronuclear Diatomics
+
+For heteronuclear molecules (e.g., CO, HF, NO), the atomic orbitals on different atoms have different energies. The more electronegative atom contributes more to the bonding orbitals, and the less electronegative atom contributes more to the antibonding orbitals.
+
+The molecular orbitals no longer have $g/u$ symmetry (no inversion center). The bonding orbital has more weight on the more electronegative atom:
+
+$$
+\psi_{\text{bonding}} = c_A\phi_A + c_B\phi_B, \quad |c_B| > |c_A| \text{ if } B \text{ more electronegative}
+$$
+
+### Example: Carbon Monoxide (CO)
+
+CO is isoelectronic with N₂ (14 electrons). The HOMO is a lone pair on carbon (slightly antibonding σ), which is why CO is a good σ-donor ligand in coordination chemistry. The bond order is 3.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- MO symmetry: σ ($|m|=0$), π ($|m|=1$); g/u for homonuclear
+- Bond order $= \frac{1}{2}(N_b - N_{ab})$ — determines stability and bond strength
+- O₂ is paramagnetic — two unpaired electrons in $\pi^*$ (triumph of MO theory)
+- Heteronuclear: MOs weighted toward the more electronegative atom
+:::

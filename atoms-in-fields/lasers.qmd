@@ -1,0 +1,177 @@
+---
+title: "Lasers"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain the principle of stimulated emission and its role in laser operation
+- Describe the conditions for population inversion and optical gain
+- Distinguish between three-level and four-level laser systems
+- Explain the role of the optical resonator and laser modes
+- Describe key types of lasers and their applications
+- Explain the principle of laser cooling and optical trapping
+- Discuss ultrafast lasers and their use in time-resolved spectroscopy
+- Describe photothermal effects: thermoplasmonics and optical heating of nanoparticles
+:::
+
+## From Stimulated Emission to Lasing
+
+Einstein's concept of stimulated emission (1917) is the foundation of laser operation:
+
+- A photon incident on an excited atom can stimulate the emission of a **second, identical photon** — same frequency, phase, polarization, and direction.
+- If more atoms are in the excited state than in the ground state (**population inversion**), stimulated emission dominates over absorption, and the medium provides **optical gain**.
+
+LASER = **L**ight **A**mplification by **S**timulated **E**mission of **R**adiation
+
+## Population Inversion
+
+In thermal equilibrium, the population ratio follows the Boltzmann distribution:
+
+$$
+\frac{N_2}{N_1} = \frac{g_2}{g_1}\exp\left(-\frac{E_2 - E_1}{k_BT}\right) < 1
+$$
+
+Population inversion ($N_2 > N_1$) **cannot be achieved in thermal equilibrium** — it requires an external **pumping mechanism** (optical, electrical, or chemical).
+
+### Why Two Levels Are Not Enough
+
+In a simple two-level system, pumping equalizes the populations at best ($N_2 = N_1$) due to stimulated emission competing with absorption. Population inversion requires at least **three levels**.
+
+## Three-Level Laser
+
+The three-level scheme (Maiman's ruby laser, 1960):
+
+1. **Pumping:** Atoms are excited from level 1 to level 3
+2. **Fast relaxation:** Atoms rapidly decay (non-radiatively) from level 3 to the metastable level 2
+3. **Lasing transition:** Stimulated emission occurs on the $2 \to 1$ transition
+
+The challenge: more than half of all atoms must be pumped to level 2 before gain is achieved, since the lower laser level is the ground state.
+
+## Four-Level Laser
+
+The four-level scheme is more efficient (e.g., Nd:YAG laser):
+
+1. **Pumping:** Level 1 → Level 4
+2. **Fast relaxation:** Level 4 → Level 3 (upper laser level)
+3. **Lasing:** Level 3 → Level 2 (stimulated emission)
+4. **Fast relaxation:** Level 2 → Level 1
+
+Since level 2 is nearly empty (rapid depopulation to level 1), population inversion between levels 3 and 2 is achieved with minimal pumping.
+
+## The Optical Resonator
+
+The laser medium is placed inside an **optical resonator** (cavity), typically formed by two mirrors:
+
+- One mirror is highly reflecting ($R \approx 99.9\%$)
+- The output coupler has partial transmission ($T \sim 1\text{–}5\%$)
+
+The resonator provides:
+
+- **Optical feedback:** Photons make multiple passes through the gain medium
+- **Mode selection:** Only certain frequencies (longitudinal modes) and spatial patterns (transverse modes) are amplified
+- **Threshold condition:** Gain per round trip must exceed losses
+
+### Longitudinal Modes
+
+The resonant frequencies of a cavity of length $L$ are:
+
+$$
+\nu_q = q\frac{c}{2L}, \quad q = 1, 2, 3, \ldots
+$$
+
+The frequency spacing between adjacent modes is $\Delta\nu = c/(2L)$.
+
+## Laser Properties
+
+Laser light has unique properties:
+
+- **Monochromaticity:** Extremely narrow spectral linewidth ($\Delta\nu/\nu \sim 10^{-15}$ for stabilized lasers)
+- **Coherence:** High temporal and spatial coherence
+- **Directionality:** Low beam divergence (diffraction limited)
+- **Brightness:** Very high spectral radiance
+
+## Types of Lasers
+
+| Type | Medium | Wavelength | Application |
+|------|--------|------------|-------------|
+| He-Ne | Gas | 632.8 nm | Alignment, interferometry |
+| Nd:YAG | Solid-state | 1064 nm | Material processing, surgery |
+| CO₂ | Gas | 10.6 μm | Industrial cutting, surgery |
+| Semiconductor | Diode | 400–1600 nm | Telecom, optical storage |
+| Ti:Sapphire | Solid-state | 650–1100 nm | Ultrafast spectroscopy |
+| Excimer | Gas | 157–351 nm | Lithography, eye surgery |
+
+## Laser Cooling of Atoms
+
+The narrow linewidth and tunability of lasers enable a remarkable application: slowing and cooling atoms using light pressure.
+
+**Doppler cooling:** An atom moving toward a laser beam tuned slightly below resonance ($\delta < 0$, "red-detuned") sees the light Doppler-shifted closer to resonance and absorbs more photons. Each absorbed photon delivers a momentum kick $\hbar k$ opposing the atom's motion. Spontaneous re-emission is isotropic and averages to zero net momentum. The resulting velocity-dependent friction force slows the atom.
+
+With six counter-propagating beams along three orthogonal axes, atoms are cooled in all directions — this is **optical molasses**. The minimum achievable temperature (the **Doppler limit**) is:
+
+$$
+T_D = \frac{\hbar\Gamma}{2k_B}
+$$ {#eq-doppler-limit}
+
+where $\Gamma$ is the natural linewidth. For rubidium-87: $T_D \approx 146\;\mu\text{K}$.
+
+::: {.callout-important}
+## Experiment: The Magneto-Optical Trap (MOT)
+
+Adding a spatially varying magnetic field (from anti-Helmholtz coils) to optical molasses creates a **magneto-optical trap (MOT)** — the workhorse of cold-atom physics. The Zeeman shift makes the radiation pressure position-dependent, providing both cooling and trapping. A MOT can trap $\sim 10^9$ atoms at temperatures of $\sim 100\;\mu\text{K}$ and densities of $\sim 10^{10}\;\text{cm}^{-3}$. Steven Chu, Claude Cohen-Tannoudji, and William Phillips received the 1997 Nobel Prize for the development of laser cooling methods.
+:::
+
+## Optical Trapping and Tweezers
+
+A tightly focused laser beam creates a gradient force that can trap dielectric particles at the beam focus. These **optical tweezers** (Arthur Ashkin, Nobel Prize 2018) exert forces of $\sim 0.1\text{–}100\;\text{pN}$, ideal for manipulating biological objects:
+
+- Measuring the force generated by single motor proteins (kinesin, myosin)
+- Stretching DNA molecules to determine their elastic properties
+- Trapping and sorting individual cells, bacteria, or nanoparticles
+
+The trapping force arises from the interaction of the induced dipole with the intensity gradient: $\mathbf{F}_{\text{grad}} = \frac{\alpha}{2}\nabla|\mathbf{E}|^2$, where $\alpha$ is the particle's polarizability.
+
+## Ultrafast Laser Spectroscopy
+
+Mode-locked Ti:sapphire lasers produce pulses as short as $\sim 5$ fs (a few optical cycles), enabling direct observation of molecular dynamics:
+
+- **Pump-probe spectroscopy:** A pump pulse initiates a photochemical process; a delayed probe pulse measures the transient absorption or reflectivity at controlled time delays (femtosecond resolution). Ahmed Zewail used this to observe chemical bond breaking in real time ("femtochemistry," Nobel Prize 1999).
+
+- **Frequency combs:** A mode-locked laser emits a comb of precisely equally spaced frequencies, separated by the repetition rate $f_{\text{rep}} \sim 100$ MHz–1 GHz. Each comb tooth has a frequency $\nu_n = nf_{\text{rep}} + f_{\text{CEO}}$, where $f_{\text{CEO}}$ is the carrier-envelope offset. Stabilizing both $f_{\text{rep}}$ and $f_{\text{CEO}}$ turns the frequency comb into an optical frequency ruler with $\sim 10^{-18}$ fractional accuracy (Theodor Hänsch and John Hall, Nobel Prize 2005).
+
+## Thermoplasmonics: Laser Heating of Nanoparticles
+
+::: {.callout-tip}
+## Research Highlight: When Nanoparticles Absorb Light
+
+Metal nanoparticles (especially Au and Ag) exhibit **localized surface plasmon resonances (LSPR)** — collective oscillations of conduction electrons driven by the incident light field. At resonance, the absorption cross-section can greatly exceed the geometric cross-section ($\sigma_{\text{abs}} \gg \pi R^2$), making these particles extremely efficient nanoscale heaters.
+
+When a gold nanoparticle (e.g., 80 nm diameter, LSPR near 550 nm) absorbs laser light, the absorbed energy thermalizes within the electron gas ($\sim 100$ fs), transfers to the lattice via electron–phonon coupling ($\sim 1$ ps), and dissipates into the surrounding medium ($\sim 100$ ps–ns). The steady-state temperature rise around a single particle of radius $R$ heated by absorbed power $P_{\text{abs}}$ is:
+
+$$
+\Delta T(r) = \frac{P_{\text{abs}}}{4\pi\kappa r} \quad (r \geq R)
+$$
+
+where $\kappa$ is the thermal conductivity of the surrounding medium. For a 40 nm gold nanoparticle in water absorbing $\sim 1$ mW, $\Delta T \sim 10$ K at the surface — enough to drive local chemical reactions, trigger phase transitions, or probe the mechanical properties of the nanoscale environment.
+
+Thermoplasmonics finds applications in photothermal cancer therapy, drug delivery, steam generation, and — as discussed in the spectroscopy chapters — photothermal microscopy and photothermal IR spectroscopy.
+:::
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Laser requires population inversion → at least 3 energy levels
+- Four-level laser is more efficient than three-level
+- Optical resonator provides feedback and mode selection
+- Threshold: round-trip gain must exceed losses
+- Key properties: monochromaticity, coherence, directionality, brightness
+- Laser cooling: Doppler limit $T_D = \hbar\Gamma/(2k_B)$, MOT traps $\sim 10^9$ atoms
+- Optical tweezers: gradient force traps particles, pN-scale force measurements
+- Ultrafast spectroscopy: fs pulses resolve molecular dynamics in real time
+- Thermoplasmonics: plasmonic nanoparticles as nanoscale photothermal heaters
+:::

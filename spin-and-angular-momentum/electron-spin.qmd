@@ -1,0 +1,111 @@
+---
+title: "Electron Spin"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain the experimental evidence for electron spin
+- Describe spin-½ as an intrinsic angular momentum with no classical analog
+- Write down the Pauli spin matrices and spin eigenstates
+- Calculate expectation values and probabilities for spin measurements
+- Explain the magnetic moment associated with electron spin
+:::
+
+## Discovery of Spin
+
+In 1925, Uhlenbeck and Goudsmit proposed that the electron possesses an intrinsic angular momentum — **spin** — to explain several puzzling observations:
+
+- The anomalous Zeeman effect (more spectral lines than expected)
+- The Stern–Gerlach experiment (two beams for silver atoms)
+- The fine structure of alkali metal spectra
+- The need for a fourth quantum number to satisfy the Pauli exclusion principle
+
+## Spin Angular Momentum
+
+Spin is described by operators $\hat{\mathbf{S}} = (\hat{S}_x, \hat{S}_y, \hat{S}_z)$ satisfying the same commutation relations as orbital angular momentum:
+
+$$
+[\hat{S}_i, \hat{S}_j] = i\hbar\epsilon_{ijk}\hat{S}_k
+$$
+
+For the electron, the spin quantum number is $s = 1/2$, giving:
+
+$$
+\hat{S}^2|s, m_s\rangle = \hbar^2 s(s+1)|s, m_s\rangle = \frac{3}{4}\hbar^2|s, m_s\rangle
+$$
+
+$$
+\hat{S}_z|s, m_s\rangle = m_s\hbar|s, m_s\rangle, \quad m_s = \pm\frac{1}{2}
+$$
+
+The two eigenstates are often written as:
+
+$$
+|\!\uparrow\rangle \equiv |+\rangle \equiv \left|\tfrac{1}{2}, +\tfrac{1}{2}\right\rangle, \qquad |\!\downarrow\rangle \equiv |-\rangle \equiv \left|\tfrac{1}{2}, -\tfrac{1}{2}\right\rangle
+$$
+
+## Pauli Spin Matrices
+
+In the basis $\{|\!\uparrow\rangle, |\!\downarrow\rangle\}$, the spin operators are represented by $2 \times 2$ matrices:
+
+$$
+\hat{S}_i = \frac{\hbar}{2}\sigma_i
+$$
+
+where the **Pauli matrices** are:
+
+$$
+\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+$$ {#eq-pauli-matrices}
+
+These satisfy $\sigma_i^2 = I$, $\sigma_i\sigma_j = i\epsilon_{ijk}\sigma_k$ (for $i \neq j$), and $\{\sigma_i, \sigma_j\} = 2\delta_{ij}I$.
+
+## General Spin State
+
+A general spin-½ state is a superposition:
+
+$$
+|\chi\rangle = \alpha|\!\uparrow\rangle + \beta|\!\downarrow\rangle = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}, \quad |\alpha|^2 + |\beta|^2 = 1
+$$
+
+The probabilities of measuring $m_s = +1/2$ or $-1/2$ are $|\alpha|^2$ and $|\beta|^2$, respectively.
+
+## Magnetic Moment of the Electron
+
+The spin magnetic moment is:
+
+$$
+\hat{\boldsymbol{\mu}}_s = -g_s \frac{e}{2m_e}\hat{\mathbf{S}} = -g_s \mu_B \frac{\hat{\mathbf{S}}}{\hbar}
+$$ {#eq-spin-magnetic-moment}
+
+where $\mu_B = e\hbar/(2m_e) = 9.274 \times 10^{-24}$ J/T is the **Bohr magneton** and $g_s \approx 2.0023$ is the electron spin **g-factor**. The anomalous value $g_s \neq 2$ is one of the great predictions of quantum electrodynamics.
+
+The $z$-component of the spin magnetic moment is:
+
+$$
+\mu_z = -g_s m_s \mu_B \approx \mp \mu_B
+$$
+
+## Total Angular Momentum
+
+Including spin, the complete state of a hydrogen electron is specified by four quantum numbers: $n$, $\ell$, $m_\ell$, and $m_s$. The total angular momentum is:
+
+$$
+\hat{\mathbf{J}} = \hat{\mathbf{L}} + \hat{\mathbf{S}}
+$$
+
+with quantum number $j = \ell \pm 1/2$ (for $\ell > 0$) and $j = 1/2$ (for $\ell = 0$).
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Electron spin: $s = 1/2$, $m_s = \pm 1/2$
+- Spin magnitude: $|\mathbf{S}| = \frac{\sqrt{3}}{2}\hbar$
+- Pauli matrices: $\hat{S}_i = \frac{\hbar}{2}\sigma_i$
+- Spin magnetic moment: $\hat{\boldsymbol{\mu}}_s = -g_s\mu_B\hat{\mathbf{S}}/\hbar$ with $g_s \approx 2$
+:::

@@ -1,0 +1,59 @@
+---
+title: "Solutions — Exercise Sheet 12: Molecular Orbitals and Chemical Bonds"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Solution 1: Molecular Orbital Diagrams
+
+**(a)** O₂ has 12 valence electrons. The ordering for O₂ and heavier diatomics is: $\sigma_{2s} < \sigma^*_{2s} < \sigma_{2p} < \pi_{2p} < \pi^*_{2p} < \sigma^*_{2p}$ (note: $\sigma_{2p}$ is below $\pi_{2p}$ for O₂, unlike N₂).
+
+Filling: $(\sigma_{2s})^2(\sigma^*_{2s})^2(\sigma_{2p})^2(\pi_{2p})^4(\pi^*_{2p})^2$
+
+The two electrons in $\pi^*_{2p}$ occupy different degenerate orbitals with parallel spins (Hund's rule).
+
+**(b)** Bond order = $\frac{1}{2}(8 - 4) = 2$ (double bond).
+
+O₂ is **paramagnetic** because it has two unpaired electrons in the $\pi^*_{2p}$ orbitals. This was a triumph of MO theory — the Lewis structure (O=O) incorrectly predicts diamagnetism.
+
+**(c)** N₂: 10 valence electrons. Bond order = $\frac{1}{2}(8-2) = 3$ (triple bond), diamagnetic.
+
+F₂: 14 valence electrons. Bond order = $\frac{1}{2}(8-6) = 1$ (single bond), diamagnetic.
+
+N₂ has the stronger bond (bond order 3 vs. 1, $D_e = 945$ vs. $159\;\text{kJ/mol}$).
+
+## Solution 2: Hybridization and Molecular Geometry
+
+**(a)** BF₃: sp² (trigonal planar, 120°). CH₄: sp³ (tetrahedral, 109.5°). SF₆: sp³d² (octahedral, 90°). CO₂: sp (linear, 180°).
+
+**(b)** In C₂H₄, each C forms three σ bonds (two C–H + one C–C) using sp² hybrids in a plane. The unhybridized $p_z$ orbitals overlap laterally above and below the plane to form the π bond. Rotation around the C–C axis would break this π overlap, so the molecule is planar.
+
+**(c)** Carbon in H₂CO: sp² (three σ bonds: two C–H + one C–O, plus one π bond to O).
+
+Oxygen: sp² hybridized, with one σ bond to C, one π bond to C, and two lone pairs in the remaining sp² hybrids. (Alternatively, one lone pair in sp² and one in unhybridized $p$.)
+
+## Solution 3: Bond Types and Properties
+
+**(a)** NaCl: ionic ($\Delta\chi \approx 2.1$). HF: polar covalent ($\Delta\chi = 1.9$). N₂: pure covalent ($\Delta\chi = 0$). CO: polar covalent ($\Delta\chi = 1.0$).
+
+**(b)** In CO, the MO description shows that the highest occupied MO (HOMO) is a σ orbital with more electron density on carbon than on oxygen. This creates a dipole pointing from O to C that partially cancels the electronegativity-based dipole from C to O. The near-cancellation gives the very small observed dipole moment.
+
+**(c)** N₂ (bond order 3): very strong triple bond. O₂ (bond order 2): double bond, weakened by antibonding $\pi^*$ electrons. F₂ (bond order 1): single bond, further weakened by strong lone-pair repulsion between the fluorine atoms at close range. The trend follows decreasing bond order and increasing antibonding occupation.
+
+## Solution 4: Molecular Symmetry
+
+**(a)** Dipole moments:
+
+- H₂O: **yes** (bent geometry, two O–H dipoles don't cancel)
+- CO₂: **no** (linear, two C=O dipoles cancel by symmetry)
+- NH₃: **yes** (pyramidal, lone pair contributes)
+- CH₄: **no** (tetrahedral symmetry, four C–H dipoles cancel)
+- HCl: **yes** (heteronuclear diatomic)
+- SF₆: **no** (octahedral symmetry, six S–F dipoles cancel)
+
+**(b)** Purely ionic: $\mu_{\text{ionic}} = eR = 1.602\times10^{-19}\times1.27\times10^{-10} = 2.034\times10^{-29}\;\text{C·m}$
+
+Converting: $\mu_{\text{ionic}} = 2.034\times10^{-29}/3.336\times10^{-30} = 6.10\;\text{D}$
+
+Ionic character: $1.08/6.10 = 17.7\%$ of an elementary charge is transferred.
+
+**(c)** Rotational absorption requires the molecule to have a permanent electric dipole moment. The oscillating dipole of a rotating polar molecule couples to the oscillating electric field of the microwave radiation. Non-polar molecules (like N₂, CO₂) cannot absorb microwave radiation through pure rotational transitions.

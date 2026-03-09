@@ -1,0 +1,107 @@
+---
+title: "Rotational Spectroscopy"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Solve the quantum mechanical rigid rotor and derive rotational energy levels
+- Define the rotational constant and moment of inertia
+- Explain the selection rules for rotational transitions
+- Interpret pure rotational (microwave) spectra of diatomic molecules
+- Discuss corrections for centrifugal distortion and non-rigid rotors
+:::
+
+## The Rigid Rotor Model
+
+A diatomic molecule rotating about its center of mass is modeled as a **rigid rotor** — two masses $m_1$ and $m_2$ connected by a rigid bond of length $R$.
+
+The Schrödinger equation for the rotational motion is:
+
+$$
+\hat{H}_{\text{rot}}\Psi = \frac{\hat{L}^2}{2I}\Psi = E_J\Psi
+$$
+
+where $I = \mu R^2$ is the moment of inertia ($\mu$ = reduced mass). The solutions are spherical harmonics $Y_J^{M_J}(\theta, \varphi)$ with energies:
+
+$$
+E_J = \frac{\hbar^2}{2I}J(J+1) = BJ(J+1)
+$$ {#eq-rotational-energy}
+
+where $J = 0, 1, 2, \ldots$ is the rotational quantum number and $B = \hbar^2/(2I) = h/(8\pi^2 I)$ is the **rotational constant** (in energy units). In spectroscopic convention (cm⁻¹):
+
+$$
+\tilde{B} = \frac{B}{hc} = \frac{h}{8\pi^2 I c}
+$$
+
+Each level has degeneracy $g_J = 2J + 1$ (from $M_J = -J, \ldots, +J$).
+
+## Rotational Spectra
+
+### Selection Rules
+
+For electric dipole transitions, the molecule must have a **permanent electric dipole moment** ($\mu \neq 0$). Homonuclear diatomics (H₂, N₂, O₂) have no pure rotational spectrum. The selection rule is:
+
+$$
+\Delta J = \pm 1
+$$ {#eq-rot-selection}
+
+### Transition Frequencies
+
+The transition $J \to J+1$ has frequency:
+
+$$
+\tilde{\nu}_{J \to J+1} = \frac{E_{J+1} - E_J}{hc} = 2\tilde{B}(J+1)
+$$
+
+The rotational spectrum consists of **equally spaced lines** separated by $2\tilde{B}$.
+
+### Measuring Bond Lengths
+
+From the line spacing, we determine $\tilde{B}$, and hence the moment of inertia $I$ and the bond length $R$. Typical rotational constants: $\tilde{B} \sim 1\text{–}60$ cm⁻¹, corresponding to microwave frequencies ($\nu \sim 1\text{–}1000$ GHz).
+
+## Intensity Distribution
+
+The intensity of rotational transitions depends on the population of the initial state:
+
+$$
+I_{J \to J+1} \propto (2J+1)\exp\left(-\frac{BJ(J+1)}{k_BT}\right)
+$$
+
+The factor $(2J+1)$ is the degeneracy. The population peaks at:
+
+$$
+J_{\max} \approx \sqrt{\frac{k_BT}{2B}} - \frac{1}{2}
+$$
+
+## Centrifugal Distortion
+
+Real molecules are not perfectly rigid. As the rotation speeds up, the bond stretches due to centrifugal force. The corrected energy levels are:
+
+$$
+E_J = BJ(J+1) - DJ^2(J+1)^2 + \cdots
+$$ {#eq-centrifugal}
+
+where $D$ is the **centrifugal distortion constant**. Typically $D/B \sim 10^{-4}$, so the correction is small but measurable in high-resolution spectra.
+
+## Polyatomic Molecules
+
+Polyatomic molecules are classified as:
+
+- **Linear** (e.g., CO₂, HCN): same as diatomic, one rotational constant $B$
+- **Symmetric top** (e.g., CH₃Cl, NH₃): two moments of inertia, $I_A \neq I_B = I_C$
+- **Spherical top** (e.g., CH₄, SF₆): all moments equal, $I_A = I_B = I_C$, no microwave spectrum
+- **Asymmetric top** (e.g., H₂O): all moments different, complex spectra
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Rigid rotor energies: $E_J = BJ(J+1)$, $B = \hbar^2/(2I)$
+- Selection rule: $\Delta J = \pm 1$, requires permanent dipole moment
+- Spectrum: equally spaced lines separated by $2B$
+- From $B$ → moment of inertia → bond length
+:::

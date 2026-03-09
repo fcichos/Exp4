@@ -1,0 +1,50 @@
+---
+title: "Exercise Sheet 4 — Angular Momentum and Electron Spin"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: Angular Momentum Algebra
+
+The angular momentum operators satisfy $[\hat{L}_i, \hat{L}_j] = i\hbar\,\varepsilon_{ijk}\hat{L}_k$.
+
+(a) Using $\hat{L}_{\pm} = \hat{L}_x \pm i\hat{L}_y$, show that $[\hat{L}_z, \hat{L}_{\pm}] = \pm\hbar\hat{L}_{\pm}$.
+
+(b) If $|{\ell, m}\rangle$ is an eigenstate of $\hat{L}^2$ and $\hat{L}_z$ with eigenvalues $\ell(\ell+1)\hbar^2$ and $m\hbar$, show that $\hat{L}_{\pm}|{\ell, m}\rangle$ is an eigenstate of $\hat{L}_z$ with eigenvalue $(m \pm 1)\hbar$.
+
+(c) For $\ell = 2$, what are the possible eigenvalues of $\hat{L}_z$? Calculate $\langle L_x \rangle$ and $\langle L_x^2 \rangle$ for the state $|{2, 1}\rangle$.
+
+## Problem 2: Spin-½ and Pauli Matrices
+
+The Pauli spin matrices are:
+
+$$
+\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
+\sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
+\sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+$$
+
+with $\hat{S}_i = \frac{\hbar}{2}\sigma_i$.
+
+(a) Verify that $\sigma_x^2 = \sigma_y^2 = \sigma_z^2 = \mathbf{1}$ (the identity matrix).
+
+(b) Compute $[\sigma_x, \sigma_y]$ and verify that $[\hat{S}_x, \hat{S}_y] = i\hbar\hat{S}_z$.
+
+(c) An electron is in the spin state $|\chi\rangle = \frac{1}{\sqrt{3}}\begin{pmatrix}1 \\ \sqrt{2}\end{pmatrix}$ (in the $S_z$ basis). What is the probability of measuring $S_z = +\hbar/2$? What is $\langle S_x \rangle$ in this state?
+
+## Problem 3: Addition of Angular Momenta
+
+Consider two angular momenta $\ell_1 = 1$ and $\ell_2 = 1$ (e.g., two $p$-electrons with orbital angular momentum only).
+
+(a) What are the possible values of the total angular momentum quantum number $L$?
+
+(b) How many states are there in total? Verify that $\sum_L (2L+1)$ gives the correct total.
+
+(c) Express the coupled state $|L = 2, M = 0\rangle$ in terms of the uncoupled states $|m_1, m_2\rangle$ using the Clebsch–Gordan coefficients: $|L=2,M=0\rangle = \frac{1}{\sqrt{6}}|1,-1\rangle + \sqrt{\frac{2}{3}}|0,0\rangle + \frac{1}{\sqrt{6}}|-1,1\rangle$. Verify that this state is normalized.
+
+## Problem 4: Magnetic Moment and Spin Precession
+
+(a) The magnetic moment of an electron due to its spin is $\boldsymbol{\mu}_s = -g_s\mu_B\hat{\mathbf{S}}/\hbar$, with $g_s \approx 2$ and $\mu_B = e\hbar/(2m_e)$. Calculate $\mu_B$ in units of eV/T and J/T.
+
+(b) An electron spin is placed in a magnetic field $\mathbf{B} = B_0\hat{z}$. What is the energy splitting between the spin-up and spin-down states? Calculate this for $B_0 = 1\;\text{T}$.
+
+(c) At what frequency (in GHz) does the spin precess around the magnetic field axis? This is the **electron spin resonance (ESR)** frequency.

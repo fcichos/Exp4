@@ -1,0 +1,54 @@
+---
+title: "Exercise Sheet 10 — Quantum Statistics"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: Identical Particles and Symmetry
+
+(a) Two identical particles are in single-particle states $|\alpha\rangle$ and $|\beta\rangle$. Write the correctly symmetrized two-particle state for bosons and for fermions.
+
+(b) Show that if $|\alpha\rangle = |\beta\rangle$, the fermionic state vanishes. State the corresponding physical principle.
+
+(c) Consider three identical non-interacting fermions in a one-dimensional harmonic oscillator with energy levels $E_n = (n + 1/2)\hbar\omega$. What is the ground state energy of the system (include spin degeneracy)?
+
+## Problem 2: Fermi–Dirac and Bose–Einstein Distributions
+
+The occupation number for fermions and bosons is:
+
+$$
+\bar{n}_{\text{FD}} = \frac{1}{e^{(\varepsilon - \mu)/(k_BT)} + 1}, \qquad \bar{n}_{\text{BE}} = \frac{1}{e^{(\varepsilon - \mu)/(k_BT)} - 1}
+$$
+
+(a) Sketch both distributions at $T = 0$ and at finite temperature. What happens to $\bar{n}_{\text{FD}}$ at the Fermi energy $\varepsilon = \mu$?
+
+(b) For a metal with Fermi energy $E_F = 7.0\;\text{eV}$ (copper), calculate the Fermi temperature $T_F = E_F/k_B$. At room temperature ($T = 300\;\text{K}$), what fraction $k_BT/E_F$ of the electrons are thermally excited?
+
+(c) Show that in the limit $(\varepsilon - \mu) \gg k_BT$, both distributions reduce to the Maxwell–Boltzmann distribution $\bar{n}_{\text{MB}} = e^{-(\varepsilon - \mu)/(k_BT)}$.
+
+## Problem 3: Bose–Einstein Condensation
+
+(a) The critical temperature for BEC of $^{87}$Rb atoms ($m = 1.44 \times 10^{-25}\;\text{kg}$) at a density of $n = 2.5 \times 10^{18}\;\text{m}^{-3}$ is given by:
+
+$$
+k_BT_c = \frac{2\pi\hbar^2}{m}\left(\frac{n}{\zeta(3/2)}\right)^{2/3}
+$$
+
+Calculate $T_c$ in nanokelvin.
+
+(b) At $T = T_c/2$, what fraction of the atoms are in the condensate?
+
+(c) Calculate the thermal de Broglie wavelength $\lambda_{\text{dB}} = h/\sqrt{2\pi m k_BT}$ at $T = T_c$ and compare with the mean interparticle spacing $d = n^{-1/3}$.
+
+## Problem 4: Blackbody Radiation as a Bose Gas
+
+Photons are bosons with $\mu = 0$ (the number of photons is not conserved).
+
+(a) Starting from the Bose–Einstein distribution with $\mu = 0$ and the photon density of states $g(\nu) = 8\pi\nu^2/c^3$, derive the Planck radiation law:
+
+$$
+u(\nu) = \frac{8\pi h\nu^3}{c^3}\frac{1}{e^{h\nu/(k_BT)} - 1}
+$$
+
+(b) Derive the Stefan–Boltzmann law $u_{\text{total}} = aT^4$ by integrating $u(\nu)$ over all frequencies. Express $a$ in terms of fundamental constants.
+
+(c) The cosmic microwave background (CMB) is a nearly perfect blackbody at $T = 2.725\;\text{K}$. At what frequency does the CMB spectrum peak? In what part of the electromagnetic spectrum does this lie?

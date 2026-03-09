@@ -1,0 +1,46 @@
+---
+title: "Exercise Sheet 7 — Periodic Table and Atomic Structure"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: The Aufbau Principle and Anomalies
+
+(a) Using the Aufbau principle, write the electron configuration for potassium ($Z = 19$), chromium ($Z = 24$), and copper ($Z = 29$).
+
+(b) Chromium and copper are notable exceptions to the standard filling order. What are their actual configurations, and why is a half-filled or completely filled $3d$ subshell especially stable?
+
+(c) Determine the ground state term symbol for potassium, chromium, and copper.
+
+## Problem 2: Ionization Energies and the Periodic Table
+
+(a) Explain why the first ionization energy generally increases across a period (e.g., Li to Ne) but has dips at B and O.
+
+(b) The ionization energy of beryllium ($Z = 4$) is $9.32\;\text{eV}$ and that of boron ($Z = 5$) is $8.30\;\text{eV}$. Despite having a higher nuclear charge, boron has a lower ionization energy. Explain.
+
+(c) The ionization energies of nitrogen ($Z = 7$) and oxygen ($Z = 8$) are $14.53$ and $13.62\;\text{eV}$. Explain the dip at oxygen.
+
+## Problem 3: X-Ray Spectra and Moseley's Law
+
+Moseley's law for the $K_\alpha$ X-ray line is:
+
+$$
+\sqrt{\nu} = a(Z - \sigma)
+$$
+
+where $a = \sqrt{\frac{3R_\infty c}{4}}$ and $\sigma \approx 1$ is the screening constant.
+
+(a) Derive Moseley's law by considering the $K_\alpha$ transition ($n = 2 \to n = 1$) in a hydrogen-like model with effective nuclear charge $(Z - \sigma)$.
+
+(b) Calculate the $K_\alpha$ X-ray energy (in keV) for copper ($Z = 29$) and molybdenum ($Z = 42$).
+
+(c) The $K_\alpha$ line of an unknown element has an energy of $6.40\;\text{keV}$. Identify the element.
+
+## Problem 4: The Auger Effect
+
+When a $K$-shell vacancy is created (e.g., by X-ray absorption), it can be filled by an electron from a higher shell. The energy can be released as a characteristic X-ray photon or transferred to another electron (Auger effect).
+
+(a) In the Auger process $KL_1L_{2,3}$, a $K$-shell vacancy is filled by an $L_1$ electron, and the energy is transferred to an $L_{2,3}$ electron. Write the energy balance for the emitted Auger electron.
+
+(b) For light elements ($Z < 30$), the Auger yield is much higher than the fluorescence yield. Explain qualitatively why.
+
+(c) Why is Auger electron spectroscopy surface-sensitive?

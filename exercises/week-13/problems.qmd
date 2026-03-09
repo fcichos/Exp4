@@ -1,0 +1,56 @@
+---
+title: "Exercise Sheet 13 — Rotational and Vibrational Spectra"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: The Rigid Rotor
+
+The energy levels of a rigid diatomic rotor are:
+
+$$
+E_J = B\,J(J+1), \qquad B = \frac{\hbar^2}{2I} = \frac{\hbar^2}{2\mu R_e^2}
+$$
+
+(a) For CO ($R_e = 1.128\;\text{Å}$, $m_C = 12\;\text{u}$, $m_O = 16\;\text{u}$), calculate the rotational constant $B$ in cm⁻¹ and GHz.
+
+(b) The selection rule is $\Delta J = \pm 1$. Show that the rotational spectrum consists of equally spaced lines at frequencies $\nu = 2B(J+1)/h$ with spacing $2B$.
+
+(c) At room temperature ($T = 300\;\text{K}$), which rotational level $J$ has the maximum population? (The population is proportional to $(2J+1)e^{-BJ(J+1)/(k_BT)}$.)
+
+(d) Estimate the number of rotational levels significantly populated at 300 K.
+
+## Problem 2: The Harmonic Oscillator and Vibrational Spectra
+
+The vibrational energy levels of a diatomic molecule (harmonic approximation) are:
+
+$$
+E_v = \left(v + \frac{1}{2}\right)\hbar\omega, \quad v = 0, 1, 2, \ldots
+$$
+
+(a) The fundamental vibrational frequency of HCl is $\tilde{\nu}_0 = 2991\;\text{cm}^{-1}$. Calculate the force constant $k$ of the H–Cl bond.
+
+(b) What is the zero-point energy in eV? Is it significant compared to $k_BT$ at room temperature?
+
+(c) The selection rule for the harmonic oscillator is $\Delta v = \pm 1$. What changes when anharmonicity is included? Write the energy levels of the Morse oscillator and explain the appearance of overtone bands.
+
+## Problem 3: Ro-Vibrational Spectra
+
+The combined rotational–vibrational energy is $E_{v,J} = (v + 1/2)\hbar\omega + BJ(J+1)$.
+
+(a) The selection rules are $\Delta v = +1$ and $\Delta J = \pm 1$. Show that the P-branch ($\Delta J = -1$) and R-branch ($\Delta J = +1$) produce lines at:
+
+$$
+\tilde{\nu}_P = \tilde{\nu}_0 - 2BJ, \quad \tilde{\nu}_R = \tilde{\nu}_0 + 2B(J+1)
+$$
+
+(b) Explain why there is a gap of $4B$ at the band center (no Q-branch for $\Delta J = 0$ in HCl). When is a Q-branch allowed?
+
+(c) In the IR spectrum of HCl, the R-branch lines are observed at: 2906.3, 2925.9, 2944.9, 2963.3, 2981.0 cm⁻¹ for $J'' = 0, 1, 2, 3, 4$. Determine $\tilde{\nu}_0$ and $B$ from these data.
+
+## Problem 4: FTIR Spectroscopy
+
+(a) Explain the operating principle of a Fourier-transform infrared (FTIR) spectrometer. What is an interferogram, and how is it related to the spectrum?
+
+(b) What advantage does FTIR have over a dispersive (grating) spectrometer in terms of signal-to-noise ratio (Fellgett's advantage) and throughput (Jacquinot's advantage)?
+
+(c) The resolution of an FTIR spectrometer is approximately $\Delta\tilde{\nu} \approx 1/(2\Delta_{\max})$, where $\Delta_{\max}$ is the maximum mirror displacement. What mirror displacement is needed to resolve the rotational structure of CO ($2B \approx 3.86\;\text{cm}^{-1}$)?

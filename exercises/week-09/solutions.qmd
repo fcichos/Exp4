@@ -1,0 +1,69 @@
+---
+title: "Solutions — Exercise Sheet 9: Optical Transitions and Lasers"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Solution 1: Einstein Coefficients
+
+**(a)** In thermal equilibrium with radiation density $\rho(\nu)$, the rate equations give:
+
+$N_1 B_{12}\rho = N_2(A_{21} + B_{21}\rho)$
+
+Using $N_2/N_1 = (g_2/g_1)e^{-h\nu/(k_BT)}$ and requiring $\rho(\nu)$ to equal the Planck distribution:
+
+$$
+\rho(\nu) = \frac{A_{21}/B_{21}}{(g_1 B_{12})/(g_2 B_{21})e^{h\nu/(k_BT)} - 1}
+$$
+
+Comparing with $\rho(\nu) = \frac{8\pi h\nu^3/c^3}{e^{h\nu/(k_BT)} - 1}$ gives:
+
+$B_{12}/B_{21} = g_2/g_1$ and $A_{21}/B_{21} = 8\pi h\nu^3/c^3$. ✓
+
+**(b)** $A_{21}/B_{21} = 8\pi h\nu^3/c^3 = 8\pi \times 6.626\times10^{-34}\times(2.47\times10^{15})^3/(3\times10^8)^3$
+
+$= 8\pi \times 6.626\times10^{-34}\times 1.506\times10^{46}/2.7\times10^{25} = 7.3\times10^{-13}\;\text{J·s/m}^3$
+
+The large $\nu^3$ dependence means that at optical frequencies, spontaneous emission dominates over stimulated emission unless the radiation field is very intense.
+
+**(c)** Lifetime: $\tau = 1/A_{21} = 1/(6.27\times10^8) = 1.60\;\text{ns}$
+
+Natural linewidth: $\Delta\nu_{\text{nat}} = A_{21}/(2\pi) = 99.8\;\text{MHz} \approx 100\;\text{MHz}$
+
+**(d)** $\tau_{2s} = 1/8.2 = 0.122\;\text{s}$. This is $\sim 10^8$ times longer than the $2p$ lifetime. The $2s$ state is "metastable" because it cannot decay by the dominant (E1) channel and lives extremely long compared to other excited states.
+
+## Solution 2: Selection Rules
+
+**(a)**
+- $3d \to 2p$: $\Delta\ell = -1$ → **allowed** ✓
+- $3d \to 2s$: $\Delta\ell = -2$ → **forbidden** ✗
+- $3s \to 2s$: $\Delta\ell = 0$ → **forbidden** ✗
+- $4f \to 3d$: $\Delta\ell = -1$ → **allowed** ✓
+- $4f \to 2p$: $\Delta\ell = -2$ → **forbidden** ✗
+
+**(b)** The $^3P_1 \to\, ^1S_0$ transition requires $\Delta S = -1$ (triplet to singlet), which violates the $\Delta S = 0$ selection rule. It is only weakly allowed due to spin–orbit coupling mixing singlet and triplet states. In light atoms like helium where spin–orbit coupling is weak, the line is extremely faint.
+
+**(c)** The M1 rate for $2s \to 1s$ is essentially zero for hydrogen (it is strictly forbidden by $\Delta\ell = 0$). The two-photon E1 rate is $\sim 8.2\;\text{s}^{-1}$, so the two-photon process completely dominates.
+
+## Solution 3: Laser Threshold and Mode Structure
+
+**(a)** $\Delta\nu_{\text{FSR}} = c/(2L) = 3\times10^8/(2\times0.3) = 500\;\text{MHz}$
+
+**(b)** Number of modes: $N = \Delta\nu_g/\Delta\nu_{\text{FSR}} = 120\times10^9/500\times10^6 = 240$ modes.
+
+**(c)** $R_1 R_2\,e^{2gL} = 1$, so $2gL = -\ln(R_1 R_2) = -\ln(0.999\times0.95) = -\ln(0.94905) = 0.05232$
+
+$g = 0.05232/(2\times0.3) = 0.0872\;\text{m}^{-1} = 0.087\;\text{m}^{-1}$
+
+## Solution 4: Three-Level vs. Four-Level Laser
+
+**(a)** In a three-level system, the total number of atoms is $N = N_1 + N_2$ (level 3 depopulates instantly). For gain, we need $N_2 > N_1$, i.e., $N_2 > N/2$. More than half of all atoms must be in the upper laser level. This requires high pump power.
+
+**(b)** In a four-level system, the lower laser level (level 2) is rapidly emptied to level 1 by non-radiative decay. Thus $N_2 \approx 0$, and any small population in level 3 gives inversion ($N_3 > N_2 \approx 0$). The threshold pump power is dramatically reduced.
+
+**(c)** At threshold, $N_2 = N/2 = 5\times10^{19}$. The pump must compensate spontaneous emission:
+
+$P_{\text{pump}} = N_2 \cdot h\nu \cdot A_{21} = 5\times10^{19}\times6.626\times10^{-34}\times4.32\times10^{14}\times300$
+
+$= 5\times10^{19}\times2.863\times10^{-19}\times 300 = 4.3\;\text{kW}$
+
+This is a substantial power, explaining why three-level lasers (like ruby) require powerful flashlamp pumping.

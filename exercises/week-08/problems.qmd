@@ -1,0 +1,50 @@
+---
+title: "Exercise Sheet 8 — Zeeman and Stark Effects"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: Normal Zeeman Effect
+
+The normal Zeeman effect occurs for transitions between singlet states ($S = 0$, so $g_J = 1$).
+
+(a) A cadmium lamp emits the red line at $\lambda = 643.8\;\text{nm}$ (a $^1D_2 \to \,^1P_1$ transition). In a magnetic field $B = 1\;\text{T}$, into how many components does this line split?
+
+(b) Calculate the Zeeman splitting $\Delta E = \mu_B B$ in eV and the corresponding frequency shift $\Delta\nu$ in GHz.
+
+(c) The three components have $\Delta m = 0$ ($\pi$) and $\Delta m = \pm 1$ ($\sigma^{\pm}$). What are their polarization properties when observed along and perpendicular to the magnetic field?
+
+## Problem 2: Anomalous Zeeman Effect
+
+Consider the sodium D-lines: $^2P_{3/2} \to\, ^2S_{1/2}$ (D₂, 589.0 nm) and $^2P_{1/2} \to\, ^2S_{1/2}$ (D₁, 589.6 nm).
+
+(a) Calculate $g_J$ for the states $^2S_{1/2}$, $^2P_{1/2}$, and $^2P_{3/2}$.
+
+(b) In a weak magnetic field, draw the energy level diagram showing the splitting of all $m_J$ sublevels for both the $^2P_{3/2}$ and $^2S_{1/2}$ states.
+
+(c) Using the selection rule $\Delta m_J = 0, \pm 1$, determine the number of allowed transitions for the D₂ line. Sketch the resulting spectrum.
+
+(d) How does the pattern change in the Paschen–Back regime (very strong field)?
+
+## Problem 3: Quadratic Stark Effect in Hydrogen
+
+For the hydrogen ground state ($n = 1$), the first-order Stark effect vanishes by parity. The second-order (quadratic) Stark shift is:
+
+$$
+\Delta E^{(2)} = -\frac{1}{2}\alpha_s \mathcal{E}^2
+$$
+
+where $\alpha_s$ is the static polarizability and $\mathcal{E}$ is the electric field strength.
+
+(a) Explain why the first-order Stark effect vanishes for the ground state of hydrogen. (Hint: consider the parity of the wave function and the electric dipole operator.)
+
+(b) The polarizability of hydrogen in the ground state is $\alpha_s = \frac{9}{2}(4\pi\varepsilon_0)a_0^3$. Calculate the energy shift (in eV) for an electric field of $\mathcal{E} = 10^6\;\text{V/m}$.
+
+(c) For $n = 2$ in hydrogen, there is a first-order (linear) Stark effect. Explain why it exists for $n = 2$ but not for $n = 1$.
+
+## Problem 4: Magnetic Moment Measurement
+
+(a) In a magnetic field of $B = 0.5\;\text{T}$, calculate the energy splitting between the $m_J = +2$ and $m_J = -2$ sublevels of the $^3D_2$ state of calcium ($g_J = 7/6$).
+
+(b) A spectral line at $\lambda = 500\;\text{nm}$ is observed to split by $\Delta\lambda = 0.012\;\text{nm}$ in a field of $B = 1\;\text{T}$. Determine whether this is consistent with a normal Zeeman triplet. (Use $\Delta\lambda/\lambda = \Delta\nu/\nu$.)
+
+(c) Why are magnetically sensitive transitions problematic for atomic clocks? Which transitions are typically used instead?

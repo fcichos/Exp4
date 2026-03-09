@@ -1,0 +1,143 @@
+---
+title: "The Bohr Model"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Describe the key experimental evidence that led to the Bohr model
+- State Bohr's postulates and derive the energy levels of hydrogen
+- Calculate the Bohr radius and ionization energy
+- Explain the hydrogen spectral series (Lyman, Balmer, Paschen)
+- Discuss the limitations of the Bohr model
+:::
+
+## Historical Context
+
+By the early 20th century, several experimental observations defied classical physics explanations:
+
+- **Blackbody radiation** — Planck's quantization of energy (1900)
+- **Photoelectric effect** — Einstein's photon concept (1905)
+- **Atomic line spectra** — Discrete emission and absorption lines
+- **Rutherford scattering** — The nuclear model of the atom (1911)
+
+The challenge was clear: Rutherford's planetary model, with electrons orbiting a nucleus, was classically unstable — an accelerating charge radiates energy and would spiral into the nucleus within $\sim 10^{-11}$ s.
+
+## The Hydrogen Spectrum
+
+::: {.callout-important}
+## Experiment: Observing Atomic Line Spectra
+
+The discrete emission lines of hydrogen can be observed with a simple setup: a hydrogen gas discharge tube (a sealed glass tube at low pressure, $\sim 1$ mbar, with electrodes), powered by a high-voltage supply ($\sim 5$ kV). The discharge excites H₂ molecules, which dissociate, and the resulting hydrogen atoms emit light as they de-excite.
+
+Viewing the discharge through a **handheld spectroscope** (a small diffraction grating) immediately reveals the Balmer series: the red Hα line (656.3 nm), blue-green Hβ (486.1 nm), blue Hγ (434.0 nm), and violet Hδ (410.2 nm). A more precise measurement uses a **grating spectrometer**: a slit, collimating lens, diffraction grating (e.g., 600 lines/mm), and a CCD detector or eyepiece. From the measured wavelengths and the Rydberg formula, students can determine the Rydberg constant to $\sim 0.1\%$ accuracy.
+
+The discharge tube itself is a plasma — a partially ionized gas where electrons collisionally excite atoms. The characteristic pink-red glow of a hydrogen discharge arises from the dominance of the Hα emission line.
+:::
+
+The visible emission spectrum of hydrogen was empirically described by the **Balmer formula** (1885):
+
+$$
+\frac{1}{\lambda} = R_H \left(\frac{1}{4} - \frac{1}{n^2}\right), \quad n = 3, 4, 5, \ldots
+$$
+
+The **Rydberg formula** generalized this to all spectral series:
+
+$$
+\frac{1}{\lambda} = R_\infty \left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right), \quad n_2 > n_1
+$$ {#eq-rydberg}
+
+where $R_\infty = 1.097 \times 10^7 \, \text{m}^{-1}$ is the Rydberg constant.
+
+## Bohr's Postulates (1913)
+
+Niels Bohr proposed three revolutionary postulates:
+
+**Postulate 1 — Stationary orbits.** Electrons move in circular orbits around the nucleus without radiating energy. Only certain discrete orbits are allowed.
+
+**Postulate 2 — Quantization of angular momentum.** The orbital angular momentum of the electron is quantized in units of $\hbar$:
+
+$$
+L = m_e v r = n\hbar, \quad n = 1, 2, 3, \ldots
+$$ {#eq-bohr-quantization}
+
+**Postulate 3 — Quantum jumps.** Radiation is emitted or absorbed only when an electron transitions between stationary orbits. The photon energy equals the energy difference:
+
+$$
+h\nu = E_{n_2} - E_{n_1}
+$$
+
+## Derivation of Energy Levels
+
+For an electron in a circular orbit of radius $r$ around a proton, the Coulomb force provides the centripetal acceleration:
+
+$$
+\frac{e^2}{4\pi\varepsilon_0 r^2} = \frac{m_e v^2}{r}
+$$ {#eq-force-balance}
+
+Combining with the quantization condition @eq-bohr-quantization, we find the **Bohr radius**:
+
+$$
+a_0 = \frac{4\pi\varepsilon_0 \hbar^2}{m_e e^2} = 0.529 \, \text{Å}
+$$ {#eq-bohr-radius}
+
+and the allowed orbital radii:
+
+$$
+r_n = n^2 a_0
+$$
+
+The total energy (kinetic + potential) of the $n$-th orbit is:
+
+$$
+E_n = -\frac{m_e e^4}{2(4\pi\varepsilon_0)^2 \hbar^2} \cdot \frac{1}{n^2} = -\frac{13.6 \, \text{eV}}{n^2}
+$$ {#eq-bohr-energies}
+
+This gives the **ionization energy** of hydrogen: $E_I = 13.6 \, \text{eV}$.
+
+## Spectral Series
+
+The Rydberg formula @eq-rydberg is now explained by transitions between Bohr orbits:
+
+| Series | $n_1$ | $n_2$ | Spectral Region |
+|--------|-------|-------|-----------------|
+| Lyman | 1 | 2, 3, 4, … | Ultraviolet |
+| Balmer | 2 | 3, 4, 5, … | Visible |
+| Paschen | 3 | 4, 5, 6, … | Near infrared |
+| Brackett | 4 | 5, 6, 7, … | Infrared |
+| Pfund | 5 | 6, 7, 8, … | Far infrared |
+
+## Reduced Mass Correction
+
+For a finite nuclear mass $M$, the electron and nucleus orbit their common center of mass. Replacing $m_e$ by the **reduced mass**:
+
+$$
+\mu = \frac{m_e M}{m_e + M}
+$$
+
+gives a small but measurable correction. This explains the isotope shift between hydrogen and deuterium, discovered by Urey (1932).
+
+## Limitations of the Bohr Model
+
+While remarkably successful for hydrogen, the Bohr model has fundamental shortcomings:
+
+- Cannot explain spectra of multi-electron atoms
+- Cannot predict transition intensities (selection rules)
+- Cannot account for fine structure or the Lamb shift
+- Violates the uncertainty principle ($\Delta x \, \Delta p \geq \hbar/2$)
+- No justification for the angular momentum quantization rule
+
+These limitations motivate the full quantum mechanical treatment using the Schrödinger equation.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Bohr model: $E_n = -13.6 \, \text{eV}/n^2$, $r_n = n^2 a_0$
+- Bohr radius: $a_0 = 0.529$ Å
+- Rydberg constant: $R_\infty = 1.097 \times 10^7 \, \text{m}^{-1}$
+- The model correctly predicts hydrogen energy levels but fails for multi-electron atoms
+:::

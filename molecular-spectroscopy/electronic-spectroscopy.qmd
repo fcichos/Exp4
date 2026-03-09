@@ -1,0 +1,146 @@
+---
+title: "Electronic Spectroscopy and Fluorescence"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Describe electronic transitions in molecules and the Franck–Condon principle
+- Interpret UV-Vis absorption spectra with vibrational fine structure
+- Explain the Franck–Condon factors and their effect on spectral intensities
+- Distinguish between fluorescence, phosphorescence, and non-radiative decay
+- Describe a Jablonski diagram and the key photophysical processes
+- Explain the principles of confocal fluorescence microscopy and single-molecule detection
+- Describe photothermal detection as a complementary method for non-fluorescent species
+:::
+
+## Electronic Transitions in Molecules
+
+When a molecule absorbs a UV or visible photon, an electron is promoted from a bonding or non-bonding orbital to an antibonding orbital. Typical transitions:
+
+| Transition | Energy range | Example |
+|-----------|-------------|---------|
+| $\sigma \to \sigma^*$ | Far UV (<200 nm) | C–C, C–H bonds |
+| $n \to \sigma^*$ | UV (150–250 nm) | H₂O, amines |
+| $\pi \to \pi^*$ | UV-Vis (200–700 nm) | Conjugated systems |
+| $n \to \pi^*$ | UV-Vis (250–600 nm) | Carbonyls, azo compounds |
+
+## The Franck–Condon Principle
+
+Electronic transitions occur on a timescale ($\sim 10^{-15}$ s) much shorter than nuclear vibrations ($\sim 10^{-13}$ s). Therefore, the **nuclear positions and momenta are unchanged** during the electronic transition — this is the **Franck–Condon principle**.
+
+On a potential energy diagram, the transition is **vertical**: the molecule transitions from the equilibrium geometry of the initial state to the same geometry on the excited state potential surface.
+
+## Franck–Condon Factors
+
+The transition probability from vibrational level $v'$ (ground electronic state) to $v''$ (excited electronic state) is proportional to the **Franck–Condon factor**:
+
+$$
+|\langle v''|v'\rangle|^2
+$$ {#eq-franck-condon}
+
+This is the overlap integral between the vibrational wave functions of the two electronic states. The FC factors determine the **vibrational fine structure** of electronic absorption bands.
+
+### Equilibrium Geometry Shift
+
+If the excited state has a similar equilibrium geometry to the ground state, the $0 \to 0$ transition is strongest. If the geometry changes significantly (e.g., longer bond), higher vibrational levels are populated, and the absorption maximum shifts to $0 \to v''$ with $v'' > 0$.
+
+## The Jablonski Diagram
+
+The photophysical processes following light absorption are summarized in a **Jablonski diagram**:
+
+1. **Absorption** ($\sim 10^{-15}$ s): $S_0 \to S_1$ (or higher singlet states)
+2. **Internal conversion (IC)** ($\sim 10^{-12}$ s): Non-radiative relaxation within the same spin manifold ($S_2 \to S_1$)
+3. **Vibrational relaxation** ($\sim 10^{-12}$ s): Dissipation of excess vibrational energy to the solvent
+4. **Fluorescence** ($\sim 10^{-9}$ s): Radiative decay $S_1 \to S_0$ (spin-allowed, fast)
+5. **Intersystem crossing (ISC)** ($\sim 10^{-8}$ s): Non-radiative transition to triplet state ($S_1 \to T_1$, spin-forbidden, slow)
+6. **Phosphorescence** ($\sim 10^{-3}$–$10^0$ s): Radiative decay $T_1 \to S_0$ (spin-forbidden, very slow)
+
+## Fluorescence
+
+Key properties of fluorescence:
+
+- **Stokes shift:** Fluorescence occurs at **longer wavelengths** (lower energy) than absorption, due to vibrational relaxation in the excited state
+- **Mirror image rule:** The fluorescence spectrum is often an approximate mirror image of the absorption spectrum (same FC factors in reverse)
+- **Kasha's rule:** Fluorescence occurs from the lowest vibrational level of $S_1$, regardless of the initially excited state
+- **Quantum yield:** $\Phi_F = k_r/(k_r + k_{nr})$, where $k_r$ and $k_{nr}$ are the radiative and non-radiative decay rates
+- **Fluorescence lifetime:** $\tau_F = 1/(k_r + k_{nr})$, typically 1–10 ns
+
+## Phosphorescence
+
+Phosphorescence arises from the $T_1 \to S_0$ transition:
+
+- Spin-forbidden → long lifetime ($\mu$s to seconds)
+- Requires intersystem crossing (enhanced by heavy atoms through spin–orbit coupling)
+- Important in organic LEDs (OLEDs) and photochemistry
+
+## Applications of Fluorescence
+
+Fluorescence spectroscopy is widely used in:
+
+- Biological imaging (fluorescent proteins, dyes)
+- Analytical chemistry (trace detection)
+- Materials science (defect characterization)
+- Medical diagnostics
+
+::: {.callout-important}
+## Experiment: UV-Vis Absorption Spectrophotometer
+
+A benchtop UV-Vis spectrophotometer (e.g., a double-beam instrument) uses a deuterium lamp (UV) and a tungsten-halogen lamp (visible), a monochromator or diode-array detector, and measures the absorbance $A = -\log_{10}(I/I_0) = \varepsilon c l$ (Beer–Lambert law). The molar absorption coefficient $\varepsilon$ (units: L mol⁻¹ cm⁻¹) is characteristic of the chromophore and quantifies the transition strength. Typical values range from $\varepsilon \sim 10$ ($n \to \pi^*$, symmetry-forbidden) to $\varepsilon \sim 10^5$ ($\pi \to \pi^*$ in strongly absorbing dyes). UV-Vis spectrophotometry remains the workhorse for concentration determination via Beer–Lambert's law.
+:::
+
+## Confocal Fluorescence Microscopy
+
+In a **confocal fluorescence microscope**, a laser beam is focused through a high-NA objective (e.g., 60×, NA = 1.4 with oil immersion) to a diffraction-limited spot ($\sim 250$ nm). Fluorescence from the sample passes back through the objective and is separated from the excitation light by a dichroic mirror. A pinhole in the detection plane rejects out-of-focus light, providing optical sectioning with $\sim 500$ nm axial resolution.
+
+By raster-scanning the laser across the sample (or moving the sample on a piezo stage), a fluorescence image is built up pixel by pixel. The confocal geometry is essential for studying thin biological samples, single molecules at interfaces, and nanostructures.
+
+## Single-Molecule Fluorescence Detection
+
+At sufficiently low concentrations ($\sim$ pM–nM), the confocal excitation volume ($\sim 1$ fL) contains at most one fluorescent molecule at a time. The fluorescence of individual molecules can then be recorded, revealing information hidden in ensemble averages:
+
+- **Fluorescence intermittency (blinking):** Single molecules stochastically switch between bright (on) and dark (off) states — a direct observation of quantum jumps between electronic states (e.g., triplet shelving or spectral diffusion).
+
+- **Photon antibunching:** The emitted photons show sub-Poissonian statistics: the probability of detecting two photons simultaneously is zero ($g^{(2)}(0) = 0$), proving that the signal comes from a single quantum emitter.
+
+- **FRET (Förster Resonance Energy Transfer):** When a donor and acceptor fluorophore are separated by $\sim 1\text{–}10$ nm, non-radiative energy transfer via dipole–dipole coupling competes with donor fluorescence. Measuring the transfer efficiency $E = 1/(1 + (r/R_0)^6)$ gives the inter-dye distance $r$ with Ångström precision — a "spectroscopic ruler" for conformational dynamics.
+
+- **Fluorescence correlation spectroscopy (FCS):** Analyzing the temporal autocorrelation of the fluorescence intensity fluctuations from molecules diffusing through the focus yields diffusion coefficients ($D \sim 10^{-10}\text{–}10^{-12}\;\text{m}^2/\text{s}$) and concentrations at the single-molecule level.
+
+::: {.callout-tip}
+## Research Highlight: Photothermal Single-Particle Detection
+
+Fluorescence detection requires the molecule to emit — but many important nanoscale objects (metal nanoparticles, carbon nanotubes, semiconductor quantum dots with low quantum yield) absorb light efficiently without fluorescing. **Photothermal microscopy** detects these non-fluorescent absorbers by measuring the heat they release.
+
+**Principle:** A modulated pump laser ($\sim$ MHz) heats the absorbing nanoparticle, creating a time-varying temperature field in the surrounding medium. The resulting modulation of the local refractive index is detected by a second, non-resonant probe laser whose forward-scattered field acquires a phase modulation. Lock-in detection of the probe signal at the pump modulation frequency yields an absorption signal proportional to the particle's absorption cross-section $\sigma_{\text{abs}}$.
+
+The sensitivity is remarkable: photothermal microscopy can detect individual gold nanoparticles as small as 1.4 nm (about 67 atoms), and has been extended to single non-fluorescent organic molecules at cryogenic temperatures. The technique is inherently background-free (no absorption → no signal) and immune to photobleaching — the nanoparticle absorbs and heats indefinitely.
+
+**Photothermal correlation spectroscopy (PhoCS)** extends this concept to measure the diffusion and size of non-fluorescent nanoparticles in solution, analogous to FCS but based on absorption rather than fluorescence. The twin-beam variant (**Twin-PhoCS**) uses spatially separated pump and probe beams to access a wider range of diffusion timescales.
+:::
+
+## Super-Resolution Microscopy
+
+The diffraction limit ($\sim\lambda/(2\,\text{NA}) \approx 200$ nm) can be circumvented by exploiting the photophysics of single fluorophores:
+
+- **PALM/STORM:** Individual fluorophores are stochastically switched on and off. Only a sparse subset fluoresces in each camera frame, allowing their positions to be localized with $\sim 10\text{–}20$ nm precision. Accumulating many frames produces a pointillist super-resolution image. (Nobel Prize in Chemistry 2014 to Betzig, Hell, and Moerner.)
+
+- **STED:** Stimulated emission from a doughnut-shaped depletion beam shrinks the effective fluorescence spot to $\sim 30\text{–}50$ nm.
+
+These techniques have revolutionized cell biology, enabling direct visualization of protein organization at the nanoscale.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Franck–Condon principle: electronic transitions are vertical (nuclei don't move)
+- FC factors $|\langle v''|v'\rangle|^2$ determine vibrational fine structure
+- Fluorescence: $S_1 \to S_0$, nanosecond timescale, Stokes-shifted
+- Phosphorescence: $T_1 \to S_0$, spin-forbidden, long-lived
+- Single-molecule detection: photon antibunching, blinking, FRET, FCS
+- Photothermal microscopy: absorption-based detection of non-fluorescent nanoparticles
+- Super-resolution: PALM/STORM, STED — beyond the diffraction limit
+:::

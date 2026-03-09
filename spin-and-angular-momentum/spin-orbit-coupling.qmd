@@ -1,0 +1,119 @@
+---
+title: "Spin–Orbit Coupling"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain the physical origin of spin–orbit coupling
+- Derive the spin–orbit Hamiltonian and the Thomas precession correction
+- Apply the coupling to determine the fine structure of hydrogen
+- Use the quantum numbers $j$ and $m_j$ to label atomic states
+- Write term symbols and understand spectroscopic notation for single-electron atoms
+:::
+
+## Physical Origin
+
+In the electron's rest frame, the nucleus orbits the electron, creating a magnetic field at the electron's position. The electron's spin magnetic moment interacts with this field. Transforming back to the lab frame and including the **Thomas precession** (a relativistic kinematic effect), the spin–orbit Hamiltonian is:
+
+$$
+\hat{H}_{\text{SO}} = \frac{1}{2m_e^2c^2}\frac{1}{r}\frac{dV}{dr}\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}
+$$ {#eq-so-hamiltonian}
+
+For the Coulomb potential $V(r) = -Ze^2/(4\pi\varepsilon_0 r)$:
+
+$$
+\hat{H}_{\text{SO}} = \frac{Ze^2}{8\pi\varepsilon_0 m_e^2 c^2 r^3}\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}
+$$
+
+## Evaluating $\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}$
+
+Using the total angular momentum $\hat{\mathbf{J}} = \hat{\mathbf{L}} + \hat{\mathbf{S}}$:
+
+$$
+\hat{\mathbf{J}}^2 = \hat{\mathbf{L}}^2 + \hat{\mathbf{S}}^2 + 2\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}
+$$
+
+Therefore:
+
+$$
+\hat{\mathbf{L}}\cdot\hat{\mathbf{S}} = \frac{1}{2}(\hat{\mathbf{J}}^2 - \hat{\mathbf{L}}^2 - \hat{\mathbf{S}}^2)
+$$
+
+In the coupled basis $|n, \ell, s, j, m_j\rangle$:
+
+$$
+\langle\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}\rangle = \frac{\hbar^2}{2}[j(j+1) - \ell(\ell+1) - s(s+1)]
+$$ {#eq-ls-expectation}
+
+For a single electron ($s = 1/2$), the two possible values of $j$ are:
+
+- $j = \ell + 1/2$: $\langle\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}\rangle = \frac{\hbar^2}{2}\ell$ (parallel alignment, higher energy)
+- $j = \ell - 1/2$: $\langle\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}\rangle = -\frac{\hbar^2}{2}(\ell + 1)$ (antiparallel, lower energy)
+
+## $j$–$j$ Quantum Numbers
+
+In the presence of spin–orbit coupling, $m_\ell$ and $m_s$ are no longer good quantum numbers (they don't commute with $\hat{H}_{\text{SO}}$). Instead, the good quantum numbers are:
+
+$$
+n, \ell, s, j, m_j
+$$
+
+where $j = |\ell - s|, \ldots, \ell + s$ and $m_j = -j, -j+1, \ldots, j$.
+
+## Spectroscopic Notation: Term Symbols
+
+Atomic states are labeled using **term symbols**:
+
+$$
+n \, {}^{2S+1}L_J
+$$
+
+where $S$ is the total spin, $L$ is the orbital angular momentum letter (S, P, D, F, …), and $J$ is the total angular momentum. For single-electron atoms:
+
+| State | $\ell$ | $j$ | Term symbol |
+|-------|--------|-----|-------------|
+| $1s$ | 0 | 1/2 | $1\,{}^2S_{1/2}$ |
+| $2s$ | 0 | 1/2 | $2\,{}^2S_{1/2}$ |
+| $2p$ | 1 | 1/2, 3/2 | $2\,{}^2P_{1/2}$, $2\,{}^2P_{3/2}$ |
+| $3d$ | 2 | 3/2, 5/2 | $3\,{}^2D_{3/2}$, $3\,{}^2D_{5/2}$ |
+
+The superscript $2S+1 = 2$ (doublet) reflects the electron spin.
+
+## Fine Structure Splitting
+
+The fine structure splits the $2p$ level into:
+
+- $2\,{}^2P_{3/2}$ (higher energy, $j = 3/2$)
+- $2\,{}^2P_{1/2}$ (lower energy, $j = 1/2$)
+
+The splitting is proportional to $Z^4/n^3$ and increases rapidly with nuclear charge:
+
+$$
+\Delta E_{\text{SO}} \propto \frac{Z^4}{n^3\ell(\ell+1/2)(\ell+1)}
+$$
+
+For the hydrogen $2p$ level, this amounts to $\Delta E \approx 4.5 \times 10^{-5}$ eV.
+
+## The Landé Interval Rule
+
+For a given configuration, the energy intervals between adjacent $j$ levels follow the **Landé interval rule**:
+
+$$
+E(j) - E(j-1) \propto j
+$$
+
+This is useful for identifying term values from experimental spectra.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Spin–orbit coupling: $\hat{H}_{\text{SO}} \propto \hat{\mathbf{L}}\cdot\hat{\mathbf{S}}$
+- Good quantum numbers: $n, \ell, s, j, m_j$
+- Term symbols: $n\,{}^{2S+1}L_J$
+- Splitting: $\Delta E_{\text{SO}} \propto Z^4/n^3$, depends on $j$
+:::

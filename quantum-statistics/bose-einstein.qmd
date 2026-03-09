@@ -1,0 +1,86 @@
+---
+title: "Bose–Einstein Statistics"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Derive the Bose–Einstein distribution function
+- Explain the physical consequences of bosonic statistics
+- Apply Bose–Einstein statistics to the photon gas (blackbody radiation)
+- Describe the phonon gas and the Debye model for heat capacity
+- Explain the concept of a Bose–Einstein condensate at a qualitative level
+:::
+
+## The Bose–Einstein Distribution
+
+For non-interacting bosons in thermal equilibrium, the mean occupation number is:
+
+$$
+\bar{n}(\varepsilon) = \frac{1}{e^{(\varepsilon - \mu)/(k_BT)} - 1}
+$$ {#eq-bose-einstein}
+
+Note the crucial $-1$ in the denominator (vs. $+1$ for fermions). Since $\bar{n} \geq 0$, we must have $\mu \leq \varepsilon_{\min}$ (the chemical potential cannot exceed the lowest energy level).
+
+Key properties:
+
+- No upper limit on occupation: many bosons can share the same state
+- For $\varepsilon \gg k_BT$: both distributions approach the classical Maxwell–Boltzmann result $\bar{n} \approx e^{-(\varepsilon-\mu)/(k_BT)}$
+- At low temperatures, bosons tend to accumulate in the ground state
+
+## Application: The Photon Gas
+
+Photons are bosons with $s = 1$. For a photon gas in a cavity (blackbody radiation), the chemical potential $\mu = 0$ (photon number is not conserved). The mean occupation of a mode with frequency $\nu$ is:
+
+$$
+\bar{n}(\nu) = \frac{1}{e^{h\nu/(k_BT)} - 1}
+$$
+
+Combined with the photon density of states $g(\nu) = 8\pi\nu^2/c^3$, this gives the **Planck distribution**:
+
+$$
+u(\nu) = \frac{8\pi h\nu^3}{c^3}\frac{1}{e^{h\nu/(k_BT)} - 1}
+$$ {#eq-planck}
+
+This resolves the ultraviolet catastrophe of classical physics and recovers:
+
+- **Wien's law** ($h\nu \gg k_BT$): $u(\nu) \propto \nu^3 e^{-h\nu/(k_BT)}$
+- **Rayleigh–Jeans law** ($h\nu \ll k_BT$): $u(\nu) \propto \nu^2 k_BT$
+- **Stefan–Boltzmann law:** Total power $\propto T^4$
+- **Wien displacement law:** $\lambda_{\max}T = 2.898 \times 10^{-3}$ m·K
+
+## Application: Phonons and Heat Capacity
+
+Lattice vibrations in solids are quantized as **phonons** — bosons with $\mu = 0$. The **Debye model** treats the solid as an elastic continuum with a maximum frequency $\omega_D$:
+
+$$
+C_V = 9Nk_B\left(\frac{T}{\Theta_D}\right)^3\int_0^{\Theta_D/T}\frac{x^4 e^x}{(e^x - 1)^2}\,dx
+$$
+
+where $\Theta_D = \hbar\omega_D/k_B$ is the Debye temperature. This correctly gives:
+
+- $C_V \propto T^3$ at low temperatures (Debye $T^3$ law)
+- $C_V \to 3Nk_B$ at high temperatures (Dulong–Petit law)
+
+## Comparison: Fermi–Dirac vs. Bose–Einstein
+
+| Property | Fermions | Bosons |
+|----------|----------|--------|
+| Spin | Half-integer | Integer |
+| Distribution | $\frac{1}{e^{(\varepsilon-\mu)/(k_BT)}+1}$ | $\frac{1}{e^{(\varepsilon-\mu)/(k_BT)}-1}$ |
+| Max occupation | 1 | Unlimited |
+| $T = 0$ behavior | Filled Fermi sea | Bose–Einstein condensate |
+| Examples | Electrons, protons | Photons, phonons, ${}^4$He |
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Bose–Einstein distribution: $\bar{n} = 1/(e^{(\varepsilon-\mu)/(k_BT)} - 1)$
+- Photon gas ($\mu = 0$) → Planck's blackbody radiation law
+- Phonon gas → Debye model: $C_V \propto T^3$ at low $T$
+- No upper limit on boson occupation → macroscopic quantum phenomena
+:::

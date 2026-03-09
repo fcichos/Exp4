@@ -1,0 +1,63 @@
+---
+title: "Solutions — Exercise Sheet 7: Periodic Table and Atomic Structure"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Solution 1: The Aufbau Principle and Anomalies
+
+**(a)** Standard Aufbau: K: $[Ar]\,4s^1$; Cr: $[Ar]\,3d^4\,4s^2$ (naive); Cu: $[Ar]\,3d^9\,4s^2$ (naive).
+
+**(b)** Actual configurations:
+
+- Cr: $[Ar]\,3d^5\,4s^1$ (half-filled $d$ shell)
+- Cu: $[Ar]\,3d^{10}\,4s^1$ (fully filled $d$ shell)
+
+Half-filled and fully filled subshells are stabilized by: (1) maximum exchange energy (Hund's rule — all spins parallel in a half-filled shell maximizes the number of favorable exchange interactions), and (2) the extra stability from the spherical symmetry of the charge distribution.
+
+**(c)** K: $4s^1$ → $S = 1/2$, $L = 0$, $J = 1/2$: **$^2S_{1/2}$**
+
+Cr: $3d^5\,4s^1$ → $S = 3$ (all parallel), $L = 0$, $J = 3$... Actually: $3d^5$ gives $S_d = 5/2$, $L_d = 0$; $4s^1$ gives $S_s = 1/2$, $L_s = 0$. Total: $S = 3$, $L = 0$, $J = 3$: **$^7S_3$**
+
+Cu: $3d^{10}\,4s^1$ → $3d^{10}$ is closed shell. Only $4s^1$: **$^2S_{1/2}$**
+
+## Solution 2: Ionization Energies
+
+**(a)** General increase: as $Z$ increases across a period, effective nuclear charge increases while electrons are added to the same shell, so binding increases. Dips occur at special configurations.
+
+**(b)** Be ($2s^2$) vs. B ($2s^2\,2p^1$): The $2p$ electron in B is in a higher-energy subshell with less penetration and more screening. Removing it is easier than removing a $2s$ electron from the fully occupied $2s^2$ subshell of Be.
+
+**(c)** N ($2p^3$) vs. O ($2p^4$): Nitrogen has a half-filled $2p$ subshell (extra stability from exchange). Oxygen must place a fourth $2p$ electron into an already singly-occupied orbital, creating electron–electron repulsion (paired electrons). This pairing energy makes it easier to remove the extra electron from O.
+
+## Solution 3: X-Ray Spectra and Moseley's Law
+
+**(a)** The $K_\alpha$ photon energy corresponds to $n = 2 \to n = 1$ with effective charge $(Z - \sigma)$:
+
+$$
+h\nu = (Z-\sigma)^2 \times 13.6\;\text{eV}\left(1 - \frac{1}{4}\right) = \frac{3}{4}(Z-\sigma)^2 \times 13.6\;\text{eV}
+$$
+
+$$
+\nu = \frac{3R_\infty c}{4}(Z-\sigma)^2, \qquad \sqrt{\nu} = \sqrt{\frac{3R_\infty c}{4}}(Z - \sigma)
+$$
+
+This is Moseley's law. ✓
+
+**(b)** $E_{K\alpha} = \frac{3}{4}(Z-1)^2 \times 13.6\;\text{eV}$
+
+Cu ($Z = 29$): $E = 0.75 \times 28^2 \times 13.6 = 7997\;\text{eV} \approx 8.0\;\text{keV}$ (experimental: 8.05 keV ✓)
+
+Mo ($Z = 42$): $E = 0.75 \times 41^2 \times 13.6 = 17{,}140\;\text{eV} \approx 17.1\;\text{keV}$ (experimental: 17.5 keV ✓)
+
+**(c)** $6400 = 10.2(Z-1)^2 \implies (Z-1)^2 = 627 \implies Z-1 = 25.0 \implies Z = 26$
+
+This is **iron (Fe)**. ✓
+
+## Solution 4: The Auger Effect
+
+**(a)** $E_{\text{Auger}} = E_K - E_{L_1} - E_{L_{2,3}}$
+
+The binding energy released by filling the $K$ vacancy from $L_1$ is $E_K - E_{L_1}$. This energy ejects the $L_{2,3}$ electron, which leaves with kinetic energy $E_K - E_{L_1} - E_{L_{2,3}}$.
+
+**(b)** The Auger rate depends on the overlap of the wave functions of the electrons involved. For light elements, the electrons are closer together (smaller atom), so the Coulomb interaction between them is stronger, favoring the Auger process. For heavy elements, the radiative (fluorescence) rate scales as $Z^4$, overtaking the Auger rate.
+
+**(c)** Auger electrons have well-defined kinetic energies (typically 50–2000 eV). At these energies, the inelastic mean free path in solids is only 0.5–3 nm. Only Auger electrons from the top few atomic layers escape without energy loss, making AES inherently surface-sensitive.

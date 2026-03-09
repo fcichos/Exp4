@@ -1,0 +1,56 @@
+---
+title: "Solutions — Exercise Sheet 14: Raman, Fluorescence, and Electronic Spectroscopy"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Solution 1: Raman Spectroscopy
+
+**(a)** Laser: $\tilde{\nu}_0 = 1/532\times10^{-7} = 18{,}797\;\text{cm}^{-1}$
+
+Stokes: $\tilde{\nu}_S = 18{,}797 - 2331 = 16{,}466\;\text{cm}^{-1} \implies \lambda_S = 1/16466 = 607\;\text{nm}$
+
+Anti-Stokes: $\tilde{\nu}_{aS} = 18{,}797 + 2331 = 21{,}128\;\text{cm}^{-1} \implies \lambda_{aS} = 1/21128 = 473\;\text{nm}$
+
+**(b)** The anti-Stokes process requires the molecule to already be in an excited vibrational state. The population ratio is Boltzmann:
+
+$$
+\frac{I_{aS}}{I_S} = \left(\frac{\nu_0 + \Delta\nu}{\nu_0 - \Delta\nu}\right)^4 e^{-h\Delta\nu/(k_BT)}
+$$
+
+At room temperature for N₂: $h\Delta\nu/(k_BT) = hc\times2331/(k_B\times300) = 11.2$, so $I_{aS}/I_S \approx e^{-11.2} \approx 1.4\times10^{-5}$. The anti-Stokes line is about $10^5$ times weaker.
+
+**(c)** Raman scattering involves a two-photon process (absorption + emission), so the selection rule is $\Delta J = 0, \pm 2$ (each photon interaction changes $J$ by $\pm 1$, and $1+1 = 2$). The branches are: O-branch ($\Delta J = -2$), Q-branch ($\Delta J = 0$, unshifted), S-branch ($\Delta J = +2$).
+
+**(d)** In centrosymmetric molecules like CO₂, the rule of mutual exclusion states: vibrations that are IR-active are Raman-inactive, and vice versa. The symmetric stretch preserves the center of symmetry (no dipole change → IR-inactive, but polarizability changes → Raman-active). The asymmetric stretch breaks the symmetry (dipole change → IR-active, but no polarizability change to first order → Raman-inactive).
+
+## Solution 2: Brillouin Scattering
+
+**(a)** $\Delta\nu_B = 2nv_s\sin(\theta/2)/\lambda_0 = 2\times1.5\times5000\times\sin(45°)/532\times10^{-9}$
+
+$= 2\times1.5\times5000\times0.707/(5.32\times10^{-7}) = 10{,}605/(5.32\times10^{-7}) = 1.99\times10^{10}\;\text{Hz} \approx 20\;\text{GHz}$
+
+**(b)** Brillouin scattering involves acoustic phonons (sound waves) with frequencies in the GHz range. Raman scattering involves optical phonons (molecular vibrations) with frequencies in the THz range. Brillouin shifts are typically $10^3\text{–}10^4$ times smaller than Raman shifts.
+
+**(c)** The Brillouin shift ($\sim$GHz) is too small for a grating spectrometer to resolve (typical grating resolution $\sim$cm⁻¹ or $\sim$30 GHz). A Fabry–Pérot interferometer provides the much higher spectral resolution needed (free spectral range can be matched to the small Brillouin shift).
+
+## Solution 3: The Franck–Condon Principle
+
+**(a)** Classical: Electronic transitions occur so rapidly that the nuclei can be considered stationary during the transition (vertical transition on the potential energy diagram). Quantum mechanical: The transition probability between vibrational levels $v$ and $v'$ is proportional to $|\langle\chi_{v'}|\chi_v\rangle|^2$, the square of the overlap integral between the initial and final vibrational wave functions.
+
+**(b)** With $R_e' > R_e$, a vertical transition from $v = 0$ lands on the inner turning point of a higher vibrational level in the excited state. For a shift from 1.2 to 1.5 Å, the Franck–Condon maximum will be at $v' \approx 3\text{–}5$, depending on the force constants.
+
+**(c)** When $R_e' = R_e$, the equilibrium positions coincide, and the $v = 0$ wave function in the ground state overlaps most strongly with $v' = 0$ in the excited state. When $R_e' \gg R_e$, the vertical transition lands at a turning point high on the excited potential, so higher $v'$ levels have better overlap (their outer classical turning points match the ground state equilibrium position).
+
+## Solution 4: Fluorescence and Phosphorescence
+
+**(a)** Fluorescence: radiative decay between states of the same spin multiplicity (typically $S_1 \to S_0$), fast ($\tau \sim 1\text{–}100\;\text{ns}$). Phosphorescence: radiative decay between states of different multiplicity ($T_1 \to S_0$), spin-forbidden and therefore slow ($\tau \sim \mu\text{s to s}$).
+
+**(b)** Jablonski diagram shows: $S_0 \xrightarrow{\text{absorption}} S_1$ (or $S_2$), fast vibrational relaxation within $S_1$, fluorescence $S_1 \to S_0$, intersystem crossing $S_1 \rightsquigarrow T_1$, phosphorescence $T_1 \to S_0$, and internal conversion $S_1 \rightsquigarrow S_0$ (non-radiative).
+
+**(c)** $k_r = 1/\tau_r = 1/(10\times10^{-9}) = 10^8\;\text{s}^{-1}$
+
+$1/\tau = k_r + k_{nr} \implies k_{nr} = 1/\tau - k_r = 1/(4\times10^{-9}) - 10^8 = 2.5\times10^8 - 10^8 = 1.5\times10^8\;\text{s}^{-1}$
+
+$\Phi = k_r/(k_r + k_{nr}) = \tau/\tau_r = 4/10 = 0.4 = 40\%$
+
+**(d)** After absorption to $S_1(v' > 0)$, vibrational relaxation brings the molecule to $S_1(v' = 0)$ (losing energy to the solvent). Fluorescence then occurs from $v' = 0$ to various $v$ levels in $S_0$. The emitted photon has less energy than the absorbed one by the vibrational relaxation energies in both states. This energy loss is the Stokes shift, and it always red-shifts the emission.

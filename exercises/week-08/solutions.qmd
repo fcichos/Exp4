@@ -1,0 +1,67 @@
+---
+title: "Solutions — Exercise Sheet 8: Zeeman and Stark Effects"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Solution 1: Normal Zeeman Effect
+
+**(a)** For singlet states ($S = 0$), $g_J = 1$ for all levels. The transition $^1D_2 \to\, ^1P_1$ with selection rule $\Delta m = 0, \pm 1$ produces exactly **3 components** (the normal Zeeman triplet), regardless of the $J$ values.
+
+**(b)** $\Delta E = \mu_B B = 5.788 \times 10^{-5}\;\text{eV/T} \times 1\;\text{T} = 5.79 \times 10^{-5}\;\text{eV}$
+
+$\Delta\nu = \Delta E/h = 5.79 \times 10^{-5}/(4.136 \times 10^{-15}) = 14.0\;\text{GHz}$
+
+**(c)** Perpendicular to $B$: $\pi$ component ($\Delta m = 0$) is linearly polarized parallel to $B$; $\sigma^{\pm}$ components ($\Delta m = \pm 1$) are linearly polarized perpendicular to $B$. Along $B$: $\pi$ component is absent; $\sigma^{\pm}$ are right and left circularly polarized.
+
+## Solution 2: Anomalous Zeeman Effect
+
+**(a)** $g_J(^2S_{1/2}) = 2$; $g_J(^2P_{1/2}) = 2/3$; $g_J(^2P_{3/2}) = 4/3$.
+
+**(b)** $^2P_{3/2}$: $m_J = \pm 3/2, \pm 1/2$, splitting $= g_J m_J \mu_B B = (4/3)m_J\mu_B B$.
+
+$^2S_{1/2}$: $m_J = \pm 1/2$, splitting $= 2m_J\mu_B B$.
+
+The unequal $g$-factors produce an asymmetric splitting pattern.
+
+**(c)** D₂ line ($^2P_{3/2} \to\,^2S_{1/2}$): Upper level has 4 sublevels, lower has 2. With $\Delta m_J = 0, \pm 1$:
+
+From $m_J = +3/2$: $\Delta m = -1$ only → 1 transition.
+From $m_J = +1/2$: $\Delta m = 0, -1$ → 2 transitions.
+From $m_J = -1/2$: $\Delta m = 0, +1$ → 2 transitions.
+From $m_J = -3/2$: $\Delta m = +1$ only → 1 transition.
+
+Total: **6 components**.
+
+**(d)** In the Paschen–Back regime ($\mu_B B \gg$ fine structure splitting), $L$ and $S$ decouple from each other and precess independently around $B$. Good quantum numbers are $m_L$ and $m_S$. The splitting reverts to the normal Zeeman pattern with equally spaced components.
+
+## Solution 3: Quadratic Stark Effect
+
+**(a)** The first-order Stark shift is $\Delta E^{(1)} = \langle\psi|e\mathcal{E}z|\psi\rangle$. The operator $z$ has odd parity. The ground state $\psi_{100}$ has definite (even) parity, so $\langle\psi_{100}|z|\psi_{100}\rangle = 0$ — the expectation value of an odd operator in a state of definite parity vanishes.
+
+**(b)** $\alpha_s = \frac{9}{2}(4\pi\varepsilon_0)a_0^3 = \frac{9}{2} \times 4\pi \times 8.854 \times 10^{-12} \times (0.529\times10^{-10})^3$
+
+$= \frac{9}{2} \times 1.649 \times 10^{-41} = 7.42 \times 10^{-41}\;\text{C}^2\text{s}^2/(\text{kg·m}^3)$
+
+$\Delta E = -\frac{1}{2}\alpha_s\mathcal{E}^2 = -\frac{1}{2}\times 7.42\times10^{-41}\times(10^6)^2 = -3.71\times10^{-29}\;\text{J} = -2.3\times10^{-10}\;\text{eV}$
+
+This is a very tiny shift — Stark effects in the ground state are extremely small.
+
+**(c)** For $n = 2$, the $2s$ and $2p$ states are (nearly) degenerate in hydrogen. Degenerate perturbation theory with the Stark Hamiltonian $e\mathcal{E}z$ produces a non-zero matrix element $\langle 2s|z|2p\rangle \neq 0$ between states of opposite parity. This linear mixing of degenerate states gives a first-order (linear) Stark effect proportional to $\mathcal{E}$, not $\mathcal{E}^2$.
+
+## Solution 4: Magnetic Moment Measurement
+
+**(a)** Splitting: $\Delta E = g_J(m_{J,\max} - m_{J,\min})\mu_B B = (7/6)(2-(-2))\times 5.788\times10^{-5}\times 0.5$
+
+$= (7/6)\times 4 \times 2.894\times10^{-5} = 1.35\times10^{-4}\;\text{eV}$
+
+**(b)** For a normal Zeeman triplet, $\Delta\nu = \mu_B B/h = e B/(4\pi m_e)$.
+
+$\Delta\lambda/\lambda = \Delta\nu/\nu$, so $\Delta\lambda = \lambda^2 \Delta\nu/c = \lambda^2 eB/(4\pi m_e c)$
+
+$= (500\times10^{-9})^2 \times 1.76\times10^{11}\times 1/(4\pi\times 3\times10^8)$
+
+$= 2.5\times10^{-13}\times 1.40\times10^{1} = 0.012\;\text{nm}$
+
+This is consistent with a normal Zeeman triplet. ✓
+
+**(c)** Magnetically sensitive transitions shift frequency in stray magnetic fields, degrading clock accuracy. Atomic clocks use transitions with $m_F = 0 \to m_F = 0$ ("clock transitions"), which have zero first-order Zeeman shift.

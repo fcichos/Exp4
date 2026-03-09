@@ -1,0 +1,108 @@
+---
+title: "Hybridization"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain the concept of orbital hybridization and its motivation
+- Construct sp, sp², and sp³ hybrid orbitals from atomic orbitals
+- Relate hybridization to molecular geometry (linear, trigonal planar, tetrahedral)
+- Describe σ and π bonds in terms of hybrid and unhybridized p orbitals
+- Apply hybridization concepts to organic molecules (methane, ethylene, acetylene, benzene)
+:::
+
+## Motivation for Hybridization
+
+The ground state configuration of carbon is $1s^2\,2s^2\,2p^2$, with two unpaired electrons. Naively, carbon should form two bonds. However, carbon almost always forms **four bonds** (valence of 4). The explanation involves **hybridization** — the mixing of atomic orbitals to form new hybrid orbitals optimized for bonding.
+
+The energy cost of promoting a $2s$ electron to $2p$ is more than compensated by the energy gained from forming additional bonds.
+
+## sp³ Hybridization (Tetrahedral)
+
+Mixing one $s$ and three $p$ orbitals creates four equivalent **sp³ hybrid orbitals**:
+
+$$
+h_1 = \frac{1}{2}(s + p_x + p_y + p_z)
+$$
+$$
+h_2 = \frac{1}{2}(s + p_x - p_y - p_z)
+$$
+$$
+h_3 = \frac{1}{2}(s - p_x + p_y - p_z)
+$$
+$$
+h_4 = \frac{1}{2}(s - p_x - p_y + p_z)
+$$
+
+These four orbitals point toward the corners of a **tetrahedron**, with bond angles of **109.5°**.
+
+### Example: Methane (CH₄)
+
+Each sp³ hybrid on carbon overlaps with a hydrogen $1s$ orbital, forming four equivalent σ bonds. This explains the tetrahedral geometry of methane.
+
+### Example: Water (H₂O)
+
+Oxygen uses sp³ hybridization: two hybrid orbitals bond with hydrogen, and two contain lone pairs. The lone pairs compress the bond angle slightly from 109.5° to 104.5°.
+
+## sp² Hybridization (Trigonal Planar)
+
+Mixing one $s$ and two $p$ orbitals gives three **sp² hybrid orbitals** in a plane, with bond angles of **120°**. The remaining unhybridized $p$ orbital is perpendicular to this plane.
+
+### Example: Ethylene (C₂H₄)
+
+Each carbon is sp² hybridized:
+
+- Three sp² orbitals form **σ bonds** (two C–H and one C–C)
+- The unhybridized $p_z$ orbitals on adjacent carbons overlap laterally to form a **π bond**
+
+The C=C double bond thus consists of one σ bond + one π bond. The molecule is **planar** because rotation around the C–C axis would break the π bond.
+
+## sp Hybridization (Linear)
+
+Mixing one $s$ and one $p$ orbital gives two **sp hybrid orbitals** oriented at **180°**. Two unhybridized $p$ orbitals remain perpendicular to the bond axis.
+
+### Example: Acetylene (C₂H₂)
+
+Each carbon is sp hybridized:
+
+- Two sp orbitals form σ bonds (one C–H and one C–C)
+- Two pairs of unhybridized $p$ orbitals form two π bonds
+
+The C≡C triple bond consists of one σ + two π bonds. The molecule is **linear**.
+
+## Summary of Hybridization
+
+| Hybridization | Orbitals mixed | Geometry | Bond angle | Example |
+|---------------|---------------|----------|------------|---------|
+| sp | $s + p$ | Linear | 180° | C₂H₂, CO₂ |
+| sp² | $s + 2p$ | Trigonal planar | 120° | C₂H₄, BF₃ |
+| sp³ | $s + 3p$ | Tetrahedral | 109.5° | CH₄, NH₃, H₂O |
+
+## Delocalized Bonding: Benzene
+
+Benzene (C₆H₆) illustrates the limits of simple hybridization. Each carbon is sp² hybridized, forming σ bonds to two neighboring carbons and one hydrogen. The six remaining $p_z$ electrons are **delocalized** over the entire ring in π molecular orbitals.
+
+The delocalization energy (resonance stabilization) makes benzene more stable than would be predicted from three isolated C=C double bonds.
+
+## Hybridization in Quantum Mechanical Context
+
+Hybridization is a useful conceptual model, but it is important to remember:
+
+- Hybrid orbitals are not eigenstates of the atomic Hamiltonian
+- They are mathematically equivalent to the original atomic orbitals (just a unitary transformation)
+- The "best" hybridization is determined by the molecular environment (symmetry of the bonding partners)
+- For complex molecules, MO theory provides a more rigorous framework
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- sp³: tetrahedral (109.5°), sp²: trigonal planar (120°), sp: linear (180°)
+- Double bond = σ + π; Triple bond = σ + 2π
+- Hybridization explains molecular geometry via directed orbitals
+- Delocalized π systems (benzene) require MO theory for proper description
+:::

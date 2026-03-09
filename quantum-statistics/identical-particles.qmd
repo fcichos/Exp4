@@ -1,0 +1,109 @@
+---
+title: "Identical Particles"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain why identical particles are fundamentally indistinguishable in quantum mechanics
+- Distinguish between bosons and fermions based on their exchange symmetry
+- State the spin-statistics theorem
+- Construct symmetric and antisymmetric multi-particle wave functions
+- Describe the consequences of quantum statistics for occupation numbers
+:::
+
+## Indistinguishability in Quantum Mechanics
+
+In classical mechanics, identical particles can in principle be tracked by their trajectories. In quantum mechanics, this is fundamentally impossible: if two identical particles are in the same region of space, there is **no measurement** that can determine which particle is which.
+
+This leads to a profound consequence: the physics must be unchanged under particle exchange.
+
+## The Exchange Operator
+
+Define the **exchange operator** $\hat{P}_{12}$ that swaps the coordinates of particles 1 and 2:
+
+$$
+\hat{P}_{12}\Psi(\mathbf{x}_1, \mathbf{x}_2) = \Psi(\mathbf{x}_2, \mathbf{x}_1)
+$$
+
+Since $\hat{P}_{12}^2 = 1$, the eigenvalues of $\hat{P}_{12}$ are $\pm 1$:
+
+$$
+\Psi(\mathbf{x}_2, \mathbf{x}_1) = \pm\Psi(\mathbf{x}_1, \mathbf{x}_2)
+$$
+
+## Bosons and Fermions
+
+Nature allows only two possibilities:
+
+**Bosons** (symmetric wave function, $+1$):
+$$
+\Psi(\mathbf{x}_1, \mathbf{x}_2) = +\Psi(\mathbf{x}_2, \mathbf{x}_1)
+$$
+
+**Fermions** (antisymmetric wave function, $-1$):
+$$
+\Psi(\mathbf{x}_1, \mathbf{x}_2) = -\Psi(\mathbf{x}_2, \mathbf{x}_1)
+$$
+
+## The Spin-Statistics Theorem
+
+The connection between spin and statistics is one of the deepest results in physics:
+
+- **Integer spin** ($s = 0, 1, 2, \ldots$) → **Bosons** (symmetric)
+- **Half-integer spin** ($s = 1/2, 3/2, \ldots$) → **Fermions** (antisymmetric)
+
+| Particle | Spin | Statistics |
+|----------|------|-----------|
+| Photon | 1 | Boson |
+| Electron | 1/2 | Fermion |
+| Proton | 1/2 | Fermion |
+| Neutron | 1/2 | Fermion |
+| ${}^4$He atom | 0 | Boson |
+| ${}^3$He atom | 1/2 | Fermion |
+
+The spin-statistics theorem is proven rigorously in relativistic quantum field theory (Pauli, 1940).
+
+## Consequences for Occupation Numbers
+
+The symmetry requirement has dramatic consequences for how particles occupy quantum states:
+
+**Fermions:** The antisymmetry requirement means that if two fermions are in the same single-particle state, the wave function vanishes. This is the **Pauli exclusion principle**: each quantum state can be occupied by **at most one fermion**.
+
+**Bosons:** The symmetry requirement places no restriction on the number of particles per state. Any number of bosons can occupy the same quantum state. This leads to phenomena like **Bose–Einstein condensation** and **stimulated emission**.
+
+## Constructing Multi-Particle States
+
+For two non-interacting particles in single-particle states $\phi_a$ and $\phi_b$:
+
+**Bosons:**
+$$
+\Psi_S = \frac{1}{\sqrt{2}}[\phi_a(\mathbf{x}_1)\phi_b(\mathbf{x}_2) + \phi_a(\mathbf{x}_2)\phi_b(\mathbf{x}_1)]
+$$
+
+**Fermions:**
+$$
+\Psi_A = \frac{1}{\sqrt{2}}[\phi_a(\mathbf{x}_1)\phi_b(\mathbf{x}_2) - \phi_a(\mathbf{x}_2)\phi_b(\mathbf{x}_1)]
+$$
+
+For $N$ fermions, this generalizes to the **Slater determinant**. For $N$ bosons, the analogous construct is a **permanent** (determinant with all positive signs).
+
+## Exchange Forces
+
+Even without any physical interaction, quantum statistics creates an effective "exchange force":
+
+- **Fermions** tend to avoid each other (antisymmetric wave function has a node at $\mathbf{r}_1 = \mathbf{r}_2$) — this is the origin of the **exchange repulsion** that underlies the stability of matter
+- **Bosons** tend to cluster together (symmetric wave function is enhanced at $\mathbf{r}_1 = \mathbf{r}_2$) — this **bunching** effect is observable in photon correlation experiments
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Identical particles are fundamentally indistinguishable in QM
+- Bosons: symmetric wave function, integer spin, no occupation limit
+- Fermions: antisymmetric wave function, half-integer spin, Pauli exclusion
+- Spin-statistics theorem connects spin to exchange symmetry
+:::

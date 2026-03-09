@@ -1,0 +1,56 @@
+---
+title: "Exercise Sheet 3 — Atomic Orbitals and Hydrogen Spectrum"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: Orbital Shapes and Angular Distributions
+
+The spherical harmonics for $\ell = 1$ are:
+
+$$
+Y_1^0 = \sqrt{\frac{3}{4\pi}}\cos\theta, \qquad Y_1^{\pm 1} = \mp\sqrt{\frac{3}{8\pi}}\sin\theta\,e^{\pm i\varphi}
+$$
+
+(a) Show that $|Y_1^0|^2$ has its maximum along the $z$-axis and vanishes in the $xy$-plane.
+
+(b) Show that the real combinations $p_x = (Y_1^{-1} - Y_1^{+1})/\sqrt{2}$ and $p_y = i(Y_1^{-1} + Y_1^{+1})/\sqrt{2}$ are proportional to $\sin\theta\cos\varphi$ and $\sin\theta\sin\varphi$, respectively.
+
+(c) Sketch the angular probability distributions $|Y_1^0|^2$, $|p_x|^2$, and $|p_y|^2$ in three dimensions. Are the real combinations eigenstates of $\hat{L}_z$?
+
+## Problem 2: Hydrogen Spectral Series
+
+(a) Calculate the wavelengths of the first three lines of the Lyman series ($n' \to 1$, for $n' = 2, 3, 4$). Use $R_H = 1.0968 \times 10^7\;\text{m}^{-1}$.
+
+(b) The Balmer series was discovered empirically in 1885. In what range of wavelengths do the lines fall? Why was this series discovered before the others?
+
+(c) An astronomer observes an absorption line at $\lambda = 434.0\;\text{nm}$ from a distant gas cloud. Identify the transition responsible.
+
+## Problem 3: Fine Structure of Hydrogen
+
+The fine structure correction to the hydrogen energy levels (to first order in $\alpha^2$) is:
+
+$$
+E_{nj} = -\frac{13.6\;\text{eV}}{n^2}\left[1 + \frac{\alpha^2}{n^2}\left(\frac{n}{j + 1/2} - \frac{3}{4}\right)\right]
+$$
+
+where $j$ is the total angular momentum quantum number and $\alpha \approx 1/137$.
+
+(a) For $n = 2$, what are the possible values of $j$? Calculate the fine structure splitting between the $2p_{3/2}$ and $2p_{1/2}$ levels in eV and in GHz.
+
+(b) Draw an energy level diagram for $n = 1$ and $n = 2$ including fine structure. Label all levels with their spectroscopic notation ($n\ell_j$).
+
+(c) The Lamb shift separates the $2s_{1/2}$ and $2p_{1/2}$ levels by about 1057 MHz. Is this included in the formula above? What is its physical origin?
+
+## Problem 4: Radial Probability and Transition Rates
+
+(a) Plot (or sketch) the radial probability density $P(r) = r^2|R_{n\ell}(r)|^2$ for the states $1s$, $2s$, $2p$, and $3d$. How many radial nodes does each have?
+
+(b) The general rule is that $R_{n\ell}$ has $n - \ell - 1$ radial nodes. Verify this for the above states.
+
+(c) The transition rate for electric dipole radiation is proportional to $|\langle f|\hat{\mathbf{r}}|i\rangle|^2$. Using the selection rule $\Delta\ell = \pm 1$, which of the following transitions are allowed?
+
+   - $2p \to 1s$
+   - $2s \to 1s$
+   - $3d \to 2p$
+   - $3d \to 1s$
+   - $3s \to 2p$

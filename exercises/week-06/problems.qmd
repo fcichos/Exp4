@@ -1,0 +1,44 @@
+---
+title: "Exercise Sheet 6 — Multi-Electron Atoms: Helium and Beyond"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: The Helium Ground State
+
+(a) Write down the Hamiltonian for the helium atom (two electrons, nuclear charge $Z = 2$), identifying the kinetic energy, electron–nucleus attraction, and electron–electron repulsion terms.
+
+(b) In the **independent particle approximation** (neglecting electron–electron repulsion), the ground state energy is simply twice the hydrogen-like energy with $Z = 2$. Calculate this energy in eV.
+
+(c) The experimental ground state energy of helium is $-79.0\;\text{eV}$. Calculate the electron–electron repulsion energy and compare with the independent-particle result. What fraction of the total energy does the repulsion represent?
+
+(d) A better approximation uses a **variational** effective nuclear charge $Z_{\text{eff}}$. The variational energy is $E(Z_{\text{eff}}) = [-2Z_{\text{eff}}^2 + \frac{27}{8}Z_{\text{eff}}] \times 13.6\;\text{eV}$. Minimize this expression to find $Z_{\text{eff}}$ and the variational ground state energy. Compare with experiment.
+
+## Problem 2: Exchange Interaction and Singlet/Triplet States
+
+For the helium excited states ($1s)(nl$), the spatial wave function can be symmetric or antisymmetric under electron exchange.
+
+(a) Write the symmetric and antisymmetric spatial wave functions for the $(1s)(2s)$ configuration.
+
+(b) The corresponding spin states must be antisymmetric or symmetric (total wave function antisymmetric). Which spin state (singlet $S = 0$ or triplet $S = 1$) goes with which spatial function?
+
+(c) Define the **Coulomb integral** $J$ and the **exchange integral** $K$. Show that the singlet energy is $E_0 + J + K$ and the triplet energy is $E_0 + J - K$, where $E_0$ is the sum of single-particle energies.
+
+(d) Is the triplet or singlet state lower in energy? Give a physical argument in terms of the Pauli exclusion principle and electron–electron repulsion.
+
+## Problem 3: Electron Configurations
+
+(a) Write the full electron configuration for: Li ($Z = 3$), Ne ($Z = 10$), Na ($Z = 11$), and Ar ($Z = 18$).
+
+(b) Explain why the ground state of carbon is $^3P_0$ and not $^1D_2$ or $^1S_0$, even though all three arise from the $2p^2$ configuration.
+
+(c) Using Hund's rules, determine the ground state term symbol for:
+   - Oxygen (O): $[He]\,2s^2\,2p^4$
+   - Titanium (Ti): $[Ar]\,3d^2\,4s^2$
+
+## Problem 4: Screening and Effective Nuclear Charge
+
+(a) Explain qualitatively why, in multi-electron atoms, the $3s$ orbital has lower energy than the $3p$, which is lower than $3d$ (breaking the hydrogen-like degeneracy).
+
+(b) For sodium ($Z = 11$), the ionization energy is $5.14\;\text{eV}$. Using $E = -13.6\,Z_{\text{eff}}^2/n^2$ with $n = 3$ (the valence electron), calculate the effective nuclear charge $Z_{\text{eff}}$.
+
+(c) Compare $Z_{\text{eff}}$ with the bare nuclear charge and with the number of inner-shell electrons. Is the result physically reasonable?

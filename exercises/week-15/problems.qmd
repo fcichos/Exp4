@@ -1,0 +1,38 @@
+---
+title: "Exercise Sheet 15 — NMR Spectroscopy and Review"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: Larmor Precession and the NMR Signal
+
+(a) The Larmor frequency for protons ($^1$H) is $\nu_L = \gamma B_0/(2\pi)$ with $\gamma/(2\pi) = 42.58\;\text{MHz/T}$. Calculate the Larmor frequency at $B_0 = 11.7\;\text{T}$ (a 500 MHz NMR spectrometer).
+
+(b) Calculate the energy splitting between the two spin states ($m_I = \pm 1/2$) at this field strength. Compare with $k_BT$ at room temperature. What fraction of spins are in excess in the lower-energy state? (Use the high-temperature approximation.)
+
+(c) Explain why NMR is an inherently insensitive technique compared to optical spectroscopy. What strategies are used to improve sensitivity?
+
+## Problem 2: Chemical Shift
+
+The chemical shift is $\delta = (\nu - \nu_{\text{ref}})/\nu_{\text{ref}} \times 10^6$ (in ppm), where the reference is tetramethylsilane (TMS).
+
+(a) A proton resonance is observed at $300.0021\;\text{MHz}$ on a 300 MHz spectrometer ($\nu_{\text{ref}} = 300.0000\;\text{MHz}$). What is the chemical shift in ppm?
+
+(b) At what frequency would this same proton resonate on a 600 MHz spectrometer? What is the advantage of higher magnetic fields for NMR spectroscopy?
+
+(c) The ¹H chemical shifts of ethanol (CH₃CH₂OH) are approximately: CH₃ at 1.2 ppm, CH₂ at 3.7 ppm, and OH at variable position. Explain the trend in terms of electron shielding.
+
+## Problem 3: Spin–Spin Coupling
+
+(a) In the ¹H NMR spectrum of ethanol, the CH₃ group appears as a triplet and the CH₂ group as a quartet (ignoring coupling to OH). Explain this splitting pattern using the $n + 1$ rule.
+
+(b) The coupling constant between CH₃ and CH₂ protons in ethanol is $J = 7\;\text{Hz}$. Draw the expected spectrum, labeling the chemical shifts and splitting patterns. What is the total width of the quartet?
+
+(c) Explain why the coupling constant $J$ (in Hz) is independent of the magnetic field strength, while the chemical shift separation (in Hz) is proportional to $B_0$. Under what condition is the first-order analysis ($n + 1$ rule) valid?
+
+## Problem 4: Review — Connecting Atomic and Molecular Physics
+
+(a) The fine structure splitting of the sodium D-lines is $17\;\text{cm}^{-1}$. The rotational constant of CO is $B = 1.93\;\text{cm}^{-1}$. The vibrational frequency of HCl is $2991\;\text{cm}^{-1}$. Arrange these energies and explain the hierarchy: $E_{\text{electronic}} \gg E_{\text{vibrational}} \gg E_{\text{rotational}}$.
+
+(b) An atom has the configuration $[Ar]\,3d^3\,4s^2$. Determine the ground state term symbol. What element is this? How many spectral lines would you expect from the lowest-energy transition in a weak magnetic field?
+
+(c) A molecular spectroscopist observes a series of equally spaced absorption lines in the microwave region. The spacing is $\Delta\nu = 115.3\;\text{GHz}$. Identify the molecule and calculate its bond length. (Hint: it is the most abundant diatomic molecule in the interstellar medium after H₂.)

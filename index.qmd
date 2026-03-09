@@ -1,0 +1,45 @@
+---
+title: "Experimental Physics 4"
+subtitle: "Atomic and Molecular Physics — IPSP, Leipzig University"
+---
+
+# Welcome {.unnumbered}
+
+This is the lecture material for **Experimental Physics 4 (12-PHY-BIEP4)** in the International Physics Studies Program (IPSP) at Leipzig University, summer semester 2026.
+
+## About This Course
+
+Atomic and molecular physics lies at the heart of our understanding of the microscopic world. Building on the foundations of quantum mechanics from Experimental Physics 3, this course explores the quantum structure of atoms and molecules — from the hydrogen atom to complex multi-electron systems, and from simple diatomic molecules to the rich spectroscopy of molecular systems.
+
+We begin with the quantum mechanical treatment of the hydrogen atom and progressively build up to multi-electron atoms, understanding how the interplay of the Pauli principle, electron–electron interactions, and spin–orbit coupling gives rise to the structure of the periodic table. We study how atoms respond to external electric and magnetic fields and how the interaction of light with atoms leads to spectroscopy and laser physics.
+
+The second part of the course covers molecular physics: the formation of chemical bonds, molecular orbital theory, and the rotational, vibrational, and electronic degrees of freedom of molecules. We conclude with an overview of key spectroscopic techniques — infrared, Raman, fluorescence, and nuclear magnetic resonance spectroscopy — that are essential tools across physics, chemistry, and the life sciences.
+
+## Learning Outcomes
+
+After completing this module, students will be able to:
+
+- Solve the Schrödinger equation for the hydrogen atom and interpret quantum numbers, orbitals, and the hydrogen spectrum
+- Explain the role of electron spin, the Stern–Gerlach experiment, and spin–orbit coupling in atomic structure
+- Apply the Pauli exclusion principle and Hund's rules to describe multi-electron atoms and the periodic table
+- Analyze the behavior of atoms in external electric and magnetic fields (Zeeman and Stark effects)
+- Describe the principles of optical transitions, selection rules, and laser operation
+- Explain quantum statistics (Fermi–Dirac and Bose–Einstein) and the physics of Bose–Einstein condensation
+- Construct molecular orbitals using the LCAO method and explain chemical bonding and hybridization
+- Analyze rotational and vibrational spectra of diatomic and polyatomic molecules
+- Describe and compare spectroscopic techniques: IR, FTIR, Raman, Brillouin, NMR, and fluorescence spectroscopy
+
+## Course Format
+
+- **Lectures:** 4 SWS (semester hours per week), in English
+- **Exercises:** 2 SWS, weekly problem sets
+- **Credit Points:** 7 LP
+- **Prerequisites:** Experimental Physics 1–3, Theoretical Physics 1–2
+- **Examination:** Written exam (180 min); prerequisite: ≥50% of exercise points
+
+## Contact
+
+**Prof. Dr. Frank Cichos**\
+Peter Debye Institute for Soft Matter Physics\
+Leipzig University\
+[f.cichos@uni-leipzig.de](mailto:f.cichos@uni-leipzig.de)

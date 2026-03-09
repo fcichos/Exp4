@@ -1,0 +1,101 @@
+---
+title: "The Periodic Table"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain how the Pauli principle and orbital filling give rise to the structure of the periodic table
+- Identify the blocks (s, p, d, f) of the periodic table and relate them to orbital quantum numbers
+- Describe trends in ionization energy, atomic radius, and electron affinity
+- Explain the concept of screening and effective nuclear charge ($Z_{\text{eff}}$)
+- Discuss exceptions to the simple aufbau filling order
+:::
+
+## From Quantum Mechanics to the Periodic Table
+
+The periodic table — arguably the most important organizational scheme in all of science — emerges directly from quantum mechanics:
+
+1. The quantum numbers $(n, \ell, m_\ell, m_s)$ determine the allowed states
+2. The Pauli principle limits occupation to one electron per state
+3. The aufbau principle and Hund's rules determine the filling order
+4. Chemical properties are governed by the **valence electrons** (outermost shell)
+
+The periodicity arises because elements with the same valence electron configuration have similar chemical properties.
+
+## Blocks of the Periodic Table
+
+| Block | Orbitals being filled | Columns | Elements |
+|-------|----------------------|---------|----------|
+| s-block | $ns$ | 1–2 (+ He) | Alkali/alkaline earth metals, H, He |
+| p-block | $np$ | 13–18 | Main group elements, noble gases |
+| d-block | $(n-1)d$ | 3–12 | Transition metals |
+| f-block | $(n-2)f$ | Lanthanides, actinides | Rare earths |
+
+## Screening and Effective Nuclear Charge
+
+In a multi-electron atom, inner electrons **screen** the nuclear charge from outer electrons. The effective nuclear charge felt by an electron depends on its orbital:
+
+$$
+Z_{\text{eff}} = Z - \sigma
+$$
+
+where $\sigma$ is the **screening constant**. Slater's rules provide a systematic way to estimate $\sigma$. Key features:
+
+- $s$ electrons penetrate most strongly → feel largest $Z_{\text{eff}}$ → lowest energy
+- For a given $n$: $E_{ns} < E_{np} < E_{nd} < E_{nf}$
+- This $\ell$-dependent energy ordering is responsible for the aufbau filling order
+
+## Periodic Trends
+
+### Ionization Energy
+
+The first ionization energy generally **increases** across a period (increasing $Z_{\text{eff}}$) and **decreases** down a group (larger $n$, electron farther from nucleus). Notable exceptions occur at half-filled and fully filled subshells due to exchange energy stabilization.
+
+### Atomic Radius
+
+Atomic radius generally **decreases** across a period (electrons pulled closer by increasing $Z_{\text{eff}}$) and **increases** down a group (larger $n$).
+
+### Electron Affinity
+
+The energy released when adding an electron generally follows similar trends to ionization energy, with the noble gases and alkaline earth metals having near-zero or positive electron affinities (they resist gaining electrons).
+
+## Notable Exceptions in Electron Configuration
+
+Several elements deviate from the simple aufbau prediction:
+
+- **Chromium** ($Z = 24$): $[\text{Ar}]\,3d^5\,4s^1$ (not $3d^4\,4s^2$) — half-filled $3d$ subshell stabilization
+- **Copper** ($Z = 29$): $[\text{Ar}]\,3d^{10}\,4s^1$ (not $3d^9\,4s^2$) — fully filled $3d$ subshell
+- **Palladium** ($Z = 46$): $[\text{Kr}]\,4d^{10}$ (not $4d^8\,5s^2$)
+
+These exceptions arise from the near-degeneracy of $ns$ and $(n-1)d$ orbitals and the exchange energy that favors half-filled or fully filled subshells.
+
+## The Periodic Table and Atomic Spectra
+
+The ground state term symbol of each element provides key spectroscopic information. The first few elements:
+
+| Element | $Z$ | Configuration | Ground state term |
+|---------|-----|---------------|-------------------|
+| H | 1 | $1s^1$ | ${}^2S_{1/2}$ |
+| He | 2 | $1s^2$ | ${}^1S_0$ |
+| Li | 3 | $[He]\,2s^1$ | ${}^2S_{1/2}$ |
+| Be | 4 | $[He]\,2s^2$ | ${}^1S_0$ |
+| B | 5 | $[He]\,2s^2\,2p^1$ | ${}^2P_{1/2}$ |
+| C | 6 | $[He]\,2s^2\,2p^2$ | ${}^3P_0$ |
+| N | 7 | $[He]\,2s^2\,2p^3$ | ${}^4S_{3/2}$ |
+| O | 8 | $[He]\,2s^2\,2p^4$ | ${}^3P_2$ |
+| F | 9 | $[He]\,2s^2\,2p^5$ | ${}^2P_{3/2}$ |
+| Ne | 10 | $[He]\,2s^2\,2p^6$ | ${}^1S_0$ |
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Periodic table structure emerges from quantum numbers + Pauli principle + filling order
+- Four blocks: s, p, d, f — corresponding to the orbital being filled
+- Screening → $\ell$-dependent energies → aufbau filling order
+- Periodic trends: ionization energy ↑ across period, ↓ down group
+:::

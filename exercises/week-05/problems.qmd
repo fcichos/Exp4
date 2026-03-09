@@ -1,0 +1,60 @@
+---
+title: "Exercise Sheet 5 — Stern–Gerlach Experiment and Spin–Orbit Coupling"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: The Stern–Gerlach Experiment
+
+A beam of silver atoms (ground state $5s\,^2S_{1/2}$) passes through an inhomogeneous magnetic field with gradient $\partial B/\partial z = 100\;\text{T/m}$ over a length $L = 10\;\text{cm}$. The atoms have velocity $v = 500\;\text{m/s}$ and mass $m_{\text{Ag}} = 1.79 \times 10^{-25}\;\text{kg}$.
+
+(a) Into how many beams is the atomic beam split? Explain why.
+
+(b) Calculate the force on each component of the beam. Use $\mu_z = -g_J m_J \mu_B$ with $g_J = 2$ for silver's valence electron.
+
+(c) Calculate the deflection $\Delta z$ of each beam at the exit of the magnet. (Hint: the atom spends time $t = L/v$ in the field.)
+
+(d) If this experiment were done with hydrogen atoms in the $2p\;^2P_{3/2}$ state, into how many beams would the beam split?
+
+## Problem 2: Spin–Orbit Coupling
+
+The spin–orbit interaction Hamiltonian is:
+
+$$
+\hat{H}_{\text{SO}} = A(r)\,\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}
+$$
+
+where $A(r)$ depends on the radial wave function.
+
+(a) Using $\hat{\mathbf{J}} = \hat{\mathbf{L}} + \hat{\mathbf{S}}$ and $\hat{J}^2 = \hat{L}^2 + \hat{S}^2 + 2\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}$, express $\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}$ in terms of the quantum numbers $j$, $\ell$, and $s$.
+
+(b) For the hydrogen $2p$ state ($\ell = 1$, $s = 1/2$), calculate the spin–orbit splitting $\langle\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}\rangle$ for $j = 3/2$ and $j = 1/2$.
+
+(c) The **Landé interval rule** states that the energy gap between adjacent $j$ levels is proportional to the larger $j$ value. Verify this for the $2p$ doublet.
+
+## Problem 3: Term Symbols and Ground State Configurations
+
+Write the ground state term symbol $^{2S+1}L_J$ for the following atoms (use Hund's rules to determine $S$, $L$, and $J$):
+
+(a) Sodium (Na): $[Ne]\,3s^1$
+
+(b) Carbon (C): $[He]\,2s^2\,2p^2$
+
+(c) Nitrogen (N): $[He]\,2s^2\,2p^3$
+
+(d) Iron (Fe): $[Ar]\,3d^6\,4s^2$
+
+For each, state the number of $m_J$ substates.
+
+## Problem 4: Magnetic Moments and the Landé g-Factor
+
+The Landé g-factor is:
+
+$$
+g_J = 1 + \frac{j(j+1) + s(s+1) - \ell(\ell+1)}{2j(j+1)}
+$$
+
+(a) Calculate $g_J$ for the states $^2S_{1/2}$, $^2P_{1/2}$, $^2P_{3/2}$, and $^3D_2$.
+
+(b) The magnetic moment of an atom in state $|j, m_j\rangle$ along the field direction is $\mu_z = -g_J m_J \mu_B$. Calculate the maximum magnetic moment (in $\mu_B$) for each state in (a).
+
+(c) Show that for a state with $L = 0$ (pure spin), $g_J = 2$, and for $S = 0$ (pure orbital), $g_J = 1$.

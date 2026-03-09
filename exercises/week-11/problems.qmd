@@ -1,0 +1,52 @@
+---
+title: "Exercise Sheet 11 — The Hydrogen Molecule"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: The Born–Oppenheimer Approximation
+
+(a) Explain the physical basis of the Born–Oppenheimer approximation. Why is it valid to separate the nuclear and electronic motions?
+
+(b) The ratio of a typical electronic velocity to a nuclear velocity scales as $\sqrt{M/m_e}$, where $M$ is the nuclear mass. Estimate this ratio for hydrogen ($M = m_p$).
+
+(c) In the Born–Oppenheimer framework, the electronic energy $E_{\text{el}}(R)$ as a function of the internuclear distance $R$ acts as an effective potential for the nuclear motion. Sketch a typical bonding potential curve, labeling the equilibrium distance $R_e$, the dissociation energy $D_e$, and the zero-point energy.
+
+## Problem 2: The H₂⁺ Molecular Ion
+
+The simplest molecular system is H₂⁺ (one electron, two protons). In the LCAO (Linear Combination of Atomic Orbitals) approach, the trial wave functions are:
+
+$$
+\psi_{\pm} = \frac{1}{\sqrt{2(1 \pm S)}}(\phi_A \pm \phi_B)
+$$
+
+where $\phi_{A,B}$ are hydrogen $1s$ orbitals centered on nuclei A and B, and $S = \langle\phi_A|\phi_B\rangle$ is the overlap integral.
+
+(a) Which combination ($\psi_+$ or $\psi_-$) corresponds to the bonding orbital, and which to the antibonding orbital? Explain in terms of the electron probability density between the nuclei.
+
+(b) At the equilibrium distance of H₂⁺ ($R_e = 2.0\,a_0$), the overlap integral is $S \approx 0.59$. Calculate the normalization constants for $\psi_+$ and $\psi_-$.
+
+(c) The binding energy of H₂⁺ is $2.79\;\text{eV}$ and $R_e = 1.06\;\text{Å}$. The simple LCAO calculation gives $1.76\;\text{eV}$. Why is the LCAO result too small?
+
+## Problem 3: The H₂ Molecule
+
+(a) The H₂ molecule has two electrons. Write the complete wave function (spatial × spin) for the ground state in the Heitler–London valence bond approach.
+
+(b) Why must the ground state of H₂ be a spin singlet ($S = 0$)? What happens to the bond in the triplet state ($S = 1$)?
+
+(c) The experimental bond energy of H₂ is $4.75\;\text{eV}$ and the bond length is $0.74\;\text{Å}$. The Heitler–London calculation gives $3.14\;\text{eV}$. Name two improvements that bring the calculated value closer to experiment.
+
+## Problem 4: Molecular Potential Energy Curves
+
+The Morse potential is a good approximation for the potential energy of a diatomic molecule:
+
+$$
+V(R) = D_e\left[1 - e^{-a(R - R_e)}\right]^2
+$$
+
+where $D_e$ is the well depth, $R_e$ the equilibrium distance, and $a$ controls the width.
+
+(a) Show that near $R = R_e$, the Morse potential reduces to a harmonic oscillator with force constant $k = 2D_e a^2$.
+
+(b) For HCl, $D_e = 4.62\;\text{eV}$, $R_e = 1.27\;\text{Å}$, and $a = 1.87\;\text{Å}^{-1}$. Calculate the force constant $k$ and the fundamental vibrational frequency $\nu_0 = \frac{1}{2\pi}\sqrt{k/\mu}$, where $\mu$ is the reduced mass.
+
+(c) How many bound vibrational states does the Morse potential support? Use $n_{\text{max}} \approx D_e/(\hbar\omega) - 1/2$.

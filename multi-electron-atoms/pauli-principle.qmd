@@ -1,0 +1,100 @@
+---
+title: "The Pauli Exclusion Principle"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- State the Pauli exclusion principle and explain its origin in the antisymmetry of fermion wave functions
+- Construct Slater determinants for multi-electron wave functions
+- Explain the aufbau principle and the order of orbital filling
+- Determine electron configurations for atoms across the periodic table
+- Apply Hund's rules to find the ground state term of an atom
+:::
+
+## The Pauli Exclusion Principle (1925)
+
+Wolfgang Pauli formulated the exclusion principle: **no two identical fermions can occupy the same quantum state simultaneously.** For electrons in an atom, this means no two electrons can have the same set of four quantum numbers $(n, \ell, m_\ell, m_s)$.
+
+This is a direct consequence of the antisymmetry requirement for fermion wave functions. If two electrons had identical quantum numbers, the antisymmetric wave function would vanish identically — the state simply does not exist.
+
+## Slater Determinants
+
+For $N$ electrons, the antisymmetric wave function can be written as a **Slater determinant**:
+
+$$
+\Psi(\mathbf{x}_1, \ldots, \mathbf{x}_N) = \frac{1}{\sqrt{N!}}
+\begin{vmatrix}
+\phi_1(\mathbf{x}_1) & \phi_2(\mathbf{x}_1) & \cdots & \phi_N(\mathbf{x}_1) \\
+\phi_1(\mathbf{x}_2) & \phi_2(\mathbf{x}_2) & \cdots & \phi_N(\mathbf{x}_2) \\
+\vdots & \vdots & \ddots & \vdots \\
+\phi_1(\mathbf{x}_N) & \phi_2(\mathbf{x}_N) & \cdots & \phi_N(\mathbf{x}_N)
+\end{vmatrix}
+$$ {#eq-slater}
+
+where $\mathbf{x}_i = (\mathbf{r}_i, \sigma_i)$ includes both spatial and spin coordinates, and $\phi_k$ are the single-electron spin-orbitals. A Slater determinant automatically satisfies antisymmetry and the Pauli principle (it vanishes if any two $\phi_k$ are identical).
+
+## Shell Structure
+
+Each shell $n$ can hold a maximum of $2n^2$ electrons:
+
+| Shell | $n$ | Subshells | Orbitals | Max electrons |
+|-------|-----|-----------|----------|---------------|
+| K | 1 | $1s$ | 1 | 2 |
+| L | 2 | $2s, 2p$ | 4 | 8 |
+| M | 3 | $3s, 3p, 3d$ | 9 | 18 |
+| N | 4 | $4s, 4p, 4d, 4f$ | 16 | 32 |
+
+Each subshell $\ell$ holds $2(2\ell + 1)$ electrons (the factor of 2 from spin).
+
+## The Aufbau Principle
+
+In multi-electron atoms, the energy depends on both $n$ and $\ell$ (unlike hydrogen) because of electron–electron interactions and screening. The filling order approximately follows the $(n + \ell)$ rule (Madelung's rule):
+
+$$
+1s \to 2s \to 2p \to 3s \to 3p \to 4s \to 3d \to 4p \to 5s \to 4d \to \cdots
+$$
+
+The $4s$ orbital fills before $3d$ because $s$-electrons penetrate closer to the nucleus and experience less screening.
+
+## Hund's Rules
+
+For a partially filled subshell, the ground state configuration is determined by **Hund's rules** (in order of priority):
+
+**Rule 1:** Maximize the total spin $S$. Electrons occupy different $m_\ell$ orbitals with parallel spins before pairing up. (This minimizes Coulomb repulsion through the exchange interaction.)
+
+**Rule 2:** For a given $S$, maximize the total orbital angular momentum $L$. (This further reduces electron–electron repulsion.)
+
+**Rule 3:** For a given $S$ and $L$, the total angular momentum is:
+
+- $J = |L - S|$ if the subshell is **less than half-filled**
+- $J = L + S$ if the subshell is **more than half-filled**
+
+This last rule reflects the sign of the spin–orbit coupling energy.
+
+## Examples
+
+**Carbon** ($Z = 6$): $1s^2\,2s^2\,2p^2$
+
+The two $2p$ electrons: $S = 1$ (Hund's rule 1), $L = 1$ (Hund's rule 2), $J = 0$ (less than half-filled, rule 3). Ground state term: ${}^3P_0$.
+
+**Nitrogen** ($Z = 7$): $1s^2\,2s^2\,2p^3$
+
+Three $2p$ electrons: $S = 3/2$, $L = 0$, $J = 3/2$. Ground state: ${}^4S_{3/2}$.
+
+**Iron** ($Z = 26$): $[Ar]\,3d^6\,4s^2$
+
+Six $3d$ electrons: $S = 2$, $L = 2$, $J = 4$ (more than half-filled). Ground state: ${}^5D_4$.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Pauli principle: no two fermions in the same quantum state
+- Slater determinant: automatically antisymmetric $N$-electron wave function
+- Aufbau: orbital filling follows approximately the $(n + \ell)$ rule
+- Hund's rules: maximize $S$, then $L$, then $J = |L - S|$ or $L + S$
+:::

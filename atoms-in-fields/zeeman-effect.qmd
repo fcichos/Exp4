@@ -1,0 +1,137 @@
+---
+title: "The Zeeman Effect"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain the interaction of an atom with an external magnetic field
+- Derive the energy splitting in the normal Zeeman effect
+- Distinguish between the normal and anomalous Zeeman effects
+- Apply the Landé g-factor to calculate energy splittings
+- Describe the Paschen–Back effect in the strong-field limit
+:::
+
+## Atom in a Magnetic Field
+
+An atom with total magnetic moment $\boldsymbol{\mu}$ in an external magnetic field $\mathbf{B} = B\hat{z}$ has an interaction energy:
+
+$$
+\hat{H}_B = -\hat{\boldsymbol{\mu}} \cdot \mathbf{B}
+$$ {#eq-zeeman-hamiltonian}
+
+The total magnetic moment arises from both orbital and spin angular momentum:
+
+$$
+\hat{\boldsymbol{\mu}} = -\frac{\mu_B}{\hbar}(g_L\hat{\mathbf{L}} + g_S\hat{\mathbf{S}})
+$$
+
+where $g_L = 1$ (orbital g-factor) and $g_S \approx 2$ (spin g-factor).
+
+## Normal Zeeman Effect
+
+The **normal Zeeman effect** occurs when spin–orbit coupling can be neglected (or for $S = 0$ states). Each level with angular momentum $J$ splits into $2J + 1$ equally spaced sublevels:
+
+$$
+\Delta E = g_J m_J \mu_B B
+$$
+
+For $S = 0$: $g_J = 1$, and the splitting is simply $m_J \mu_B B$. A spectral line splits into **three components** (Lorentz triplet):
+
+- $\pi$ component: $\Delta m_J = 0$ (linearly polarized parallel to $\mathbf{B}$)
+- $\sigma^+$ component: $\Delta m_J = +1$ (circularly polarized)
+- $\sigma^-$ component: $\Delta m_J = -1$ (circularly polarized)
+
+## Anomalous Zeeman Effect
+
+When spin–orbit coupling is present ($S \neq 0$), the splitting pattern is more complex because $g_L \neq g_S$. The projection of $\hat{\boldsymbol{\mu}}$ on $\hat{\mathbf{J}}$ gives the **Landé g-factor**:
+
+$$
+g_J = 1 + \frac{J(J+1) + S(S+1) - L(L+1)}{2J(J+1)}
+$$ {#eq-lande-g}
+
+The energy shift is:
+
+$$
+\Delta E = g_J m_J \mu_B B
+$$ {#eq-anomalous-zeeman}
+
+Since $g_J$ differs for the upper and lower levels of a transition, the spectral line splits into more than three components — this is the **anomalous** Zeeman effect (which is actually the more common case).
+
+### Example: Sodium D Lines
+
+The sodium D lines ($3P \to 3S$) show the anomalous Zeeman effect:
+
+- $3\,{}^2S_{1/2}$: $g_J = 2$, splits into 2 sublevels
+- $3\,{}^2P_{1/2}$: $g_J = 2/3$, splits into 2 sublevels → 4 allowed transitions
+- $3\,{}^2P_{3/2}$: $g_J = 4/3$, splits into 4 sublevels → 6 allowed transitions
+
+## Selection Rules
+
+For electric dipole transitions in a magnetic field:
+
+$$
+\Delta m_J = 0 \,(\pi), \quad \Delta m_J = \pm 1 \,(\sigma^\pm)
+$$
+
+$$
+\Delta J = 0, \pm 1 \quad (J = 0 \not\to J = 0)
+$$
+
+The $\pi$ and $\sigma$ components have different polarizations, which can be used to analyze the Zeeman pattern experimentally.
+
+## Paschen–Back Effect
+
+In the **strong-field limit** ($\mu_B B \gg$ spin–orbit coupling), the magnetic field decouples $\hat{\mathbf{L}}$ and $\hat{\mathbf{S}}$, and the good quantum numbers become $m_L$ and $m_S$ (instead of $J$ and $m_J$):
+
+$$
+\Delta E = (m_L + 2m_S)\mu_B B
+$$
+
+The pattern simplifies to the normal Zeeman triplet with additional fine-structure corrections. The crossover between anomalous Zeeman and Paschen–Back regimes occurs when $\mu_B B \sim \Delta E_{\text{SO}}$.
+
+::: {.callout-important}
+## Experiment: Observing the Zeeman Effect in the Lab
+
+A classic teaching experiment uses a **cadmium spectral lamp** placed between the pole pieces of an electromagnet ($B \sim 0.5\text{–}1$ T). The red Cd line at 643.8 nm (a singlet–singlet transition, $S = 0$) shows the **normal Zeeman effect**: three cleanly separated $\pi$ and $\sigma$ components.
+
+The spectral splitting is resolved using a **Fabry–Pérot interferometer** (two parallel partially reflecting mirrors, finesse $\mathcal{F} \sim 30\text{–}50$). In the interference pattern (concentric rings), each ring splits into a triplet. From the splitting and the known free spectral range of the Fabry–Pérot, one measures $\Delta\nu = \mu_B B/h$ and determines the Bohr magneton $\mu_B$. Comparing the observed value with $\mu_B = e\hbar/(2m_e) = 9.274 \times 10^{-24}\;\text{J/T}$ gives a direct confirmation of the quantum mechanical prediction.
+
+Observing through a polarizer reveals the polarization: viewing **transverse** to $\mathbf{B}$ shows all three components (σ linearly polarized ⊥ to $\mathbf{B}$, π ∥ to $\mathbf{B}$); viewing **longitudinal** (along $\mathbf{B}$) shows only the two σ components, now circularly polarized.
+:::
+
+## The Stark Effect
+
+The analogous effect for electric fields is the **Stark effect**: an atom in an external electric field $\mathbf{E}$ acquires additional energy shifts. Unlike the magnetic case, the linear Stark effect occurs only for degenerate levels (as in hydrogen, where $\ell$-states of the same $n$ are mixed by the field). For non-degenerate levels, the leading effect is the **quadratic Stark effect**:
+
+$$
+\Delta E = -\frac{1}{2}\alpha_d E^2
+$$
+
+where $\alpha_d$ is the static dipole polarizability. The quadratic Stark effect is exploited in **Stark deceleration** of molecular beams: time-varying inhomogeneous electric fields slow molecules in low-field-seeking states, producing cold molecular samples ($\sim$ mK–μK) for precision spectroscopy and cold collision studies.
+
+## Applications of Atoms in Magnetic Fields
+
+The Zeeman interaction underpins several important technologies and experiments:
+
+- **Atomic clocks:** The cesium-133 hyperfine transition (9.192 GHz) at zero magnetic field defines the SI second. Magnetic shielding and bias field control are critical for reaching fractional accuracies of $\sim 10^{-16}$ (fountain clocks) to $10^{-18}$ (optical lattice clocks).
+
+- **Magnetic resonance imaging (MRI):** Nuclear spins in a spatially varying magnetic field precess at position-dependent Larmor frequencies. Gradient fields encode spatial information into the NMR signal (see the NMR chapter).
+
+- **Astrophysical spectroscopy:** The Zeeman splitting of spectral lines from stars and interstellar gas allows measurement of magnetic field strengths in astrophysical objects — from sunspots ($B \sim 0.1\text{–}0.3$ T) to neutron stars ($B \sim 10^8$ T).
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Zeeman interaction: $\hat{H}_B = g_J m_J \mu_B B$
+- Landé g-factor: $g_J = 1 + [J(J+1) + S(S+1) - L(L+1)]/(2J(J+1))$
+- Normal Zeeman: $S = 0$, three-line pattern
+- Anomalous Zeeman: $S \neq 0$, complex pattern determined by $g_J$
+- Paschen–Back: strong-field limit, $L$ and $S$ decouple
+- Stark effect: electric-field splitting, Stark deceleration of molecules
+- Applications: atomic clocks, MRI, astrophysical magnetic field measurements
+:::

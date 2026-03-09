@@ -1,0 +1,129 @@
+---
+title: "The Hydrogen Spectrum and Fine Structure"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain the origin of spectral series in terms of quantum transitions
+- Describe the fine structure of hydrogen and its physical origins
+- Distinguish between relativistic kinetic energy corrections and spin–orbit coupling
+- Discuss the Lamb shift and its significance for quantum electrodynamics
+- Explain the role of the Dirac equation in atomic physics
+:::
+
+## Spectral Series Revisited
+
+The hydrogen spectrum consists of discrete emission and absorption lines corresponding to transitions between energy levels:
+
+$$
+\frac{1}{\lambda} = R_\infty \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)
+$$
+
+The transition energy is $\Delta E = 13.6 \, \text{eV} \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$.
+
+## Fine Structure
+
+High-resolution spectroscopy reveals that each spectral line is actually a **multiplet** — a group of closely spaced lines. This **fine structure** arises from two relativistic corrections:
+
+### 1. Relativistic Kinetic Energy Correction
+
+The non-relativistic kinetic energy $p^2/(2m_e)$ is only the leading term in the relativistic expression:
+
+$$
+E_{\text{kin}} = \sqrt{p^2c^2 + m_e^2c^4} - m_e c^2 \approx \frac{p^2}{2m_e} - \frac{p^4}{8m_e^3c^2} + \cdots
+$$
+
+The first-order perturbation theory correction is:
+
+$$
+\Delta E_{\text{rel}} = -\frac{E_n^2}{2m_ec^2}\left(\frac{4n}{\ell + 1/2} - 3\right)
+$$
+
+This correction breaks the $\ell$-degeneracy: states with lower $\ell$ (which spend more time near the nucleus where the velocity is higher) experience a larger relativistic shift.
+
+### 2. Spin–Orbit Coupling
+
+The electron's spin magnetic moment interacts with the magnetic field produced by the orbital motion (in the electron's rest frame):
+
+$$
+\hat{H}_{\text{SO}} = \frac{1}{2m_e^2c^2}\frac{1}{r}\frac{dV}{dr}\hat{\mathbf{L}}\cdot\hat{\mathbf{S}}
+$$ {#eq-spin-orbit}
+
+The factor of $1/2$ is the **Thomas precession** correction. The spin–orbit energy depends on the total angular momentum quantum number $j$:
+
+$$
+\Delta E_{\text{SO}} \propto \langle \hat{\mathbf{L}}\cdot\hat{\mathbf{S}} \rangle = \frac{\hbar^2}{2}[j(j+1) - \ell(\ell+1) - s(s+1)]
+$$
+
+### Combined Fine Structure
+
+The total fine structure correction to the energy levels is:
+
+$$
+\Delta E_{\text{fs}} = -\frac{\alpha^2 E_n}{n}\left(\frac{1}{j + 1/2} - \frac{3}{4n}\right)
+$$ {#eq-fine-structure}
+
+where $\alpha = e^2/(4\pi\varepsilon_0\hbar c) \approx 1/137$ is the **fine-structure constant**. The energy now depends on both $n$ and $j$ (but not on $\ell$ separately), and the splitting is of order $\alpha^2 E_n \approx 10^{-4}$ eV.
+
+## The Dirac Equation
+
+The fine structure is naturally explained by the **Dirac equation** (1928), which is the relativistic wave equation for spin-½ particles:
+
+$$
+(i\hbar\gamma^\mu\partial_\mu - m_ec)\psi = 0
+$$
+
+The Dirac equation simultaneously accounts for relativistic effects, electron spin, and spin–orbit coupling. Its energy eigenvalues for hydrogen reproduce @eq-fine-structure exactly.
+
+## The Lamb Shift
+
+In 1947, Willis Lamb and Robert Retherford discovered that the $2S_{1/2}$ and $2P_{1/2}$ levels (which should be degenerate according to the Dirac equation) are in fact split by about 1057 MHz. This **Lamb shift** is explained by **quantum electrodynamics (QED)**: the electron interacts with the vacuum fluctuations of the electromagnetic field.
+
+The Lamb shift was one of the key experimental results that spurred the development of QED and is a triumph of modern theoretical physics.
+
+::: {.callout-important}
+## Experiment: The Lamb–Retherford Experiment
+
+Lamb and Retherford used a beam of hydrogen atoms, some of which were excited to the metastable $2S_{1/2}$ state by electron bombardment. (The $2S_{1/2}$ state is metastable because the $2S \to 1S$ E1 transition is forbidden by the $\Delta\ell = \pm 1$ selection rule; its lifetime is $\sim 0.14$ s.) A tunable microwave field was applied to drive transitions from $2S_{1/2}$ to $2P_{1/2}$. Atoms reaching the $2P_{1/2}$ state rapidly decay to the ground state ($\tau \sim 1.6$ ns) and no longer reach the detector. By scanning the microwave frequency and monitoring the metastable atom signal, the $2S_{1/2}$–$2P_{1/2}$ splitting was measured as $\sim 1057$ MHz — in dramatic conflict with the Dirac prediction of zero splitting.
+:::
+
+## Precision Hydrogen Spectroscopy
+
+::: {.callout-tip}
+## Research Frontier: The 1S–2S Transition
+
+The most precisely measured transition in all of physics is the hydrogen **1S–2S two-photon transition** at 243 nm. Because both the 1S and 2S states are long-lived (the 2S state is metastable), the natural linewidth is only $\sim 1.3$ Hz — yielding a potential fractional resolution of $\Delta\nu/\nu \sim 10^{-15}$.
+
+Theodor Hänsch and collaborators at the Max Planck Institute in Garching achieved this by combining a cold hydrogen beam with Doppler-free two-photon excitation using an optical frequency comb for absolute frequency measurement. The current value is:
+
+$$
+\nu_{\text{1S-2S}} = 2\,466\,061\,413\,187\,035\;\text{Hz}
+$$
+
+with fractional uncertainty $\sim 4 \times 10^{-15}$. This measurement determines the Rydberg constant, tests QED corrections to extraordinary precision, and constrains the proton charge radius — the latter being at the heart of the "proton radius puzzle" (a discrepancy between electronic and muonic hydrogen measurements that challenged the physics community from 2010 to 2019).
+:::
+
+## Hyperfine Structure
+
+An even finer splitting arises from the interaction between the electron's magnetic moment and the nuclear magnetic moment. For the hydrogen ground state, this gives the famous **21 cm line** (1420 MHz), which is of great importance in radio astronomy.
+
+$$
+\Delta E_{\text{hfs}} \propto \hat{\mathbf{I}} \cdot \hat{\mathbf{J}}
+$$
+
+where $\hat{\mathbf{I}}$ is the nuclear spin.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Fine structure ($\sim \alpha^2 E_n$): relativistic correction + spin–orbit coupling
+- Fine structure constant: $\alpha \approx 1/137$
+- Energy depends on $n$ and $j$ (not $\ell$ separately)
+- Lamb shift: QED correction splitting $2S_{1/2}$ and $2P_{1/2}$
+- Hyperfine structure: nuclear spin interaction → 21 cm line
+:::

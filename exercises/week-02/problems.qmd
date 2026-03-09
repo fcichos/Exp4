@@ -1,0 +1,60 @@
+---
+title: "Exercise Sheet 2 — Schrödinger Equation for Hydrogen"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: Separation of Variables
+
+The time-independent Schrödinger equation for the hydrogen atom (in atomic units, $\hbar = m_e = e = 4\pi\varepsilon_0 = 1$) reads:
+
+$$
+-\frac{1}{2}\nabla^2\psi - \frac{1}{r}\psi = E\psi
+$$
+
+(a) Write the Laplacian $\nabla^2$ in spherical coordinates $(r, \theta, \varphi)$.
+
+(b) Using the ansatz $\psi(r,\theta,\varphi) = R(r)\,Y(\theta,\varphi)$, separate the equation into a radial equation for $R(r)$ and an angular equation for $Y(\theta,\varphi)$. Identify the separation constant.
+
+(c) What are the allowed values of the separation constant, and how does it relate to the orbital angular momentum quantum number $\ell$?
+
+## Problem 2: Quantum Numbers and Degeneracy
+
+(a) List all quantum numbers $(n, \ell, m_\ell)$ for $n = 1, 2, 3$. How many states does each energy level have (ignoring spin)?
+
+(b) Show that the total degeneracy of level $n$ is $n^2$ (without spin) or $2n^2$ (with spin).
+
+(c) Why is the energy of hydrogen independent of $\ell$ and $m_\ell$ (the "accidental degeneracy")? Name one effect that breaks the $\ell$-degeneracy.
+
+## Problem 3: Normalization and Expectation Values
+
+The ground state wave function of hydrogen is:
+
+$$
+\psi_{100}(r) = \frac{1}{\sqrt{\pi}a_0^{3/2}}\,e^{-r/a_0}
+$$
+
+(a) Verify that $\psi_{100}$ is normalized: $\int |\psi_{100}|^2\,d^3r = 1$.
+
+(b) Calculate the expectation value $\langle r \rangle$ for the ground state.
+
+(c) Calculate $\langle r^2 \rangle$ and from it the standard deviation $\Delta r = \sqrt{\langle r^2\rangle - \langle r\rangle^2}$. Is the electron well-localized?
+
+(d) At what radius is the **radial probability density** $P(r) = 4\pi r^2|\psi_{100}|^2$ maximal? Compare with the Bohr radius.
+
+## Problem 4: The 2s and 2p States
+
+The normalized radial wave functions for $n = 2$ are:
+
+$$
+R_{20}(r) = \frac{1}{2\sqrt{2}}\left(\frac{1}{a_0}\right)^{3/2}\left(2 - \frac{r}{a_0}\right)e^{-r/(2a_0)}
+$$
+
+$$
+R_{21}(r) = \frac{1}{2\sqrt{6}}\left(\frac{1}{a_0}\right)^{3/2}\frac{r}{a_0}\,e^{-r/(2a_0)}
+$$
+
+(a) At what value of $r$ does the $2s$ radial function have a node? Sketch $R_{20}(r)$ and $R_{21}(r)$.
+
+(b) Calculate $\langle r \rangle$ for both the $2s$ and $2p$ states. Which electron is, on average, farther from the nucleus?
+
+(c) Qualitatively explain why, in multi-electron atoms, the $2s$ level has lower energy than $2p$ (the concept of "penetration").

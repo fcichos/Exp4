@@ -1,0 +1,93 @@
+---
+title: "Solutions — Exercise Sheet 2: Schrödinger Equation for Hydrogen"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Solution 1: Separation of Variables
+
+**(a)** In spherical coordinates:
+
+$$
+\nabla^2 = \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right) + \frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right) + \frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\varphi^2}
+$$
+
+**(b)** Substituting $\psi = R(r)Y(\theta,\varphi)$ and multiplying by $-2r^2/(RY)$:
+
+$$
+\frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right) + 2r^2\left(E + \frac{1}{r}\right) = -\frac{1}{Y}\hat{L}^2_{\text{ang}} Y
+$$
+
+The left side depends only on $r$, the right only on angles. Both must equal a constant $\lambda = \ell(\ell+1)$.
+
+Radial equation:
+
+$$
+\frac{1}{r^2}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right) + \left[2E + \frac{2}{r} - \frac{\ell(\ell+1)}{r^2}\right]R = 0
+$$
+
+Angular equation:
+
+$$
+\hat{L}^2 Y(\theta,\varphi) = \ell(\ell+1)\hbar^2\, Y(\theta,\varphi)
+$$
+
+**(c)** The separation constant is $\ell(\ell+1)$ with $\ell = 0, 1, 2, \ldots, n-1$. This is the eigenvalue of the orbital angular momentum operator $\hat{L}^2$.
+
+## Solution 2: Quantum Numbers and Degeneracy
+
+**(a)** For $n = 1$: $(1,0,0)$ → 1 state.
+
+For $n = 2$: $(2,0,0), (2,1,-1), (2,1,0), (2,1,1)$ → 4 states.
+
+For $n = 3$: $\ell = 0$ (1 state) + $\ell = 1$ (3 states) + $\ell = 2$ (5 states) = 9 states.
+
+**(b)** For level $n$: $\sum_{\ell=0}^{n-1}(2\ell+1) = n^2$. With spin: $2n^2$.
+
+The sum can be verified: $\sum_{\ell=0}^{n-1}(2\ell+1) = 2\frac{(n-1)n}{2} + n = n^2$. ✓
+
+**(c)** The $\ell$-independence is due to a hidden $SO(4)$ symmetry specific to the $1/r$ Coulomb potential (Runge–Lenz vector is conserved). The $\ell$-degeneracy is broken by relativistic corrections (fine structure), the Lamb shift (QED), and in multi-electron atoms by electron–electron repulsion.
+
+## Solution 3: Normalization and Expectation Values
+
+**(a)** Using $d^3r = r^2\sin\theta\,dr\,d\theta\,d\varphi$:
+
+$$
+\int |\psi_{100}|^2 d^3r = \frac{1}{\pi a_0^3}\int_0^\infty r^2 e^{-2r/a_0}dr \cdot 4\pi = \frac{4}{a_0^3}\int_0^\infty r^2 e^{-2r/a_0}dr
+$$
+
+Using $\int_0^\infty r^2 e^{-\alpha r}dr = 2/\alpha^3$ with $\alpha = 2/a_0$:
+
+$$
+= \frac{4}{a_0^3}\cdot\frac{2a_0^3}{8} = 1 \quad\checkmark
+$$
+
+**(b)** $\langle r \rangle = \frac{4}{a_0^3}\int_0^\infty r^3 e^{-2r/a_0}dr = \frac{4}{a_0^3}\cdot\frac{6a_0^4}{16} = \frac{3}{2}a_0$
+
+**(c)** $\langle r^2 \rangle = \frac{4}{a_0^3}\int_0^\infty r^4 e^{-2r/a_0}dr = \frac{4}{a_0^3}\cdot\frac{24a_0^5}{32} = 3a_0^2$
+
+$$
+\Delta r = \sqrt{3a_0^2 - \frac{9}{4}a_0^2} = \frac{\sqrt{3}}{2}a_0 \approx 0.87\,a_0
+$$
+
+Since $\Delta r / \langle r\rangle = 1/\sqrt{3} \approx 0.58$, the electron is **not** sharply localized.
+
+**(d)** Setting $dP/dr = 0$ with $P(r) = \frac{4}{a_0^3}r^2 e^{-2r/a_0}$:
+
+$$
+\frac{dP}{dr} = \frac{4}{a_0^3}e^{-2r/a_0}\left(2r - \frac{2r^2}{a_0}\right) = 0 \implies r_{\max} = a_0
+$$
+
+The most probable radius equals the Bohr radius. ✓
+
+## Solution 4: The 2s and 2p States
+
+**(a)** $R_{20} = 0$ when $2 - r/a_0 = 0$, i.e., $r = 2a_0$. The $2s$ function has one radial node; the $2p$ function has no radial nodes but starts at $r = 0$ linearly.
+
+**(b)** Using the general formula $\langle r \rangle_{n\ell} = \frac{a_0}{2}[3n^2 - \ell(\ell+1)]$:
+
+- $2s$: $\langle r \rangle = \frac{a_0}{2}(12 - 0) = 6a_0$
+- $2p$: $\langle r \rangle = \frac{a_0}{2}(12 - 2) = 5a_0$
+
+The $2s$ electron is on average farther from the nucleus.
+
+**(c)** Although $\langle r \rangle_{2s} > \langle r \rangle_{2p}$, the $2s$ wave function has significant amplitude near $r = 0$ (it "penetrates" the inner electron shells). In multi-electron atoms, this penetration means the $2s$ electron experiences a larger effective nuclear charge and is therefore more tightly bound (lower energy) than $2p$.

@@ -1,0 +1,122 @@
+---
+title: "Solutions — Exercise Sheet 1: The Bohr Model"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Solution 1: Energy Levels and Spectral Lines
+
+**(a)** The ionization energy from the ground state ($n = 1$) is:
+
+$$
+E_{\text{ion}} = E_\infty - E_1 = 0 - (-13.6\;\text{eV}) = 13.6\;\text{eV}
+$$
+
+**(b)** The photon energy for $n = 3 \to n = 2$:
+
+$$
+\Delta E = 13.6\;\text{eV}\left(\frac{1}{2^2} - \frac{1}{3^2}\right) = 13.6 \times \frac{5}{36} = 1.889\;\text{eV}
+$$
+
+The wavelength:
+
+$$
+\lambda = \frac{hc}{\Delta E} = \frac{1240\;\text{eV·nm}}{1.889\;\text{eV}} = 656.3\;\text{nm}
+$$
+
+This is the red H-α line.
+
+**(c)** The series limit corresponds to $n \to \infty$ transitioning to $n = 2$:
+
+$$
+\Delta E = \frac{13.6\;\text{eV}}{4} = 3.4\;\text{eV}, \qquad \lambda = \frac{1240}{3.4} = 364.7\;\text{nm}
+$$
+
+**(d)** Lyman series: UV (transitions to $n = 1$, $\lambda < 121.6$ nm). Balmer series: visible/near-UV (transitions to $n = 2$, 364.7–656.3 nm). Paschen series: IR (transitions to $n = 3$, $\lambda > 820$ nm).
+
+## Solution 2: The Bohr Radius and Orbital Velocity
+
+**(a)** Coulomb force = centripetal force:
+
+$$
+\frac{e^2}{4\pi\varepsilon_0 r^2} = \frac{m_e v^2}{r}
+$$
+
+With $L = m_e v r = n\hbar$, so $v = n\hbar/(m_e r)$. Substituting:
+
+$$
+\frac{e^2}{4\pi\varepsilon_0 r^2} = \frac{m_e}{r}\frac{n^2\hbar^2}{m_e^2 r^2} = \frac{n^2\hbar^2}{m_e r^3}
+$$
+
+$$
+r_n = \frac{4\pi\varepsilon_0 n^2 \hbar^2}{m_e e^2} = n^2 a_0
+$$
+
+For $n = 1$: $a_0 = 4\pi\varepsilon_0 \hbar^2/(m_e e^2) = 0.529 \times 10^{-10}\;\text{m} = 0.529\;\text{Å}$.
+
+**(b)** The velocity in orbit $n$:
+
+$$
+v_n = \frac{e^2}{4\pi\varepsilon_0 n\hbar} = \frac{\alpha c}{n}
+$$
+
+where $\alpha = e^2/(4\pi\varepsilon_0\hbar c) \approx 1/137$ is the fine structure constant. For $n = 1$:
+
+$$
+v_1 = \alpha c \approx \frac{c}{137} \approx 2.19 \times 10^6\;\text{m/s}
+$$
+
+**(c)** Kinetic energy: $T_1 = \frac{1}{2}m_e v_1^2 = \frac{m_e \alpha^2 c^2}{2} = 13.6\;\text{eV}$. Indeed $T_1 = -E_1 = 13.6\;\text{eV}$. ✓
+
+## Solution 3: Hydrogen-Like Ions
+
+**(a)** He⁺ ($Z = 2$): $E_{\text{ion}} = 4 \times 13.6 = 54.4\;\text{eV}$.
+
+Li²⁺ ($Z = 3$): $E_{\text{ion}} = 9 \times 13.6 = 122.4\;\text{eV}$.
+
+**(b)** For He⁺, $n = 2 \to n = 1$:
+
+$$
+\Delta E = 4 \times 13.6 \times \left(1 - \frac{1}{4}\right) = 40.8\;\text{eV}
+$$
+
+$$
+\lambda = \frac{1240}{40.8} = 30.4\;\text{nm}
+$$
+
+For hydrogen: $\Delta E = 10.2\;\text{eV}$, $\lambda = 121.6\;\text{nm}$. The He⁺ line is 4× shorter — deep UV.
+
+**(c)** We need $Z^2 \times 10.2\;\text{eV}$ to give $\lambda$ between 400–700 nm, i.e., $\Delta E$ between 1.77–3.1 eV. This gives $Z^2 = 10.2/\Delta E$, so $Z^2 \approx 3.3\text{–}5.8$, meaning $Z = 2$ (He⁺) does not work ($\Delta E = 40.8$ eV). Actually, we should look at higher-$n$ transitions. For He⁺, the $n = 4 \to n = 3$ transition: $\Delta E = 4 \times 13.6 \times (1/9 - 1/16) = 2.64\;\text{eV}$, $\lambda = 469\;\text{nm}$ — visible (blue). ✓
+
+## Solution 4: Reduced Mass and Isotope Effects
+
+**(a)** For hydrogen: $\mu_H = m_e \times 1836.15/(1 + 1836.15) = m_e \times 0.999456$
+
+$$
+R_H = R_\infty \times 0.999456 = 1.09678 \times 10^7\;\text{m}^{-1}
+$$
+
+For deuterium: $\mu_D = m_e \times 3672.3/(1 + 3672.3) = m_e \times 0.999728$
+
+$$
+R_D = R_\infty \times 0.999728 = 1.09707 \times 10^7\;\text{m}^{-1}
+$$
+
+**(b)** Balmer-α ($n = 3 \to 2$): $1/\lambda = R \times 5/36$.
+
+$$
+\lambda_H = 656.28\;\text{nm}, \qquad \lambda_D = 656.10\;\text{nm}
+$$
+
+$$
+\Delta\lambda = \lambda_H - \lambda_D \approx 0.18\;\text{nm}
+$$
+
+This small but measurable shift allowed Urey to identify deuterium spectroscopically.
+
+**(c)** For positronium: $\mu = m_e/2$, so:
+
+$$
+E_1^{\text{Ps}} = -\frac{\mu}{m_e} \times 13.6\;\text{eV} = -6.8\;\text{eV}
+$$
+
+The ground state energy of positronium is half that of hydrogen.

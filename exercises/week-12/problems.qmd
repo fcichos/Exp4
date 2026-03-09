@@ -1,0 +1,36 @@
+---
+title: "Exercise Sheet 12 — Molecular Orbitals and Chemical Bonds"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: Molecular Orbital Diagrams
+
+(a) Draw the molecular orbital (MO) energy level diagram for O₂, filling in the 12 valence electrons. Use the correct ordering for second-row diatomics where $\sigma_{2p}$ lies above $\pi_{2p}$... or does it? (Careful: the ordering changes at O₂.)
+
+(b) Determine the bond order of O₂. Is it paramagnetic or diamagnetic? Explain.
+
+(c) Draw MO diagrams and determine the bond order for N₂ and F₂. Which has the stronger bond?
+
+## Problem 2: Hybridization and Molecular Geometry
+
+(a) Determine the hybridization of the central atom in: BF₃, CH₄, SF₆, and CO₂.
+
+(b) For ethylene (C₂H₄), each carbon is sp² hybridized. Draw the orbital picture showing all σ and π bonds. Explain why the molecule is planar.
+
+(c) In formaldehyde (H₂CO), what is the hybridization of carbon and oxygen? Draw the orbital picture and identify the lone pairs.
+
+## Problem 3: Bond Types and Properties
+
+(a) Classify the following bonds as predominantly ionic, covalent, or polar covalent: NaCl, HF, N₂, CO. Use electronegativity differences as a guide.
+
+(b) The bond in CO is unusual: despite the electronegativity difference (O is more electronegative), the dipole moment is very small ($\mu = 0.11\;\text{D}$) and points from O to C. Explain this using MO theory.
+
+(c) The bond dissociation energies are: N₂ (945 kJ/mol), O₂ (498 kJ/mol), F₂ (159 kJ/mol). Explain the trend using MO theory.
+
+## Problem 4: Molecular Symmetry
+
+(a) Which of the following molecules have a permanent electric dipole moment: H₂O, CO₂, NH₃, CH₄, HCl, SF₆? For each, briefly explain why or why not.
+
+(b) The dipole moment of HCl is $\mu = 1.08\;\text{D}$ and the bond length is $R = 1.27\;\text{Å}$. If the bond were purely ionic (H⁺Cl⁻), what would the dipole moment be? What fraction of an elementary charge is transferred?
+
+(c) Why does the dipole moment of a molecule determine whether it can absorb microwave radiation (rotational spectroscopy)?

@@ -1,0 +1,49 @@
+---
+title: "Literature and Resources"
+---
+
+## Primary Textbooks
+
+1. **C. J. Foot**, *Atomic Physics*, Oxford University Press (2005)
+   - An excellent modern textbook covering atomic physics with a good balance of theory and experiment. Covers hydrogen atom, multi-electron atoms, interaction of atoms with light, laser physics, and laser cooling. Particularly strong on experimental aspects.
+
+2. **H. Haken & H. C. Wolf**, *The Physics of Atoms and Quanta*, Springer (7th ed., 2005)
+   - A comprehensive textbook covering atomic structure, spectroscopy, and the periodic table. Well suited for the German university curriculum. Available in English.
+
+3. **H. Haken & H. C. Wolf**, *Molecular Physics and Elements of Quantum Chemistry*, Springer (2nd ed., 2004)
+   - The companion volume covering molecular physics: chemical bonding, molecular orbital theory, and molecular spectroscopy. Essential for the second half of this course.
+
+4. **M. Alonso & E. J. Finn**, *Physics*, Addison-Wesley
+   - A broad introductory physics textbook with solid coverage of atomic and molecular physics. Useful as a complementary reference.
+
+## Supplementary Texts
+
+5. **B. H. Bransden & C. J. Joachain**, *Physics of Atoms and Molecules*, Pearson (2nd ed., 2003)
+   - A detailed and mathematically rigorous treatment. Recommended for students seeking deeper theoretical understanding.
+
+6. **W. Demtröder**, *Atoms, Molecules and Photons*, Springer (3rd ed., 2018)
+   - A modern textbook with strong emphasis on experimental techniques and applications. Well illustrated with clear explanations.
+
+7. **R. Eisberg & R. Resnick**, *Quantum Physics of Atoms, Molecules, Solids, Nuclei, and Particles*, Wiley (2nd ed., 1985)
+   - A classic text providing a gentler introduction, useful for building intuition.
+
+8. **D. J. Griffiths**, *Introduction to Quantum Mechanics*, Cambridge University Press (3rd ed., 2018)
+   - The chapters on the hydrogen atom, angular momentum, and identical particles are excellent references for this course.
+
+## Online Resources
+
+- [NIST Atomic Spectra Database](https://www.nist.gov/pml/atomic-spectra-database) — Comprehensive database of atomic spectral lines and energy levels
+- [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/) — Quick reference for concepts in atomic and molecular physics
+- [The Orbitron](https://winter.group.shef.ac.uk/orbitron/) — Visualization of atomic orbitals and electron density
+- [MIT OCW 8.421 — Atomic and Optical Physics I](https://ocw.mit.edu/) — Advanced lectures by Wolfgang Ketterle
+- [SDBS Spectral Database](https://sdbs.db.aist.go.jp/) — IR, Raman, NMR, and mass spectra of organic compounds
+
+## Mathematical Prerequisites
+
+Students should be comfortable with:
+
+- Spherical coordinates and spherical harmonics
+- Eigenvalue problems and matrix diagonalization
+- Perturbation theory (time-independent and time-dependent)
+- Angular momentum algebra and Clebsch–Gordan coefficients
+- Fourier transforms (for spectroscopy)

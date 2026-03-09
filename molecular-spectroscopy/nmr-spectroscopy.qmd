@@ -1,0 +1,203 @@
+---
+title: "Nuclear Magnetic Resonance Spectroscopy"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain the physical basis of NMR in terms of nuclear spin precession
+- Derive the Larmor frequency and its dependence on the magnetic field
+- Define chemical shift and explain its origin in electron shielding
+- Describe spin–spin coupling (J-coupling) and its effect on NMR spectra
+- Interpret simple ¹H and ¹³C NMR spectra
+- Describe 2D NMR techniques (COSY, HSQC) and their use for structure elucidation
+- Explain the principles of magnetic resonance imaging (MRI)
+- Discuss solid-state NMR and its applications
+:::
+
+## Nuclear Spin
+
+Certain nuclei possess an intrinsic angular momentum (nuclear spin) $\hat{\mathbf{I}}$, with spin quantum number $I$. The most important NMR-active nuclei:
+
+| Nucleus | $I$ | Natural abundance | Gyromagnetic ratio $\gamma/(2\pi)$ (MHz/T) |
+|---------|-----|-------------------|---------------------------------------------|
+| ¹H | 1/2 | 99.98% | 42.58 |
+| ¹³C | 1/2 | 1.11% | 10.71 |
+| ¹⁹F | 1/2 | 100% | 40.05 |
+| ³¹P | 1/2 | 100% | 17.24 |
+
+Nuclei with $I = 0$ (e.g., ¹²C, ¹⁶O) are NMR-inactive.
+
+## Larmor Precession
+
+In an external magnetic field $\mathbf{B}_0 = B_0\hat{z}$, the nuclear magnetic moment precesses around the field direction at the **Larmor frequency**:
+
+$$
+\omega_L = -\gamma B_0, \qquad \nu_L = \frac{\gamma B_0}{2\pi}
+$$ {#eq-larmor}
+
+where $\gamma$ is the **gyromagnetic ratio** of the nucleus. For a spin-½ nucleus, there are two energy levels:
+
+$$
+E_{m_I} = -\gamma\hbar m_I B_0 = \mp\frac{1}{2}\gamma\hbar B_0
+$$
+
+The energy splitting is $\Delta E = \gamma\hbar B_0 = h\nu_L$.
+
+## The NMR Experiment
+
+In a typical NMR experiment:
+
+1. The sample is placed in a strong magnetic field ($B_0 \sim 1\text{–}20$ T)
+2. A radiofrequency (RF) pulse at frequency $\nu_L$ tips the nuclear magnetization away from equilibrium
+3. The **free induction decay (FID)** — the precessing magnetization — is detected
+4. Fourier transformation of the FID gives the NMR spectrum
+
+::: {.callout-important}
+## Experiment: A Pulsed FT-NMR Spectrometer
+
+A modern NMR spectrometer consists of a superconducting magnet (persistent current in a NbTi/Nb₃Sn solenoid cooled by liquid helium, providing $B_0 = 7\text{–}23.5$ T, corresponding to ¹H frequencies of 300–1000 MHz), a probe containing the RF coil surrounding the sample, a transmitter, and a receiver.
+
+The experiment proceeds as follows: a short, intense RF pulse ($\sim 10\;\mu$s, power $\sim 100$ W) at the Larmor frequency tips the bulk magnetization $\mathbf{M}$ by a flip angle $\theta = \gamma B_1 t_p$ (typically $\theta = 90°$ for maximum signal). After the pulse, the precessing transverse magnetization induces an oscillating voltage in the same coil — the **free induction decay (FID)**, which decays with time constant $T_2^*$ (typically ms to seconds). The FID is digitized (ADC sampling at $\sim 100$ kHz–1 MHz) and Fourier-transformed to yield the frequency-domain spectrum.
+
+**Sensitivity:** The thermal polarization is tiny — the population difference between spin-up and spin-down is $\Delta N/N \approx \gamma\hbar B_0/(2k_BT) \sim 10^{-5}$ at room temperature and 10 T. Signal averaging ($N_{\text{scans}}$) improves the signal-to-noise ratio as $\sqrt{N_{\text{scans}}}$. A typical ¹H spectrum of a $\sim 10$ mg sample requires only 1–16 scans, while ¹³C (1.1% natural abundance, lower $\gamma$) may need thousands.
+
+**Field homogeneity** is critical: $\Delta B/B < 10^{-9}$ over the sample volume is achieved by **shimming** — adjustable correction coils that cancel field gradients.
+:::
+
+### Signal Enhancement Techniques
+
+Several methods overcome the inherent low sensitivity of NMR:
+
+**Cross-polarization (CP):** Magnetization is transferred from abundant, high-$\gamma$ nuclei (¹H) to rare, low-$\gamma$ nuclei (¹³C, ¹⁵N) by matching the Hartmann–Hahn condition $\gamma_H B_{1,H} = \gamma_X B_{1,X}$, boosting the signal by a factor $\gamma_H/\gamma_X$.
+
+**Dynamic nuclear polarization (DNP):** Microwave irradiation transfers the much larger electron spin polarization ($\gamma_e/\gamma_H \approx 660$) to nuclear spins via paramagnetic dopants, enhancing NMR signals by factors of 10–400. This is an active area of research for sensitivity-limited applications.
+
+## Chemical Shift
+
+The local magnetic field at a nucleus differs from the applied field due to **electron shielding**:
+
+$$
+B_{\text{local}} = B_0(1 - \sigma)
+$$
+
+where $\sigma$ is the **shielding constant**. The resonance frequency shifts accordingly:
+
+$$
+\nu = \nu_0(1 - \sigma)
+$$
+
+The **chemical shift** is defined relative to a reference compound (TMS for ¹H and ¹³C):
+
+$$
+\delta = \frac{\nu - \nu_{\text{ref}}}{\nu_{\text{ref}}} \times 10^6 \quad \text{(ppm)}
+$$ {#eq-chemical-shift}
+
+Chemical shifts are **field-independent** (in ppm) and carry information about the electronic environment of each nucleus.
+
+### Typical ¹H Chemical Shifts
+
+| Group | $\delta$ (ppm) |
+|-------|----------------|
+| R–CH₃ (alkyl) | 0.8–1.0 |
+| R₂CH₂ | 1.2–1.4 |
+| =C–H (vinyl) | 4.5–6.5 |
+| Ar–H (aromatic) | 6.5–8.0 |
+| R–CHO (aldehyde) | 9.5–10.0 |
+| R–OH, R–NH | Variable |
+
+## Spin–Spin Coupling (J-Coupling)
+
+Neighboring magnetic nuclei interact through their bonding electrons, causing spectral lines to split into multiplets. The **coupling constant** $J$ (in Hz) is:
+
+- Independent of the applied magnetic field
+- Depends on the number and geometry of bonds between the coupled nuclei
+- Provides information about molecular connectivity and conformation
+
+### First-Order Multiplet Patterns
+
+For a nucleus coupled to $n$ equivalent spin-½ neighbors, the signal splits into $n + 1$ lines with intensities following **Pascal's triangle**:
+
+| $n$ neighbors | Pattern | Intensity ratio |
+|---------------|---------|----------------|
+| 0 | Singlet | 1 |
+| 1 | Doublet | 1:1 |
+| 2 | Triplet | 1:2:1 |
+| 3 | Quartet | 1:3:3:1 |
+
+### Example: Ethanol (CH₃CH₂OH)
+
+- CH₃: triplet ($n = 2$ from CH₂ neighbors)
+- CH₂: quartet ($n = 3$ from CH₃ neighbors)
+- OH: singlet (fast exchange averages coupling)
+
+## Relaxation
+
+After the RF pulse, the nuclear magnetization returns to equilibrium through two processes:
+
+- **$T_1$ (spin–lattice relaxation):** Recovery of longitudinal magnetization, typically 0.1–10 s. Caused by fluctuating local fields (molecular tumbling) at the Larmor frequency.
+- **$T_2$ (spin–spin relaxation):** Decay of transverse magnetization, $T_2 \leq T_1$. Caused by static and slowly fluctuating field inhomogeneities that dephase the precessing spins.
+
+The **Bloch equations** describe the time evolution of the magnetization vector $\mathbf{M}(t)$ phenomenologically, combining precession with exponential relaxation toward thermal equilibrium.
+
+## Two-Dimensional NMR
+
+One-dimensional NMR spectra of large molecules become hopelessly crowded. **2D NMR** spreads the information into two frequency dimensions, resolving overlapping peaks and revealing connectivity between nuclei.
+
+The general scheme: **preparation → evolution ($t_1$) → mixing → detection ($t_2$)**. The experiment is repeated for many values of $t_1$; a double Fourier transform over $t_1$ and $t_2$ produces the 2D spectrum $S(\omega_1, \omega_2)$.
+
+### COSY (Correlated Spectroscopy)
+
+In **¹H–¹H COSY**, cross-peaks appear between protons that are J-coupled (typically 2–3 bonds apart). Walking along the cross-peaks traces out the network of coupled spins — i.e., the molecular connectivity. COSY was one of the first 2D NMR experiments (Jeener, 1971; Ernst, Nobel Prize 1991).
+
+### HSQC (Heteronuclear Single Quantum Coherence)
+
+**HSQC** correlates ¹H with a directly bonded heteronucleus (¹³C or ¹⁵N). Each cross-peak connects a proton chemical shift ($\omega_2$) with the chemical shift of the attached carbon or nitrogen ($\omega_1$). HSQC is indispensable for protein NMR: in a ¹⁵N-HSQC spectrum of a labeled protein, each cross-peak corresponds to one amide N–H group, providing a "fingerprint" of the protein's backbone.
+
+### NOESY (Nuclear Overhauser Effect Spectroscopy)
+
+**NOESY** detects through-space dipolar relaxation between protons that are close in space ($< 5$ Å), regardless of whether they are bonded. The cross-peak intensities are proportional to $1/r^6$, providing distance restraints for 3D structure determination. This is the primary method by which protein and nucleic acid solution structures are determined (Wüthrich, Nobel Prize 2002).
+
+## Magnetic Resonance Imaging (MRI)
+
+::: {.callout-important}
+## Experiment: MRI — From Spins to Images
+
+**Magnetic resonance imaging** applies NMR principles to produce spatially resolved images of soft tissue, exploiting the fact that the human body is $\sim 70\%$ water and thus rich in ¹H nuclei.
+
+**Spatial encoding:** The key idea (Lauterbur, 1973; Mansfield, Nobel Prize 2003) is to apply **magnetic field gradients** $\mathbf{G} = (G_x, G_y, G_z)$, so that the Larmor frequency becomes position-dependent:
+
+$$
+\omega(\mathbf{r}) = \gamma(B_0 + \mathbf{G} \cdot \mathbf{r})
+$$
+
+By applying gradients along different directions during **slice selection** (a gradient during the RF pulse excites only a thin slice), **frequency encoding** (a gradient during readout maps position to frequency), and **phase encoding** (a gradient between excitation and readout imprints position-dependent phase), the NMR signal is modulated by position. The signal in **k-space** is the Fourier transform of the spin density; inverse Fourier transformation reconstructs the image.
+
+**Contrast mechanisms:** Different tissues have different $T_1$ and $T_2$ relaxation times (e.g., gray matter: $T_1 \approx 1.0$ s, $T_2 \approx 80$ ms at 1.5 T; CSF: $T_1 \approx 4.3$ s, $T_2 \approx 2.2$ s). By choosing appropriate pulse sequences (spin echo, gradient echo, inversion recovery) and timing parameters (TR, TE), images can be weighted toward $T_1$, $T_2$, or proton density contrast — all without ionizing radiation.
+
+**Functional MRI (fMRI):** The BOLD (blood oxygenation level dependent) effect exploits the fact that deoxygenated hemoglobin is paramagnetic while oxygenated hemoglobin is diamagnetic. Neural activity increases local blood flow and oxygenation, reducing $T_2^*$ dephasing. This provides an indirect measure of brain activity with $\sim 1$ mm spatial and $\sim 1$ s temporal resolution.
+:::
+
+## Solid-State NMR
+
+In solution, rapid molecular tumbling averages anisotropic interactions (dipolar coupling, chemical shift anisotropy) to their isotropic values, yielding sharp lines. In **solids**, these interactions are not averaged and produce broad, featureless spectra.
+
+**Magic-angle spinning (MAS):** Rapidly spinning the sample at the **magic angle** $\theta_m = \arccos(1/\sqrt{3}) = 54.74°$ with respect to $B_0$ averages the $(3\cos^2\theta - 1)$ angular dependence of dipolar and CSA interactions to zero, recovering high-resolution spectra. Modern MAS frequencies reach 100–150 kHz. Combined with cross-polarization (CP-MAS), this enables ¹³C, ¹⁵N, and ¹⁷O spectroscopy of insoluble materials: polymers, catalysts, pharmaceuticals, bone, and membrane proteins.
+
+**DNP-enhanced solid-state NMR** (combining dynamic nuclear polarization with MAS) pushes the sensitivity frontier, enabling structural studies of surface species, thin films, and materials at natural isotopic abundance.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Larmor frequency: $\nu_L = \gamma B_0/(2\pi)$
+- Chemical shift: $\delta$ (ppm) — reflects electronic environment
+- J-coupling: spin–spin splitting, $n+1$ rule for equivalent spin-½ neighbors
+- NMR provides detailed information about molecular structure and dynamics
+- 2D NMR: COSY (connectivity), HSQC (heteronuclear correlation), NOESY (spatial proximity → 3D structures)
+- MRI: spatial encoding via field gradients, $T_1$/$T_2$ contrast, fMRI (BOLD effect)
+- Solid-state NMR: magic-angle spinning averages anisotropic interactions
+:::

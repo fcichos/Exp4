@@ -1,0 +1,101 @@
+---
+title: "The Stark Effect"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Describe the interaction of an atom with an external electric field
+- Distinguish between the linear and quadratic Stark effects
+- Explain why hydrogen shows a linear Stark effect while other atoms show a quadratic one
+- Apply degenerate perturbation theory to the hydrogen Stark effect
+- Discuss applications of the Stark effect in spectroscopy
+:::
+
+## Atom in an Electric Field
+
+An atom in a uniform external electric field $\mathbf{E} = E\hat{z}$ acquires a perturbation:
+
+$$
+\hat{H}_E = e\mathbf{E}\cdot\hat{\mathbf{r}} = eEz = eEr\cos\theta
+$$ {#eq-stark-perturbation}
+
+This perturbation has odd parity ($z \to -z$), which has important consequences.
+
+## The Quadratic Stark Effect
+
+For most atoms, the energy levels are **non-degenerate** in $\ell$ (due to electron–electron interactions and screening). Since $\hat{H}_E$ has odd parity:
+
+$$
+\langle n, \ell, m | \hat{H}_E | n, \ell, m \rangle = 0
+$$
+
+The first-order correction vanishes. The leading effect is **second-order** (quadratic Stark effect):
+
+$$
+\Delta E = -\frac{1}{2}\alpha E^2
+$$ {#eq-quadratic-stark}
+
+where $\alpha$ is the **static electric polarizability** of the atom:
+
+$$
+\alpha = 2e^2\sum_{k \neq n}\frac{|\langle k|z|n\rangle|^2}{E_n - E_k}
+$$
+
+The energy shift is always negative (the atom is attracted to regions of stronger field) and proportional to $E^2$.
+
+## The Linear Stark Effect in Hydrogen
+
+Hydrogen is special: levels with different $\ell$ but the same $n$ are **degenerate** (in the non-relativistic limit). The matrix elements $\langle n, \ell', m'|\hat{H}_E|n, \ell, m\rangle$ can be non-zero for $\ell' = \ell \pm 1$ (selection rule from the parity of $z = r\cos\theta$).
+
+### Example: $n = 2$ Hydrogen
+
+The four degenerate states are $|2,0,0\rangle$ and $|2,1,m\rangle$ with $m = -1, 0, +1$. The perturbation matrix in this basis has the non-zero element:
+
+$$
+\langle 2,0,0 | eEz | 2,1,0 \rangle = -3eEa_0
+$$
+
+Diagonalizing the $2 \times 2$ submatrix (the $m = \pm 1$ states are unaffected), we find:
+
+$$
+\Delta E = \pm 3eEa_0
+$$ {#eq-linear-stark}
+
+This is the **linear Stark effect**: the energy shift is proportional to $E$ (first order). The two states are linear combinations of $|2s\rangle$ and $|2p_0\rangle$ — they have permanent electric dipole moments.
+
+### General Result for Hydrogen
+
+For arbitrary $n$, the linear Stark effect gives shifts:
+
+$$
+\Delta E = \frac{3}{2}n(n_1 - n_2)eEa_0
+$$
+
+where $n_1$ and $n_2$ are parabolic quantum numbers ($n_1 + n_2 + |m| + 1 = n$).
+
+## Stark Effect and Symmetry Breaking
+
+The Stark effect lifts the $m_J$ degeneracy. However, states with $+m_J$ and $-m_J$ remain degenerate in an electric field (unlike the magnetic case), because the electric field interaction depends on $|m_J|$ only (in the quadratic case).
+
+## Applications
+
+The Stark effect has numerous applications:
+
+- **Stark spectroscopy:** Measuring electric polarizabilities and dipole moments
+- **Electric field measurement:** Using known Stark shifts as calibration
+- **Stark deceleration:** Slowing polar molecules using time-varying electric fields
+- **Quantum computing:** Controlling atomic states with electric fields in Rydberg atoms
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Quadratic Stark effect (generic): $\Delta E = -\frac{1}{2}\alpha E^2$
+- Linear Stark effect (hydrogen): $\Delta E \propto eEa_0$ due to $\ell$-degeneracy
+- Hydrogen $n = 2$: $\Delta E = \pm 3eEa_0$
+- Electric field lifts $|m_J|$ degeneracy but preserves $\pm m_J$ symmetry
+:::

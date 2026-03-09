@@ -1,0 +1,144 @@
+---
+title: "Raman and Brillouin Spectroscopy"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Explain the Raman effect as inelastic light scattering
+- Distinguish between Stokes and anti-Stokes Raman scattering
+- Derive the selection rules for Raman scattering and compare with IR selection rules
+- Explain the complementarity of IR and Raman spectroscopy
+- Describe modern Raman techniques: SERS, CARS, and tip-enhanced Raman
+- Describe Brillouin scattering and its applications
+:::
+
+## The Raman Effect
+
+When monochromatic light (frequency $\nu_0$) illuminates a molecule, most photons are **elastically scattered** (Rayleigh scattering). However, a small fraction ($\sim 10^{-7}$) is **inelastically scattered** with a shifted frequency — this is the **Raman effect** (discovered by C. V. Raman, 1928, Nobel Prize 1930).
+
+The scattered light contains three components:
+
+- **Rayleigh line:** $\nu = \nu_0$ (elastic scattering)
+- **Stokes lines:** $\nu = \nu_0 - \nu_{\text{vib}}$ (photon loses energy to molecule)
+- **Anti-Stokes lines:** $\nu = \nu_0 + \nu_{\text{vib}}$ (photon gains energy from molecule)
+
+## Classical Description
+
+Classically, the Raman effect arises from the modulation of the molecular **polarizability** $\alpha$ by molecular vibrations:
+
+$$
+\alpha = \alpha_0 + \left(\frac{\partial\alpha}{\partial Q}\right)_0 Q(t) + \cdots
+$$
+
+where $Q(t) = Q_0\cos(\omega_{\text{vib}}t)$ is the normal coordinate. The induced dipole is:
+
+$$
+\mathbf{p} = \alpha\mathbf{E} = \alpha_0 E_0\cos(\omega_0 t) + \frac{1}{2}\left(\frac{\partial\alpha}{\partial Q}\right)_0 Q_0 E_0[\cos((\omega_0 - \omega_{\text{vib}})t) + \cos((\omega_0 + \omega_{\text{vib}})t)]
+$$
+
+The first term gives Rayleigh scattering; the last two give Stokes and anti-Stokes Raman lines.
+
+## Raman Selection Rules
+
+A vibration is **Raman-active** if the polarizability changes during the vibration:
+
+$$
+\left(\frac{\partial\alpha}{\partial Q}\right)_0 \neq 0
+$$ {#eq-raman-selection}
+
+For rotational Raman scattering:
+$$
+\Delta J = 0, \pm 2
+$$
+
+### Complementarity with IR
+
+The **rule of mutual exclusion** states that for molecules with a center of symmetry (e.g., CO₂, C₂H₂):
+
+- Symmetric vibrations → Raman-active, IR-inactive
+- Antisymmetric vibrations → IR-active, Raman-inactive
+
+For molecules without a center of symmetry, vibrations may be both IR- and Raman-active. Using both techniques provides a more complete picture of molecular vibrations.
+
+## Stokes vs. Anti-Stokes Intensities
+
+The intensity ratio of anti-Stokes to Stokes lines reflects the thermal population:
+
+$$
+\frac{I_{\text{anti-Stokes}}}{I_{\text{Stokes}}} = \left(\frac{\nu_0 + \nu_{\text{vib}}}{\nu_0 - \nu_{\text{vib}}}\right)^4 \exp\left(-\frac{h\nu_{\text{vib}}}{k_BT}\right)
+$$
+
+At room temperature, anti-Stokes lines are weaker because fewer molecules are in excited vibrational states.
+
+## Resonance Raman Spectroscopy
+
+When the excitation frequency $\nu_0$ approaches an electronic absorption band, certain Raman lines are enormously enhanced ($10^3\text{–}10^6$ times). This **resonance Raman** effect selectively probes the vibrations of the chromophore and is widely used in biophysics and materials science.
+
+::: {.callout-important}
+## Experiment: Raman Microscopy in the Lab
+
+A modern confocal Raman microscope consists of a laser source (commonly 532 nm or 785 nm), a high-NA microscope objective (e.g., 100×, NA = 0.9), edge or notch filters to suppress the Rayleigh line, and a spectrograph with a CCD detector. Spatial resolution reaches $\sim 300$ nm laterally and $\sim 1\;\mu\text{m}$ axially. Confocal pinholes reject out-of-focus light, enabling depth profiling in transparent samples. A motorized stage allows hyperspectral imaging: at each pixel, a complete Raman spectrum is recorded, producing chemical maps of heterogeneous materials, biological cells, or pharmaceutical tablets.
+:::
+
+## Surface-Enhanced Raman Scattering (SERS)
+
+Molecules adsorbed on nanostructured metal surfaces (typically Ag or Au) exhibit Raman signals enhanced by factors of $10^6\text{–}10^{10}$. This **SERS** effect arises from two mechanisms:
+
+- **Electromagnetic enhancement:** The localized surface plasmon resonance of metal nanostructures amplifies the electric field near the surface. At "hot spots" (gaps between nanoparticles), the local field can be $10^2\text{–}10^3$ times the incident field. Since Raman intensity scales as $|\mathbf{E}|^4$, field enhancement alone accounts for factors up to $\sim 10^{10}$.
+
+- **Chemical enhancement:** Charge transfer between the molecule and the metal surface modifies the molecular polarizability, contributing an additional factor of $\sim 10^1\text{–}10^2$.
+
+SERS enables detection down to the single-molecule level and is widely used in analytical chemistry, biosensing, and forensic science.
+
+## Coherent Anti-Stokes Raman Scattering (CARS)
+
+**CARS** is a nonlinear (four-wave mixing) Raman technique in which two laser beams — a pump ($\omega_p$) and a Stokes ($\omega_S$) beam — drive a specific vibrational mode when $\omega_p - \omega_S = \omega_{\text{vib}}$. A third photon ($\omega_p$) then generates a coherent anti-Stokes signal at $\omega_{\text{CARS}} = 2\omega_p - \omega_S$:
+
+$$
+\omega_{\text{CARS}} = 2\omega_p - \omega_S = \omega_p + \omega_{\text{vib}}
+$$
+
+CARS produces a **directional, coherent** beam (unlike spontaneous Raman, which is emitted isotropically), yielding signals that are orders of magnitude stronger. CARS microscopy is used for label-free imaging of lipids in biological tissue, with video-rate imaging capability.
+
+## Tip-Enhanced Raman Spectroscopy (TERS)
+
+**TERS** combines SERS with scanning probe microscopy: a sharp metal tip (Ag or Au, radius $\sim 10\text{–}30$ nm) acts as a nanoscale antenna that creates a strongly localized electromagnetic hot spot at its apex. Raman spectra are recorded as the tip scans across the sample. Spatial resolution of $\sim 1\text{–}10$ nm has been demonstrated, enabling chemical identification of individual molecules on surfaces — far beyond the optical diffraction limit.
+
+::: {.callout-tip}
+## Research Connection: Plasmonics and Nanoscale Spectroscopy
+
+The electromagnetic enhancement exploited in SERS and TERS is closely related to **thermoplasmonics**: the same localized surface plasmon resonances that amplify the electromagnetic field also lead to efficient photothermal heating of metal nanoparticles. This dual nature — field enhancement for spectroscopy and heat generation for photothermal applications — makes plasmonic nanostructures versatile tools for both chemical analysis and nanoscale energy conversion.
+:::
+
+## Brillouin Scattering
+
+**Brillouin scattering** is the inelastic scattering of light by acoustic phonons (sound waves) in a medium. The frequency shift is:
+
+$$
+\Delta\nu = \pm\frac{2nv_s\nu_0}{c}\sin\left(\frac{\theta}{2}\right)
+$$ {#eq-brillouin}
+
+where $n$ is the refractive index, $v_s$ is the sound velocity, and $\theta$ is the scattering angle. Brillouin spectroscopy is used to measure:
+
+- Elastic constants and sound velocities in materials
+- Viscoelastic properties of polymers and biological tissues
+- Phase transitions in crystals
+
+The frequency shifts are much smaller than Raman shifts (typically $\sim 0.1\text{–}1$ cm⁻¹ vs. $\sim 100\text{–}4000$ cm⁻¹ for Raman).
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Raman effect: inelastic light scattering, Stokes ($\nu_0 - \nu_{\text{vib}}$) and anti-Stokes ($\nu_0 + \nu_{\text{vib}}$)
+- Selection rule: polarizability must change during vibration ($\partial\alpha/\partial Q \neq 0$)
+- Complementary to IR: rule of mutual exclusion for centrosymmetric molecules
+- SERS: plasmonic enhancement up to $10^{10}$, single-molecule sensitivity
+- CARS: coherent nonlinear Raman, label-free imaging at video rate
+- TERS: tip-enhanced Raman, nanometer spatial resolution
+- Brillouin: scattering by acoustic phonons, measures elastic properties
+:::

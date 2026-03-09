@@ -1,0 +1,48 @@
+---
+title: "Course Overview"
+---
+
+## Module Description (12-PHY-BIEP4)
+
+**Experimental Physics 4 — Atomic and Molecular Physics** is a core module in the 4th semester of the International Physics Studies Program (IPSP) at Leipzig University.
+
+### Qualification Goals
+
+Students understand the fundamental concepts, phenomena, and terminology of atomic and molecular physics. They are able to apply quantum mechanical principles to describe atomic structure, spectroscopy, and molecular bonding. Students know both experimental and theoretical methods used to investigate atoms and molecules. With the acquired knowledge, students can independently solve problems in atomic and molecular physics and transfer their understanding to new contexts.
+
+### Module Structure
+
+| Component | Hours/Week | Format |
+|-----------|-----------|--------|
+| Lecture | 4 SWS | in English |
+| Exercises / Seminar | 2 SWS | in English |
+
+### Examination
+
+- **Type:** Written exam (180 minutes)
+- **Prerequisite:** At least 50% of the total exercise points over the semester
+- **Credit Points:** 7 LP
+- **Grading:** Standard scale (1.0–5.0)
+
+### Prerequisites
+
+- Experimental Physics 1–3 (Mechanics, Electrodynamics & Optics, Quantum Mechanics)
+- Theoretical Physics 1–2 (Mechanics, Electrodynamics)
+- Mathematics 1–2
+
+## Topics Overview
+
+The course covers the following major areas:
+
+### Part I — Atomic Physics
+
+1. **The Hydrogen Atom** — Bohr model, Schrödinger equation in the Coulomb potential, quantum numbers, orbitals, hydrogen spectrum, fine structure
+2. **Spin and Angular Momentum** — Orbital and spin angular momentum, Stern–Gerlach experiment, spin–orbit coupling, total angular momentum
+3. **Multi-Electron Atoms** — Helium atom, Pauli exclusion principle, Hund's rules, electron configurations, periodic table, X-ray spectra
+4. **Atoms in External Fields** — Zeeman effect (normal and anomalous), Stark effect, optical transitions, selection rules, laser principles
+5. **Quantum Statistics** — Identical particles, Fermi–Dirac and Bose–Einstein statistics, Bose–Einstein condensation
+
+### Part II — Molecular Physics
+
+6. **Molecular Structure and Bonding** — H₂⁺ and H₂ molecules, Born–Oppenheimer approximation, LCAO molecular orbitals, chemical bonds, hybridization
+7. **Molecular Spectroscopy** — Rotational and vibrational spectra, IR and FTIR spectroscopy, Raman and Brillouin scattering, electronic spectroscopy, fluorescence, NMR spectroscopy

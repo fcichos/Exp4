@@ -1,0 +1,97 @@
+---
+title: "Chemical Bonds"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Classify the main types of chemical bonds and their characteristics
+- Explain the physical origin of covalent bonding in terms of quantum mechanics
+- Describe ionic bonding and the Madelung energy of ionic crystals
+- Discuss metallic bonding and the free electron model
+- Compare weak interactions: van der Waals forces and hydrogen bonds
+:::
+
+## Types of Chemical Bonds
+
+Chemical bonds arise from the electromagnetic interaction between atoms. They can be broadly classified by the nature of the electron sharing:
+
+| Bond type | Mechanism | Typical strength | Examples |
+|-----------|-----------|-----------------|----------|
+| Covalent | Shared electron pairs | 1–10 eV | H₂, CH₄, diamond |
+| Ionic | Electron transfer | 1–5 eV | NaCl, MgO |
+| Metallic | Delocalized electrons | 1–5 eV | Na, Cu, Fe |
+| Hydrogen | Electrostatic + partial covalent | 0.1–0.5 eV | H₂O, DNA |
+| Van der Waals | Fluctuating dipoles | 0.01–0.1 eV | Noble gas solids, molecular crystals |
+
+## Covalent Bonding
+
+In a covalent bond, electrons are shared between atoms. The quantum mechanical explanation involves two key effects:
+
+1. **Kinetic energy lowering:** When an electron delocalizes over two nuclei instead of one, its wave function becomes more spread out, reducing its kinetic energy (via the uncertainty principle).
+
+2. **Potential energy lowering:** The electron density accumulates between the nuclei, providing an attractive electron–nuclear interaction.
+
+The balance between these effects and the nuclear–nuclear repulsion determines the equilibrium bond length and bond energy.
+
+### Directional Character
+
+Covalent bonds are **directional** — their strength depends on the relative orientation of the participating orbitals. This gives rise to molecular geometry: bond angles, molecular shapes, and the basis for chemistry.
+
+## Ionic Bonding
+
+When the electronegativity difference between two atoms is large, one atom effectively transfers an electron to the other, forming cation–anion pairs.
+
+The energy of forming an ion pair at separation $R$:
+
+$$
+E(R) = E_I(A) - E_A(B) - \frac{e^2}{4\pi\varepsilon_0 R}
+$$
+
+where $E_I(A)$ is the ionization energy of atom A and $E_A(B)$ is the electron affinity of atom B.
+
+### Ionic Crystals
+
+In ionic crystals (e.g., NaCl), the electrostatic energy per ion pair is:
+
+$$
+E_{\text{Madelung}} = -\alpha_M\frac{e^2}{4\pi\varepsilon_0 R_0}
+$$
+
+where $\alpha_M$ is the **Madelung constant** (depends on crystal structure; $\alpha_M = 1.748$ for NaCl). The short-range repulsion (Pauli exclusion) prevents collapse.
+
+## Metallic Bonding
+
+In metals, valence electrons are delocalized over the entire crystal, forming an **electron gas**. The bonding arises from the lowering of kinetic energy when electrons can spread over many atomic sites (analogous to the particle in a box: larger box → lower energy levels).
+
+Key features: non-directional bonds, high electrical and thermal conductivity, ductility.
+
+## Weak Interactions
+
+### Van der Waals (London Dispersion) Forces
+
+Even non-polar atoms experience attractive interactions due to correlated fluctuations of their electron clouds. The London dispersion energy between two atoms at distance $R$ is:
+
+$$
+E_{\text{disp}} = -\frac{C_6}{R^6}
+$$
+
+where $C_6$ depends on the atomic polarizabilities. These forces are responsible for the condensation of noble gases.
+
+### Hydrogen Bonds
+
+A hydrogen atom bonded to an electronegative atom (F, O, N) can form a secondary bond to another electronegative atom. Hydrogen bonds are stronger than typical van der Waals forces but weaker than covalent bonds. They are crucial in water, proteins, and DNA.
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Covalent: shared electrons, directional, 1–10 eV
+- Ionic: electron transfer, Madelung energy, non-directional
+- Metallic: delocalized electrons, non-directional
+- Van der Waals: $\propto -1/R^6$, weak, universal
+- Hydrogen bonds: 0.1–0.5 eV, crucial for biology
+:::

@@ -1,0 +1,44 @@
+---
+title: "Exercise Sheet 14 — Raman, Fluorescence, and Electronic Spectroscopy"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Problem 1: Raman Spectroscopy
+
+In Raman scattering, an incident photon of frequency $\nu_0$ is inelastically scattered, gaining or losing energy to molecular vibrations or rotations.
+
+(a) The Raman shift for the vibrational mode of N₂ is $\Delta\tilde{\nu} = 2331\;\text{cm}^{-1}$. If the excitation laser has $\lambda_0 = 532\;\text{nm}$ (frequency-doubled Nd:YAG), calculate the wavelengths of the Stokes and anti-Stokes lines.
+
+(b) Explain why the anti-Stokes line is weaker than the Stokes line at room temperature. Derive the intensity ratio $I_{\text{aS}}/I_{\text{S}}$ in terms of $\Delta E$ and $T$.
+
+(c) The selection rules for rotational Raman scattering are $\Delta J = 0, \pm 2$. Why $\pm 2$ instead of $\pm 1$? Sketch the resulting O-branch, Q-branch, and S-branch pattern.
+
+(d) CO₂ is IR-active for its asymmetric stretch but Raman-inactive. Conversely, the symmetric stretch is Raman-active but IR-inactive. Explain this complementarity (rule of mutual exclusion).
+
+## Problem 2: Brillouin Scattering
+
+Brillouin scattering involves the interaction of light with acoustic phonons (sound waves) in a material.
+
+(a) The Brillouin shift is $\Delta\nu_B = \pm 2nv_s\sin(\theta/2)/\lambda_0$, where $n$ is the refractive index, $v_s$ the sound velocity, and $\theta$ the scattering angle. For glass ($n = 1.5$, $v_s = 5000\;\text{m/s}$) with $\lambda_0 = 532\;\text{nm}$ in a 90° scattering geometry, calculate $\Delta\nu_B$.
+
+(b) How does the Brillouin shift differ from the Raman shift in terms of the physical process and typical frequency range?
+
+(c) Why is a Fabry–Pérot interferometer (not a grating) typically used to resolve Brillouin spectra?
+
+## Problem 3: The Franck–Condon Principle
+
+(a) State the Franck–Condon principle in both its classical and quantum mechanical formulations.
+
+(b) A diatomic molecule has its equilibrium bond length increase from $R_e = 1.2\;\text{Å}$ (ground electronic state) to $R_e' = 1.5\;\text{Å}$ (excited electronic state). Sketch the potential energy curves and use the Franck–Condon principle to predict which vibrational level $v'$ in the excited state will be most strongly populated in absorption.
+
+(c) The Franck–Condon factor is $|\langle v'|\chi_v\rangle|^2$, where $|\chi_v\rangle$ are vibrational wave functions. Explain why, when $R_e' = R_e$, the $0 \to 0$ transition dominates, but when $R_e' \gg R_e$, higher vibrational levels are preferentially excited.
+
+## Problem 4: Fluorescence and Phosphorescence
+
+(a) Distinguish between fluorescence and phosphorescence in terms of the spin states involved and typical lifetimes.
+
+(b) Draw a Jablonski diagram showing: absorption, vibrational relaxation, internal conversion, fluorescence, intersystem crossing, and phosphorescence.
+
+(c) The fluorescence quantum yield is defined as $\Phi = k_r/(k_r + k_{nr})$, where $k_r$ is the radiative rate and $k_{nr}$ the total non-radiative rate. A dye molecule has a measured fluorescence lifetime of $\tau = 4\;\text{ns}$ and a natural (radiative) lifetime of $\tau_r = 10\;\text{ns}$. Calculate the quantum yield and the non-radiative rate.
+
+(d) Explain the Stokes shift between absorption and fluorescence emission. Why is the emission spectrum always red-shifted relative to absorption?

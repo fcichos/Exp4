@@ -1,0 +1,39 @@
+/* Custom styles for Experimental Physics 4 */
+
+/* Highlight important equations */
+.callout-note {
+  border-left-color: #2780e3;
+}
+
+/* Style for lecture objectives */
+.objectives {
+  background-color: rgba(39, 128, 227, 0.1);
+  border-left: 4px solid #2780e3;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Key concept boxes */
+.key-concept {
+  background-color: rgba(46, 139, 87, 0.1);
+  border-left: 4px solid #2e8b57;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Experiment description boxes */
+.experiment {
+  background-color: rgba(255, 165, 0, 0.1);
+  border-left: 4px solid #ffa500;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Figure captions */
+.quarto-figure-center figcaption {
+  text-align: center;
+  font-style: italic;
+}

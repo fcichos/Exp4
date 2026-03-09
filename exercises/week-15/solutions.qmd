@@ -1,0 +1,76 @@
+---
+title: "Solutions — Exercise Sheet 15: NMR Spectroscopy and Review"
+subtitle: "EP4: Experimental Physics 4 — Atomic and Molecular Physics"
+---
+
+## Solution 1: Larmor Precession and the NMR Signal
+
+**(a)** $\nu_L = 42.58 \times 11.7 = 498.2\;\text{MHz} \approx 500\;\text{MHz}$ ✓
+
+**(b)** $\Delta E = h\nu_L = 6.626\times10^{-34}\times4.982\times10^8 = 3.30\times10^{-25}\;\text{J} = 2.06\times10^{-6}\;\text{eV}$
+
+$k_BT = 4.14\times10^{-21}\;\text{J}$ at 300 K.
+
+$\Delta E/(k_BT) = 3.30\times10^{-25}/4.14\times10^{-21} = 7.97\times10^{-5}$
+
+Population excess: $\Delta N/N \approx \Delta E/(2k_BT) = 4.0\times10^{-5}$
+
+Only about 40 per million spins contribute to the net magnetization — NMR is extremely insensitive.
+
+**(c)** The tiny energy splitting ($\Delta E \ll k_BT$) means almost equal populations in both states, giving a very small net signal. Optical transitions have $\Delta E \gg k_BT$, so virtually all molecules are in the ground state, giving strong absorption.
+
+Strategies to improve sensitivity: stronger magnetic fields (population difference scales as $B_0$), signal averaging, cryogenic probes (reduce thermal noise), hyperpolarization techniques (DNP, PHIP), and using higher-$\gamma$ nuclei.
+
+## Solution 2: Chemical Shift
+
+**(a)** $\delta = (300.0021 - 300.0000)/300.0000 \times 10^6 = 0.0021/300 \times 10^6 = 7.0\;\text{ppm}$
+
+**(b)** On a 600 MHz spectrometer: $\nu = 600.0000 + 7.0\times10^{-6}\times600 = 600.0042\;\text{MHz}$
+
+Advantage: Higher $B_0$ increases the chemical shift separation in Hz (proportional to $B_0$), improving spectral resolution. The linewidth (in Hz) is field-independent, so the resolving power improves linearly with $B_0$.
+
+**(c)** CH₃ (1.2 ppm): alkyl protons, well shielded by surrounding electron density. CH₂ (3.7 ppm): adjacent to the electronegative oxygen, which withdraws electron density and reduces shielding (deshielded). OH (variable): hydrogen bonding and fast exchange with solvent make the shift concentration- and temperature-dependent.
+
+## Solution 3: Spin–Spin Coupling
+
+**(a)** CH₃ has 2 neighboring CH₂ protons: $n + 1 = 3$ → **triplet** (intensity 1:2:1).
+
+CH₂ has 3 neighboring CH₃ protons: $n + 1 = 4$ → **quartet** (intensity 1:3:3:1).
+
+**(b)** CH₃ triplet centered at 1.2 ppm: three lines separated by $J = 7\;\text{Hz}$.
+
+CH₂ quartet centered at 3.7 ppm: four lines separated by $J = 7\;\text{Hz}$. Total width of quartet: $3J = 21\;\text{Hz}$.
+
+The integral ratio CH₃:CH₂ = 3:2, reflecting the number of protons.
+
+**(c)** $J$ is mediated by the bonding electrons and depends only on the molecular geometry — it is a property of the molecule, not the spectrometer. Chemical shift in Hz is $\delta \times \nu_0$, which scales with $B_0$.
+
+The first-order ($n+1$ rule) analysis is valid when $\Delta\nu/J \gg 1$, i.e., the chemical shift difference (in Hz) is much larger than the coupling constant. Higher fields make this condition easier to satisfy.
+
+## Solution 4: Review
+
+**(a)** Energy hierarchy:
+
+- Electronic: Na D-line splitting $\sim 17\;\text{cm}^{-1}$, but the actual D-line energy is $\sim 17{,}000\;\text{cm}^{-1}$ (visible light).
+- Vibrational: HCl $\sim 2991\;\text{cm}^{-1}$ (infrared).
+- Rotational: CO $\sim 2B \approx 3.86\;\text{cm}^{-1}$ (microwave).
+
+The ratio is roughly $E_{\text{el}} : E_{\text{vib}} : E_{\text{rot}} \approx 1 : 1/10 : 1/1000$, arising from the mass ratio: $E_{\text{vib}}/E_{\text{el}} \sim \sqrt{m_e/M}$ and $E_{\text{rot}}/E_{\text{el}} \sim m_e/M$.
+
+**(b)** $3d^3$: $S = 3/2$, $L = 3$ (maximize: $m_\ell = 2, 1, 0$), less than half-full: $J = |L - S| = 3/2$.
+
+Term: $^4F_{3/2}$. Element: Vanadium (V, $Z = 23$).
+
+Number of spectral lines in a weak field depends on the specific transition. For the lowest-energy transition $^4F_{3/2} \to\, ^4D_{1/2}$ (or similar): $J = 3/2$ splits into 4 sublevels and $J = 1/2$ into 2, giving up to $4 \times 2 = 8$ allowed transitions with $\Delta m_J = 0, \pm 1$ (but the actual number is 4, since transitions from $m_J = \pm 3/2$ to $J = 1/2$ require $|\Delta m_J| = 1$).
+
+**(c)** $\Delta\nu = 2B/h = 115.3\;\text{GHz}$, so $B = 57.65\;\text{GHz} = 57.65\times10^9\;\text{Hz}$.
+
+This is **CO** (carbon monoxide), the most abundant molecule in the interstellar medium after H₂ (which is homonuclear and has no dipole moment, so it lacks rotational spectrum).
+
+$B = \hbar/(4\pi I) \implies I = \hbar/(4\pi B) = 1.055\times10^{-34}/(4\pi\times57.65\times10^9) = 1.456\times10^{-46}\;\text{kg·m}^2$
+
+$\mu_{CO} = 12\times16/(28)\times1.661\times10^{-27} = 1.139\times10^{-26}\;\text{kg}$
+
+$R = \sqrt{I/\mu} = \sqrt{1.456\times10^{-46}/1.139\times10^{-26}} = \sqrt{1.278\times10^{-20}} = 1.131\times10^{-10}\;\text{m} = 1.131\;\text{Å}$
+
+(Experimental: $R_e = 1.128\;\text{Å}$) ✓

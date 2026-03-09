@@ -1,0 +1,51 @@
+---
+title: "Lecture Schedule"
+---
+
+## Summer Semester 2026
+
+The lectures take place twice per week (4 SWS). Exercise sessions are held once per week (2 SWS).
+
+## Part I: Atomic Physics
+
+| Week | Dates | Topic | Reading |
+|------|-------|-------|---------|
+| 1 | Apr 7–11 | **The Bohr Model** — Historical context, Bohr postulates, energy levels, Bohr radius, hydrogen spectrum, limitations | Foot Ch. 1; Haken & Wolf §1–3 |
+| 2 | Apr 14–18 | **Schrödinger Equation for Hydrogen** — Separation of variables, radial equation, spherical harmonics, quantum numbers $(n, \ell, m_\ell)$ | Foot Ch. 2; Alonso & Finn Ch. 22 |
+| 3 | Apr 21–25 | **Atomic Orbitals and Hydrogen Spectrum** — Radial wave functions, probability densities, orbital shapes, spectral series (Lyman, Balmer, Paschen), fine structure | Foot Ch. 2–3 |
+| 4 | Apr 28 – May 2 | **Angular Momentum and Electron Spin** — Orbital angular momentum operators, quantization, spin-½, Pauli matrices, total angular momentum, addition of angular momenta | Foot Ch. 2, 5; Haken & Wolf §12 |
+| 5 | May 5–9 | **Stern–Gerlach Experiment and Spin–Orbit Coupling** — Spatial quantization, magnetic moments, spin–orbit interaction, fine structure, Lamb shift overview | Foot Ch. 2, 5; Alonso & Finn Ch. 23 |
+| 6 | May 12–16 | **Multi-Electron Atoms: Helium and Beyond** — Helium ground state, exchange interaction, singlet/triplet states, Pauli exclusion principle, electron configurations | Foot Ch. 3–4; Haken & Wolf §17–19 |
+| 7 | May 19–23 | **Periodic Table and Atomic Structure** — Aufbau principle, Hund's rules, screening, effective nuclear charge, term symbols, X-ray spectra, Moseley's law | Foot Ch. 4; Haken & Wolf §19–20 |
+| 8 | May 26–30 | **Zeeman and Stark Effects** — Normal Zeeman effect, anomalous Zeeman effect, Paschen–Back effect, linear and quadratic Stark effect | Foot Ch. 5; Haken & Wolf §13–14 |
+| 9 | Jun 2–6 | **Optical Transitions and Lasers** — Electric dipole transitions, selection rules, Einstein A and B coefficients, linewidths, population inversion, laser principles | Foot Ch. 6–7; Haken & Wolf §21 |
+| 10 | Jun 9–13 | **Quantum Statistics** — Identical particles, fermions and bosons, Fermi–Dirac distribution, Bose–Einstein distribution, Bose–Einstein condensation | Foot Ch. 10–11; Alonso & Finn Ch. 28 |
+
+: Part I schedule — Atomic Physics {.striped .hover}
+
+## Part II: Molecular Physics
+
+| Week | Dates | Topic | Reading |
+|------|-------|-------|---------|
+| 11 | Jun 16–20 | **The Hydrogen Molecule** — Born–Oppenheimer approximation, H₂⁺ molecular ion, bonding and antibonding orbitals, LCAO method, H₂ molecule | Haken & Wolf MP Ch. 4; Alonso & Finn Ch. 25 |
+| 12 | Jun 23–27 | **Molecular Orbitals and Chemical Bonds** — σ and π bonds, bond order, MO diagrams, ionic and covalent bonding, hybridization (sp, sp², sp³) | Haken & Wolf MP Ch. 4–5 |
+| 13 | Jun 30 – Jul 4 | **Rotational and Vibrational Spectra** — Rigid rotor, rotational constants, microwave spectroscopy, harmonic oscillator, IR spectroscopy, FTIR, ro-vibrational spectra | Haken & Wolf MP Ch. 8–10 |
+| 14 | Jul 7–11 | **Raman, Fluorescence, and Electronic Spectroscopy** — Raman scattering, Stokes/anti-Stokes lines, Brillouin scattering, Franck–Condon principle, fluorescence | Haken & Wolf MP Ch. 11–12 |
+| 15 | Jul 14–18 | **NMR Spectroscopy and Review** — Nuclear spin, Larmor precession, chemical shift, spin–spin coupling; course review and exam preparation | Haken & Wolf MP Ch. 14 |
+
+: Part II schedule — Molecular Physics {.striped .hover}
+
+## Exercise Sessions
+
+Weekly exercise sheets are distributed and due the following week.
+
+- **Distribution:** Each Monday
+- **Due date:** Following Monday before the exercise session
+- **Requirement:** ≥50% of total exercise points for exam admission
+
+## Important Dates
+
+- **First Lecture:** April 7, 2026
+- **Last Lecture:** July 17, 2026
+- **Written Exam:** to be announced (180 minutes)
+- **Retake Exam:** to be announced

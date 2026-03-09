@@ -1,0 +1,150 @@
+---
+title: "X-Ray Spectra and Moseley's Law"
+---
+
+## Learning Objectives
+
+::: {.callout-note}
+After this lecture, you should be able to:
+
+- Describe the production of characteristic X-ray spectra
+- Explain Moseley's law and its significance for the periodic table
+- Distinguish between K, L, M emission lines and their origin
+- Describe the Auger effect as an alternative to X-ray emission
+- Discuss X-ray absorption edges and their applications
+- Describe photoelectron spectroscopy (XPS/UPS) and its use for surface analysis
+- Explain the role of synchrotron radiation in modern X-ray science
+:::
+
+## Production of X-Rays
+
+When high-energy electrons (typically 10–100 keV) strike a metal target, two types of X-ray radiation are produced:
+
+**Bremsstrahlung (braking radiation):** A continuous spectrum arising from the deceleration of electrons in the target material. The maximum photon energy equals the kinetic energy of the incoming electrons: $h\nu_{\max} = eV$ (Duane–Hunt law).
+
+**Characteristic X-rays:** Sharp spectral lines superimposed on the bremsstrahlung, specific to the target element. These arise from transitions between inner electron shells.
+
+## Characteristic X-Ray Lines
+
+When an inner-shell electron is knocked out (e.g., from the $K$ shell, $n = 1$), an electron from a higher shell fills the vacancy, emitting a photon. The nomenclature is:
+
+| Transition | Line designation |
+|-----------|-----------------|
+| $L \to K$ ($n = 2 \to 1$) | $K_\alpha$ |
+| $M \to K$ ($n = 3 \to 1$) | $K_\beta$ |
+| $M \to L$ ($n = 3 \to 2$) | $L_\alpha$ |
+| $N \to L$ ($n = 4 \to 2$) | $L_\beta$ |
+
+The $K$-series lines have the highest energies (shortest wavelengths), followed by $L$, $M$, etc.
+
+## Moseley's Law (1913)
+
+Henry Moseley systematically measured the $K_\alpha$ X-ray frequencies of many elements and discovered a remarkably simple relationship:
+
+$$
+\sqrt{\nu} = a(Z - \sigma)
+$$ {#eq-moseley}
+
+where $a$ is a constant and $\sigma$ is a screening constant ($\sigma \approx 1$ for $K_\alpha$ lines). This can be understood from the hydrogen-like model: the $K_\alpha$ transition energy is approximately:
+
+$$
+h\nu_{K_\alpha} \approx (Z - 1)^2 \times 13.6 \, \text{eV} \times \left(\frac{1}{1^2} - \frac{1}{2^2}\right) = \frac{3}{4}(Z - 1)^2 \times 13.6 \, \text{eV}
+$$
+
+The screening constant $\sigma \approx 1$ accounts for the remaining $1s$ electron screening the nuclear charge from the $2p$ electron making the transition.
+
+### Significance
+
+Moseley's law had profound consequences:
+
+- Established the **atomic number** $Z$ (not atomic weight) as the fundamental ordering principle of elements
+- Predicted missing elements in the periodic table (e.g., Tc, Pm, Re, At)
+- Provided a simple method for elemental identification via X-ray spectroscopy
+
+## Fine Structure of X-Ray Lines
+
+Due to spin–orbit coupling, each X-ray line is actually a multiplet. For example, the $K_\alpha$ line splits into:
+
+- $K_{\alpha_1}$: $2P_{3/2} \to 1S_{1/2}$ (stronger)
+- $K_{\alpha_2}$: $2P_{1/2} \to 1S_{1/2}$ (weaker)
+
+The intensity ratio $K_{\alpha_1} : K_{\alpha_2} \approx 2:1$ reflects the degeneracy ratio $(2j+1)$.
+
+## The Auger Effect
+
+An alternative to X-ray emission is the **Auger effect**: instead of emitting a photon, the energy released when filling an inner-shell vacancy is transferred to another electron, which is ejected from the atom. The kinetic energy of the Auger electron is:
+
+$$
+E_{\text{Auger}} = E_K - E_L - E'_L
+$$
+
+The Auger effect dominates for low-$Z$ elements, while X-ray emission dominates for high-$Z$ elements. This is characterized by the **fluorescence yield** $\omega$ (probability of X-ray emission vs. Auger emission).
+
+## X-Ray Absorption
+
+X-ray **absorption edges** occur at photon energies sufficient to ionize inner-shell electrons. Just above an absorption edge, the X-ray absorption coefficient increases sharply. The positions of absorption edges follow Moseley's law and are element-specific.
+
+Applications include:
+
+- **X-ray fluorescence (XRF):** Elemental analysis by measuring characteristic X-rays
+- **X-ray absorption spectroscopy (XAS):** Probing local electronic and geometric structure
+- **Medical imaging:** Contrast enhancement using absorption edges
+
+### EXAFS and XANES
+
+Just above an absorption edge, the X-ray absorption coefficient shows oscillatory fine structure:
+
+- **XANES (X-ray Absorption Near-Edge Structure):** The region within $\sim 50$ eV of the edge is sensitive to the oxidation state and coordination geometry of the absorbing atom. The edge position shifts by $\sim 1\text{–}3$ eV per unit change in oxidation state.
+
+- **EXAFS (Extended X-ray Absorption Fine Structure):** The oscillations extending $\sim 50\text{–}1000$ eV above the edge arise from interference between the outgoing photoelectron wave and the backscattered wave from neighboring atoms. Fourier analysis of the EXAFS signal yields interatomic distances ($\pm 0.01$ Å), coordination numbers, and the identity of neighboring atoms — even in amorphous or solution-phase materials without long-range order.
+
+## Photoelectron Spectroscopy
+
+::: {.callout-important}
+## Experiment: XPS — Chemical Fingerprinting of Surfaces
+
+In **X-ray photoelectron spectroscopy (XPS)**, also known as **ESCA** (Electron Spectroscopy for Chemical Analysis, Kai Siegbahn, Nobel Prize 1981), a monochromatic X-ray beam (typically Al Kα at 1486.6 eV or Mg Kα at 1253.6 eV) ejects core-level electrons from the sample. The kinetic energy of the photoelectron is:
+
+$$
+E_{\text{kin}} = h\nu - E_B - \phi
+$$
+
+where $E_B$ is the binding energy and $\phi$ is the spectrometer work function. By measuring $E_{\text{kin}}$, one obtains $E_B$, which is characteristic of the element and its chemical environment. Chemical shifts of $\sim 1\text{–}5$ eV between different oxidation states or bonding environments allow identification of chemical species at surfaces.
+
+XPS is inherently surface-sensitive because the inelastic mean free path of electrons in solids is only $\sim 1\text{–}3$ nm at typical kinetic energies. It is the standard tool for composition analysis of thin films, catalysts, and semiconductor interfaces.
+:::
+
+**Ultraviolet photoelectron spectroscopy (UPS)** uses He I (21.2 eV) or He II (40.8 eV) radiation to probe valence-band electronic structure, providing information about chemical bonding and the density of states near the Fermi level.
+
+## Synchrotron Radiation
+
+**Synchrotron radiation** is emitted by relativistic electrons circulating in a storage ring. It provides a brilliant, tunable, and highly collimated X-ray source spanning the entire spectrum from infrared to hard X-rays.
+
+Key properties that make synchrotron light uniquely powerful:
+
+- **Tunability:** The photon energy can be continuously selected using a monochromator — essential for XAS, where one scans across an absorption edge
+- **High brilliance:** Orders of magnitude brighter than laboratory X-ray tubes, enabling measurements on tiny samples or with high spatial resolution
+- **Pulsed structure:** The electron bunches in the ring produce X-ray pulses of $\sim 10\text{–}100$ ps, enabling time-resolved studies of structural dynamics
+- **Polarization:** Linearly polarized in the orbital plane, with circular polarization available from special insertion devices
+
+Modern synchrotron facilities (e.g., ESRF in Grenoble, PETRA III in Hamburg, APS in Chicago) are large-scale user facilities serving thousands of researchers annually. Fourth-generation sources (**X-ray free-electron lasers**, XFELs, such as the European XFEL in Hamburg) produce coherent, femtosecond X-ray pulses with peak brilliance $10^{10}$ times higher than synchrotrons, enabling single-shot imaging of nanostructures and femtosecond time-resolved crystallography.
+
+::: {.callout-important}
+## Experiment: Auger Electron Spectroscopy (AES)
+
+In AES, a focused electron beam ($\sim 3\text{–}20$ keV) creates inner-shell vacancies, and the energies of the emitted Auger electrons are analyzed. Since Auger energies depend only on the atomic levels involved (not on the primary beam energy), each element has a unique Auger fingerprint. Combined with the short electron escape depth ($\sim 1$ nm), AES provides element-specific surface composition with lateral resolution of $\sim 10$ nm (set by the electron beam focus) — superior to XPS for spatially resolved surface mapping. Depth profiling is achieved by sputtering with an ion beam and recording Auger spectra as successive layers are removed.
+:::
+
+## Summary
+
+::: {.callout-tip}
+**Key results:**
+
+- Characteristic X-rays: inner-shell transitions, element-specific
+- Moseley's law: $\sqrt{\nu} = a(Z - \sigma)$ → $Z$ is the fundamental ordering quantity
+- Auger effect: radiationless de-excitation, dominant for low-$Z$ elements
+- EXAFS/XANES: local structure from absorption fine structure
+- XPS: core-level binding energies → element identification, chemical shifts
+- Synchrotron radiation: tunable, brilliant X-rays; XFELs for femtosecond dynamics
+- Auger electron spectroscopy: surface-sensitive elemental mapping
+:::
